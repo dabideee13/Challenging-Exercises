@@ -1,2 +1,2 @@
 # Challenging-Exercises
-Compiled from different sources. Not mine.
+Problem statements compiled from different sources. Not mine.
