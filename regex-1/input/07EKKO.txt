@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+        EKKO
+          Short description:Purchase document header
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 76
+          Field length sum: 517
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Client
+        EBELN       X CHAR     10 The number of purchase document
+        INCLUDE EKKODATA
+         BUKRS        CHAR      4 Accounting circuit
+         BSTYP        CHAR      1 Type of purchase document
+         BSART        CHAR      4 Type purchase doc.
+         BSAKZ        CHAR      1 Control character to kind of proof of purchase
+         LOEKZ        CHAR      1 Character deletion of the purchase receipt
+         STATU        CHAR      1 Status of the purchase document
+         AEDAT        DATS      8 Date of Recording Connection
+         ERNAM        CHAR     12 Officer name for the object based
+         PINCR        NUMC      5 interval items
+         LPONR        NUMC      5 The last item number
+         LIFNR        CHAR     10 Vendor account number
+         SPRAS        LANG      1 language key
+         ZTERM        CHAR      4 Key payment terms
+         ZBD1T        DEC       3 days discounts
+         ZBD2T        DEC       3 days discounts
+         ZBD3T        DEC       3 days discounts
+         ZBD1P        DEC       5 1 percent cash discount
+         ZBD2P        DEC       5 2 percent discounts
+         EKORG        CHAR      4 purchasing organization
+         EKGRP        CHAR      3 Group purchase
+         WAERS        CUKY      5 key currency
+         WKURS        DEC       9 Exchange rate
+         KUFIX        CHAR      1 Character: Fixing course
+         BEDAT        DATS      8 Date of purchase document
+         KDATB        DATS      8 Commencement of validity
+         KDATE        DATS      8 Expiration date
+         BWBDT        DATS      8 Deadline appl.
+         ANGDT        DATS      8 The deadline for submission of bids
+         BNDDT        DATS      8 Binding bid deadline
+         GWLDT        DATS      8 warranty date
+         AUSNR        CHAR     10 The number listed contest
+         ANGNR        CHAR     10 Number of offer
+         IHRAN        DATS      8 Date of submission of bids
+         IHREZ        CHAR     12 Your sign
+         VERKF        CHAR     30 Competent seller at supplier
+         TELF1        CHAR     16 Telephone number of suppliers
+         LLIEF        CHAR     10 Supplier for delivery
+         KUNNR        CHAR     10 Customer number 1
+         KONNR        CHAR     10 Parent contract number
+         ABGRU        CHAR      2 The field is not used
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+         AUTLF        CHAR      1 Complete order prescribed
+         WEAKT        CHAR      1 Character: Report Receipt
+         RESWK        CHAR      4 Surrendering the race for orders shipments
+         LBLIF        CHAR     10 The field is not used
+         INCO1        CHAR      3 Incoterms part 1
+         INCO2        CHAR     28 Incoterms part 2
+         KTWRT        CURR     15 The cumulative planned value
+         SUBMI        CHAR     10 The number of submission
+         KNUMV        CHAR     10 Condition ID document
+         KALSM        CHAR      6 Diagram (pricing, news, assigned
+         STAFO        CHAR      6 Group Update to update stat
+         LIFRE        CHAR     10 Different issuer of the invoice
+         EXNUM        CHAR     10 The number of the foreign trade data in documents MM
+         UNSEZ        CHAR     12 Our brand
+         LOGSY        CHAR     10 Logical system
+         UPINC        NUMC      5 Interval subheading
+         STAKO        CHAR      1 Proof of time-dependent conditions
+         FRGGR        CHAR      2 Group free.
+         FRGSX        CHAR      2 Release strategy
+         FRGKE        CHAR      1 Sign release: Shopping document
+         FRGZU        CHAR      8 Enable status
+         FRGRL        CHAR      1 releasing incomplete
+         LANDS        CHAR      3 State tax return
+         LPHIS        CHAR      1 The sign for supplies - Documents
+         ADRNR        CHAR     10 Address number
+         STCEG_L      CHAR      3 State ID number of value added tax
+         STCEG        CHAR     20 VAT registration number
+         ABSGR        NUMC      2 Reason for rejection
+         ADDNR        CHAR     10 Number
+         KORNR        CHAR      1 Correction neutral reserves
+         MEMORY       CHAR      1 The order is not yet complete
+         PROCSTAT     CHAR      2 Status processing the purchase document
+         RLWRT        CURR     15 Total value at release
+         REVNO        CHAR      8 The version number of purchase
+        INCLUDE CI_EKKODB
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            .INCLUDE        SPRAS-
+            KTWRT           EKKO-WAERS
+            RLWRT           EKKO-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            EBELN           ALPHA
+            LIFNR           ALPHA
+            SPRAS           ISOLA
+            WKURS           EXCRT
+            AUSNR           ALPHA
+            LLIEF           ALPHA
+            KUNNR           ALPHA
+            KONNR           ALPHA
+            LBLIF           ALPHA
+            STAFO           ALPHA
+            LIFRE           ALPHA
+            LOGSY           ALPHA
+            ADRNR           ALPHA
+            ADDNR           ALPHA
+            REVNO           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

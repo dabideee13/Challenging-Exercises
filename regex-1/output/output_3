@@ -1,0 +1,2236 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        BKPF
+          Short description:Accounting header
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 94
+          Field length sum: 666
+
+        Field name          K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        Field name          K Type Length Short text
+        ____________________________________________________________
+        APPEND  ABKPF_PSO
+         INCLUDE IBKPF_PSO
+          INCLUDE IVBKPF_PSO
+        APPEND  ABKPF_UMB
+        APPEND  BKPF_CARD
+         INCLUDE FCRD_VBKPF
+        APPEND  BKPF_USFED
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        Field name          K Type Length Short text
+        ____________________________________________________________
+        APPEND  JVBKPF
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            FRATH           T001-WAERS
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            DBBLG           ALPHA
+            STBLG           ALPHA
+            STJAH           GJAHR
+            KURSF           EXCRT
+            KZKRS           EXCRT
+            KURS2           EXCRT
+            KURS3           EXCRT
+            AWSYS           ALPHA
+            TXKRS           EXCRT
+            LOTKZ           ALPHA
+            BATCH           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSAK
+        ______________________________________________________________________
+
+
+        BSAK
+          Short description:Accounting: Secondary index for suppliers (balance items)
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 177
+          Field length sum: 1413
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSAK
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSAK
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSAK
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        APPEND  ABSAK_PSO
+        APPEND  JVBSAK
+        ____________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSAK
+        ______________________________________________________________________
+
+
+
+          Field with reference fields:
+            Field name      reference field
+            DMBTR           T001-WAERS
+            WRBTR           BSAK-WAERS
+            MWSTS           T001-WAERS
+            WMWST           BSAK-WAERS
+            BDIFF           T001-WAERS
+            BDIF2           BKPF-HWAE2
+            SKFBT           BSAK-WAERS
+            SKNTO           T001-WAERS
+            WSKTO           BSAK-WAERS
+            DMBT1           T001-WAERS
+            WRBT1           BSAK-WAERS
+            DMBT2           T001-WAERS
+            WRBT2           BSAK-WAERS
+            DMBT3           T001-WAERS
+            WRBT3           BSAK-WAERS
+            QSSHB           BSAK-WAERS
+            QBSHB           BSAK-WAERS
+            QSFBT           BKPF-WAERS
+            DMBE2           BKPF-HWAE2
+            DMBE3           BKPF-HWAE3
+            DMB21           BKPF-HWAE2
+            DMB22           BKPF-HWAE2
+            DMB23           BKPF-HWAE2
+            DMB31           BKPF-HWAE3
+            DMB32           BKPF-HWAE3
+            DMB33           BKPF-HWAE3
+            MWST2           BKPF-HWAE2
+            MWST3           BKPF-HWAE3
+            SKNT2           BKPF-HWAE2
+            SKNT3           BKPF-HWAE3
+            BDIF3           BKPF-HWAE3
+            KZBTR           T001-WAERS
+            PSWBT           BSAK-PSWSL
+            PYAMT           BSAK-PYCUR
+            PPDIFF          T001-WAERS
+            PPDIF2          BKPF-HWAE2
+            PPDIF3          BKPF-HWAE3
+            PENLC1          BKPF-HWAER
+            PENLC2          BKPF-HWAE2
+            PENLC3          BKPF-HWAE3
+            PENFC           BKPF-HWAER
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSAK
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            AUGBL           ALPHA
+            GJAHR           GJAHR
+            BELNR           ALPHA
+            AUFNR           ALPHA
+            ANLN1           ALPHA
+            ANLN2           ALPHA
+            EBELN           ALPHA
+            SAKNR           ALPHA
+            HKONT           ALPHA
+            FILKD           ALPHA
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            ANFBN           ALPHA
+            ANFBJ           GJAHR
+            VBUND           ALPHA
+            PROJK           ABPSP
+            FIPOS           FMCIS
+            NPLNR           ALPHA
+            KOSTL           ALPHA
+            IMKEY           IMKEY
+            EMPFB           ALPHA
+            PRCTR           ALPHA
+            VERTN           ALPHA
+            KBLNR           ALPHA
+            GRANT_NBR       ALPHA
+            LOTKZ           ALPHA
+            PPRCT           ALPHA
+            AUGGJ           GJAHR
+            VNAME           ALPHA
+            EGRUP           ALPHA
+            BTYPE           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            6
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        BSEG
+          Short description:Document segment: Accounting
+          Cluster table from table clusters RFBLG
+          Active version
+
+
+        Field structure
+          Field count: 306
+          Field length sum: 2298
+
+        Field name K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            1
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Field name K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            2
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Field name K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            3
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Field name K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            4
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Field name K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            5
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Field name K Type Length Short text
+        ____________________________________________________________
+        ____________________________________________________________
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            6
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+
+          Field with reference fields:
+            Field name      reference field
+            DMBTR           T001-WAERS
+            WRBTR           BKPF-WAERS
+            KZBTR           BKPF-HWAER
+            PSWBT           BSEG-PSWSL
+            TXBHW           T001-WAERS
+            TXBFW           BKPF-WAERS
+            MWSTS           T001-WAERS
+            WMWST           BKPF-WAERS
+            HWBAS           T001-WAERS
+            FWBAS           BKPF-WAERS
+            HWZUZ           T001-WAERS
+            FWZUZ           BKPF-WAERS
+            QSSHB           BKPF-WAERS
+            GBETR           BKPF-WAERS
+            BDIFF           T001-WAERS
+            BDIF2           BKPF-HWAE2
+            FDWBT           BKPF-WAERS
+            SKFBT           BKPF-WAERS
+            SKNTO           T001-WAERS
+            WSKTO           BKPF-WAERS
+            NEBTR           BKPF-WAERS
+            DMBT1           T001-WAERS
+            WRBT1           BKPF-WAERS
+            DMBT2           T001-WAERS
+            WRBT2           BKPF-WAERS
+            DMBT3           T001-WAERS
+            WRBT3           BKPF-WAERS
+            BLNBT           T001-WAERS
+            KLIBT           T014-WAERS
+            QBSHB           BKPF-WAERS
+            QSFBT           BKPF-WAERS
+            NAVHW           T001-WAERS
+            NAVFW           BKPF-WAERS
+            MENGE           BSEG-MEINS
+            ERFMG           BSEG-ERFME
+            BPMNG           BSEG-BPRME
+            REWRT           T001-WAERS
+            REWWR           BKPF-WAERS
+            BONFB           T001-WAERS
+            BUALT           BKPF-WAERS
+            NPREI           T001-WAERS
+            RDIFF           T001-WAERS
+            RDIF2           BKPF-HWAE2
+            DMBE2           BKPF-HWAE2
+            DMBE3           BKPF-HWAE3
+            DMB21           BKPF-HWAE2
+            DMB22           BKPF-HWAE2
+            DMB23           BKPF-HWAE2
+            DMB31           BKPF-HWAE3
+            DMB32           BKPF-HWAE3
+            DMB33           BKPF-HWAE3
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            7
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+            MWST2           BKPF-HWAE2
+            MWST3           BKPF-HWAE3
+            NAVH2           BKPF-HWAE2
+            NAVH3           BKPF-HWAE3
+            SKNT2           BKPF-HWAE2
+            SKNT3           BKPF-HWAE3
+            BDIF3           BKPF-HWAE3
+            RDIF3           BKPF-HWAE3
+            TXBH2           BKPF-HWAE2
+            TXBH3           BKPF-HWAE3
+            STTAX           BKPF-WAERS
+            ABSBT           T014-WAERS
+            PYAMT           BSEG-PYCUR
+            PPDIFF          T001-WAERS
+            PPDIF2          BKPF-HWAE2
+            PPDIF3          BKPF-HWAE3
+            PENLC1          BKPF-HWAER
+            PENLC2          BKPF-HWAE2
+            PENLC3          BKPF-HWAE3
+            PENFC           BKPF-WAERS
+            SCTAX           BKPF-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            8
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            AUGBL           ALPHA
+            KURSR           EXCRT
+            VBUND           ALPHA
+            ALTKT           ALPHA
+            FDGRP           ALPHA
+            KOSTL           ALPHA
+            AUFNR           ALPHA
+            VBELN           ALPHA
+            VBEL2           ALPHA
+            ANLN1           ALPHA
+            ANLN2           ALPHA
+            SAKNR           ALPHA
+            HKONT           ALPHA
+            KUNNR           ALPHA
+            LIFNR           ALPHA
+            FILKD           ALPHA
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            DISBN           ALPHA
+            DISBJ           GJAHR
+            ANFBN           ALPHA
+            ANFBJ           GJAHR
+            ESRRE           ALPHA
+            MATNR           MATN1
+            MEINS           CUNIT
+            ERFME           CUNIT
+            BPRME           CUNIT
+            EBELN           ALPHA
+            RYACQ           GJAHR
+            PRCTR           ALPHA
+            VNAME           ALPHA
+            RECID           ALPHA
+            EGRUP           ALPHA
+            VPTNR           ALPHA
+            VERTN           ALPHA
+            IMKEY           IMKEY
+            FIPOS           FMCIS
+            NPLNR           ALPHA
+            PROJK           ABPSP
+            BTYPE           ALPHA
+            ETYPE           ALPHA
+            LOKKT           ALPHA
+            PPRCT           ALPHA
+            KBLNR           ALPHA
+            CCBTC           ALPHA
+            EMPFB           ALPHA
+            PRZNR           ALPHA
+            GRANT_NBR       ALPHA
+            AUGGJ           GJAHR
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            9
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+            ZZPROV          ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                           10
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EINA
+        ______________________________________________________________________
+
+
+        EINA
+          Short description:Purchase info record - general data
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 39
+          Field length sum: 354
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        APPEND  ZAEINA
+        ____________________________________________________________
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EINA
+        ______________________________________________________________________
+
+
+
+          Field with reference fields:
+            Field name      reference field
+            ANZPU           EINA-PUNEI
+
+          Field with conversion routines:
+            Field name      conversion routine
+            INFNR           ALPHA
+            MATNR           MATN1
+            LIFNR           ALPHA
+            MEINS           CUNIT
+            LMEIN           CUNIT
+            KOLIF           ALPHA
+            PUNEI           CUNIT
+            MFRNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKBE
+        ______________________________________________________________________
+
+
+        EKBE
+          Short description:Purchase document history
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 59
+          Field length sum: 448
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        INCLUDE EKBEDATA
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKBE
+        ______________________________________________________________________
+
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        INCLUDE RETURN_DELIVERY
+        APPEND  /SAPNEA/J_SC_EK
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            MENGE           EKPO-MEINS
+            BPMNG           EKPO-BPRME
+            DMBTR           T001-WAERS
+            WRBTR           EKBE-WAERS
+            AREWR           T001-WAERS
+            WESBS           EKPO-MEINS
+            BPWES           EKPO-BPRME
+            REEWR           T001-WAERS
+            REFWR           EKBE-WAERS
+            LSMNG           EKBE-LSMEH
+            AREWW           EKBE-WAERS
+            BAMNG           EKPO-LMEIN
+            AREWB           EKKO-WAERS
+            REWRB           EKKO-WAERS
+
+          Field with conversion routines:
+            Field name      conversion routine
+            EBELN           ALPHA
+            GJAHR           GJAHR
+            BELNR           ALPHA
+            LFGJA           GJAHR
+            LFBNR           ALPHA
+            MATNR           MATN1
+            LSMEH           CUNIT
+            EMATN           MATN1
+            SRVPOS          ALPHA
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+        EKKO
+          Short description:Purchase document header
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 76
+          Field length sum: 517
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        INCLUDE EKKODATA
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        INCLUDE CI_EKKODB
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            .INCLUDE        SPRAS-
+            KTWRT           EKKO-WAERS
+            RLWRT           EKKO-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            EBELN           ALPHA
+            LIFNR           ALPHA
+            SPRAS           ISOLA
+            WKURS           EXCRT
+            AUSNR           ALPHA
+            LLIEF           ALPHA
+            KUNNR           ALPHA
+            KONNR           ALPHA
+            LBLIF           ALPHA
+            STAFO           ALPHA
+            LIFRE           ALPHA
+            LOGSY           ALPHA
+            ADRNR           ALPHA
+            ADDNR           ALPHA
+            REVNO           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        EKPO
+          Short description:Purchase document item
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 209
+          Field length sum: 1348
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+        INCLUDE EKPODATA
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+         APPEND  FMFG_EKPODA
+        INCLUDE CI_EKPODB
+        APPEND  ZAEKPO
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            KTMNG           EKPO-MEINS
+            MENGE           EKPO-MEINS
+            NETPR           EKKO-WAERS
+            NETWR           EKKO-WAERS
+            BRTWR           EKKO-WAERS
+            ABFTZ           EKPO-MEINS
+            ZWERT           EKKO-WAERS
+            NAVNW           EKKO-WAERS
+            ABMNG           EKPO-MEINS
+            EFFWR           EKKO-WAERS
+            NTGEW           EKPO-GEWEI
+            BRGEW           EKPO-GEWEI
+            VOLUM           EKPO-VOLEH
+            GNETWR          EKKO-WAERS
+            ANZPU           EKPO-PUNEI
+            KZWI1           EKKO-WAERS
+            KZWI2           EKKO-WAERS
+            KZWI3           EKKO-WAERS
+            KZWI4           EKKO-WAERS
+            KZWI5           EKKO-WAERS
+            KZWI6           EKKO-WAERS
+            MFZHI           EKPO-MEINS
+            FFZHI           EKPO-MEINS
+            BONBA           EKKO-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            EBELN           ALPHA
+            MATNR           MATN1
+            EMATN           MATN1
+            INFNR           ALPHA
+            MEINS           CUNIT
+            BPRME           CUNIT
+            KONNR           ALPHA
+            LMEIN           CUNIT
+            KUNNR           ALPHA
+            ADRNR           ALPHA
+            STAFO           ALPHA
+            GEWEI           CUNIT
+            EAN11           EAN11
+            REVLV           NUMCV
+            FIPOS           FMCIS
+            KO_PRCTR        ALPHA
+            KO_PPRCTR       ALPHA
+            VOLEH           CUNIT
+            KOLIF           ALPHA
+            EMLIF           ALPHA
+            SATNR           MATN1
+            ADRN2           ALPHA
+            AKTNR           ALPHA
+            ABELN           ALPHA
+            PUNEI           CUNIT
+            SAISJ           GJAHR
+            ANFNR           ALPHA
+            BANFN           ALPHA
+            J_1BINDUST      ALPHA
+            MFRNR           ALPHA
+            IPRKZ           PERKZ
+            GRANT_NBR       ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            6
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        LFA1
+          Short description:Supplier root folder (general part)
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 113
+          Field length sum: 1487
+
+        Field name      K Type Length Short text
+        ____________________________________________________________
+        INCLUDE SI_LFA1
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        Field name      K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        Field name      K Type Length Short text
+        ____________________________________________________________
+        APPEND  /SAPNEA/J_SC_
+        APPEND  ALFA1_FMFG
+        APPEND  ALFA1_PSO
+         INCLUDE IADDR_PSO
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            J_SC_CAPITAL    LFA1-J_SC_CURRENCY
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            ADRNR           ALPHA
+            KUNNR           ALPHA
+            LNRZA           ALPHA
+            SPRAS           ISOLA
+            VBUND           ALPHA
+            FISKN           ALPHA
+            FISKU           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          MKPF
+        ______________________________________________________________________
+
+
+        MKPF
+          Short description:Materials document header
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 25
+          Field length sum: 211
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        APPEND  JVMKPF
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            FRATH           T001-WAERS
+
+          Field with conversion routines:
+            Field name      conversion routine
+            MBLNR           ALPHA
+            MJAHR           GJAHR
+            XABLN           ALPHA
+            AWSYS           ALPHA
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        RBKP
+          Short description:Document header - received invoice
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 127
+          Field length sum: 1236
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        INCLUDE RBKP_FI
+        INCLUDE RBKP_1TIME
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            RMWWR           RBKP-WAERS
+            BEZNK           RBKP-WAERS
+            WMWST1          RBKP-WAERS
+            WMWST2          RBKP-WAERS
+            WSKTO           RBKP-WAERS
+            ARKUEN          RBKP-WAERS
+            ARKUEMW         RBKP-WAERS
+            MAKZN           RBKP-WAERS
+            MAKZMW          RBKP-WAERS
+            LIEFFN          RBKP-WAERS
+            LIEFFMW         RBKP-WAERS
+            QSSHB           RBKP-WAERS
+            QSFBT           RBKP-WAERS
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            LIFNR           ALPHA
+            KURSF           EXCRT
+            LOGSYS          ALPHA
+            STBLG           ALPHA
+            STJAH           GJAHR
+            ESRRE           ALPHA
+            TXKRS           EXCRT
+            EMPFB           ALPHA
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            FILKD           ALPHA
+            LOTKZ           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        REGUH
+          Short description:Payments data from payment programme
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 164
+          Field length sum: 1950
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        INCLUDE IREGUH_FPM
+        APPEND  REGUH_FM
+        APPEND  REGUH_FMFG
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            RBETR           T001-WAERS
+            RSKON           T001-WAERS
+            RWBTR           REGUH-WAERS
+            RWSKT           REGUH-WAERS
+            RSPE1           T001-WAERS
+            RSPE2           T001-WAERS
+            RSPM1           T001-WAERS
+            RSPM2           T001-WAERS
+            WEHMX           T001-WAERS
+            WEFMX           REGUH-WAERS
+            WEHRS           T001-WAERS
+            WEFRS           REGUH-WAERS
+            SKVHW           T001-WAERS
+            SKVFW           REGUH-WAERS
+            DSKVH           T001-WAERS
+            RBET2           BKPF-HWAE2
+            RBET3           BKPF-HWAE3
+            RSKO2           BKPF-HWAE2
+            RSKO3           BKPF-HWAE3
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            KUNNR           ALPHA
+            VBLNR           ALPHA
+            ZSPRA           ISOLA
+            UBHKT           ALPHA
+            KURSF           EXCRT
+            KURS2           EXCRT
+            KURS3           EXCRT
+            PYORD           ALPHA
+            SAKNR           ALPHA
+            HKONT           ALPHA
+            ZADNR           ALPHA
+            ADRNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        REGUP
+          Short description:Processed items from payment programme
+          Cluster table from table clusters REGUC
+          Active version
+
+
+        Field structure
+          Field count: 176
+          Field length sum: 1481
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        INCLUDE REGUP_PRQ
+        ____________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+
+          Field with reference fields:
+            Field name      reference field
+            DMBTR           T001-WAERS
+            WRBTR           REGUH-WAERS
+            BDIFF           T001-WAERS
+            MWSTS           T001-WAERS
+            WMWST           REGUP-WAERS
+            DMBT1           T001-WAERS
+            WRBT1           REGUP-WAERS
+            DMBT2           T001-WAERS
+            WRBT2           REGUP-WAERS
+            DMBT3           T001-WAERS
+            WRBT3           REGUP-WAERS
+            SKFBT           REGUH-WAERS
+            SKNTO           T001-WAERS
+            WSKTO           REGUH-WAERS
+            QSSHB           REGUH-WAERS
+            QBSHB           REGUH-WAERS
+            QBSHH           T001-WAERS
+            MSHBT           T001-WAERS
+            MSFBT           REGUH-WAERS
+            BDIF2           X001-HWAE2
+            DSKVH           T001-WAERS
+            BDIF3           X001-HWAE3
+            DMBE2           BKPF-HWAE2
+            DMBE3           BKPF-HWAE3
+            MWST2           BKPF-HWAE2
+            SKNT2           BKPF-HWAE2
+            SKNT3           BKPF-HWAE3
+            QBSH2           BKPF-HWAE2
+            QBSH3           BKPF-HWAE3
+            DMB21           BKPF-HWAE2
+            DMB22           BKPF-HWAE2
+            DMB23           BKPF-HWAE2
+            DMB31           BKPF-HWAE3
+            DMB32           BKPF-HWAE3
+            DMB33           BKPF-HWAE3
+            MWST3           BKPF-HWAE3
+            OSKTO           T001-WAERS
+            PSWBT           REGUP-PSWSL
+            PSSKT           REGUP-PSWSL
+            GDIFF           T001-WAERS
+            GDIF2           X001-HWAE2
+            GDIF3           X001-HWAE3
+            PAMTF           REGUH-WAERS
+            PENLC1          BKPF-HWAER
+            PENLC2          BKPF-HWAE2
+            PENLC3          BKPF-HWAE3
+            PENFC           BKPF-WAERS
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            KUNNR           ALPHA
+            VBLNR           ALPHA
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            FILKD           ALPHA
+            HKONT           ALPHA
+            SAKNR           ALPHA
+            ESRRE           ALPHA
+            AUFNR           ALPHA
+            ANLN1           ALPHA
+            ANLN2           ALPHA
+            EBELN           ALPHA
+            VBUND           ALPHA
+            FIPOS           FMCIS
+            PROJK           ABPSP
+            NPLNR           ALPHA
+            VERTN           ALPHA
+            IMKEY           IMKEY
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            KOSTL           ALPHA
+            VBEL2           ALPHA
+            EMPFB           ALPHA
+            PRCTR           ALPHA
+            KBLNR           ALPHA
+            KEYNO           ALPHA
+            PPRCT           ALPHA
+            GRANT_NBR       ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            6
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+        RSEG
+          Short description:Document item - received invoice
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 71
+          Field length sum: 482
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            WRBTR           RBKP-WAERS
+            MENGE           RSEG-BSTME
+            BPMNG           RSEG-BPRME
+            LBKUM           MARA-MEINS
+            VRKUM           MARA-MEINS
+            BNKAN           RBKP-WAERS
+            SALK3           T001-WAERS
+            VMSAL           T001-WAERS
+            RBMNG           RSEG-BSTME
+            BPRBM           RSEG-BPRME
+            RBWWR           RBKP-WAERS
+            STOCK_POSTING   T001-WAERS
+            STOCK_POSTING_PPT001-WAERS
+            STOCK_POSTING_PYT001-WAERS
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            EBELN           ALPHA
+            MATNR           MATN1
+            BSTME           CUNIT
+            BPRME           CUNIT
+            MEINS           CUNIT
+            LFBNR           ALPHA
+            LFGJA           GJAHR
+            MATBF           MATN1
+            LIFNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        BKPF
+          Short description:Accounting header
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 94
+          Field length sum: 666
+
+        Field name          K Type Length Short text
+        ____________________________________________________________
+        MANDT               X CLNT      3 Client
+        BUKRS               X CHAR      4 Accounting circuit
+        BELNR               X CHAR     10 The number of accounting documents
+        GJAHR               X NUMC      4 Fiscal year
+        BLART                 CHAR      2 Doc. Type
+        BLDAT                 DATS      8 document Date
+        BUDAT                 DATS      8 Posting date in the document
+        MONAT                 NUMC      2 fiscal month
+        CPUDT                 DATS      8 Day of purchase accounting document
+        CPUTM                 TIMS      6 acquisition time
+        AEDAT                 DATS      8 The last modified date of the document according to A transaction
+        UPDDT                 DATS      8 Last updated document
+        WWERT                 DATS      8 Date conversion
+        USNAM                 CHAR     12 username
+        TCODE                 CHAR     20 Transaction code
+        BVORG                 CHAR     16 Number of accounting operations beyond accounting
+        XBLNR                 CHAR     16 Number of the reference document
+        DBBLG                 CHAR     10 Doc. No. permanent accounting
+        STBLG                 CHAR     10 The number of the cancellation document
+        STJAH                 NUMC      4 Fiscal Year of the cancellation document
+        BKTXT                 CHAR     25 Text main doc.
+        WAERS                 CUKY      5 key currency
+        KURSF                 DEC       9 Exchange rate
+        KZWRS                 CUKY      5 Currency key concern
+        KZKRS                 DEC       9 Currency exchange rate concern
+        BSTAT                 CHAR      1 status document
+        XNETB                 CHAR      1 Character: A document posted net?
+        FRATH                 CURR     13 Additional costs
+        XRUEB                 CHAR      1 Character: The document is posted to a previous
+        GLVOR                 CHAR      4 Business and Economics operations
+        GRPID                 CHAR     12 Map name Batch Input
+        DOKID                 CHAR     40 Doc. Name in archive system
+        ARCID                 CHAR     10 ID main doc. extract.
+        IBLAR                 CHAR      2 Internal type of document to document management
+        AWTYP                 CHAR      5 reference operations
+        AWKEY                 CHAR     20 key reference
+        FIKRS                 CHAR      4 financial circuit
+        HWAER                 CUKY      5 corporate currency
+        HWAE2                 CUKY      5 Second Local Currency key
+        HWAE3                 CUKY      5 Third key corporate currency
+        KURS2                 DEC       9 The value of the company for the second currency
+        KURS3                 DEC       9 The value of the company for the third currency
+        BASW2                 CHAR      1 The default currency for currency conversion
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        Field name          K Type Length Short text
+        ____________________________________________________________
+        BASW3                 CHAR      1 The default currency for currency conversion
+        UMRD2                 CHAR      1 Kind of data conversion for other corporate Me
+        UMRD3                 CHAR      1 Kind of data conversion company for third currencies
+        XSTOV                 CHAR      1 Character: The document is marked for reversal
+        STODT                 DATS      8 Scheduled date for billing cancellations
+        XMWST                 CHAR      1 Tax calculation automatically?
+        CURT2                 CHAR      2 Type Second Local Currency
+        CURT3                 CHAR      2 Type of currency for the third corporate currency
+        KUTY2                 CHAR      4 course type
+        KUTY3                 CHAR      4 course type
+        XSNET                 CHAR      1 HK accounts amounts are net amounts
+        AUSBK                 CHAR      4 Source company code
+        XUSVR                 CHAR      1 Character: Taxes US were changed to a detailed account
+        DUEFL                 CHAR      1 Status data transfer to future. release
+        AWSYS                 CHAR     10 Logical system
+        TXKRS                 DEC       9 The exchange rate for the tax
+        LOTKZ                 CHAR     10 Volume requirements
+        XWVOF                 CHAR      1 Character: Payment bill the customer before spl
+        STGRD                 CHAR      2 Reason cancellations or postings on the opposite
+        PPNAM                 CHAR     12 Users who previously acquired evidence
+        BRNCH                 CHAR      4 extension number
+        NUMPG                 NUMC      3 Number of pages of invoices
+        ADISC                 CHAR      1 Character: Entering represents diskont.doklad
+        XREF1_HD              CHAR     20 _1 Internal reference key to the header
+        XREF2_HD              CHAR     20 Reference key_2 internal header to dock
+        XREVERSAL             CHAR      1 Indicates whether a document or a hundred stronovací
+        REINDAT               DATS      8 Date of arrival Invoice
+        APPEND  ABKPF_PSO
+         INCLUDE IBKPF_PSO
+          INCLUDE IVBKPF_PSO
+           PSOTY              CHAR      2 Document Type: Payment requirements
+           PSOAK              CHAR     10 Reason
+           PSOKS              CHAR     10 region
+           PSOSG              CHAR      1 Reason for cancellation - command system IS-PS
+           PSOFN              CHAR     30 IS-PS: Sign file
+           INTFORM            CHAR      4 interest formula
+           INTDATE            DATS      8 Date of calculation of interest
+          PSOBT               DATS      8 Recognition day
+          PSOZL               CHAR      1 actual postings
+          PSODT               DATS      8 Date of last change
+          PSOTM               TIMS      6 Last change time
+        APPEND  ABKPF_UMB
+         FM_UMART             CHAR      1 Type of transfer payments
+        APPEND  BKPF_CARD
+         INCLUDE FCRD_VBKPF
+          CCINS               CHAR      4 Credit cards: Type of card
+          CCNUM               CHAR     25 Credit cards: Card Number
+        APPEND  BKPF_USFED
+         SSBLK                CHAR      1
+         BATCH                CHAR     10 Character connections for papers
+         SNAME                CHAR     12 User
+         SAMPLED              CHAR      1
+         EXCLUDE_FLAG         CHAR      1
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        Field name          K Type Length Short text
+        ____________________________________________________________
+         BLIND                CHAR      1 The 'ledger budget'
+         OFFSET_STATUS        CHAR      2 Status offset treasury
+         OFFSET_REFER_DAT     DATS      8 The data record is sent back to the Treasury
+         PENRC                CHAR      2 Reason for late payments
+        APPEND  JVBKPF
+         KNUMV                CHAR     10 Condition ID document
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            FRATH           T001-WAERS
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            DBBLG           ALPHA
+            STBLG           ALPHA
+            STJAH           GJAHR
+            KURSF           EXCRT
+            KZKRS           EXCRT
+            KURS2           EXCRT
+            KURS3           EXCRT
+            AWSYS           ALPHA
+            TXKRS           EXCRT
+            LOTKZ           ALPHA
+            BATCH           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

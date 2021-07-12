@@ -1,0 +1,365 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        REGUH
+          Short description:Payments data from payment programme
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 164
+          Field length sum: 1950
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        MANDT          X CLNT      3 Client
+        LAUFD          X DATS      8 Program start date
+        LAUFI          X CHAR      6 Supplementary identification attribute
+        XVORL          X CHAR      1 Character: Only run the draft?
+        ZBUKR          X CHAR      4 Paying company code
+        LIFNR          X CHAR     10 Vendor account number
+        KUNNR          X CHAR     10 Customer number 1
+        EMPFG          X CHAR     16 Scrambling payee
+        VBLNR          X CHAR     10 Payment Document No.
+        AVISG            CHAR      1 The reason for printing advice
+        WAERS            CUKY      5 key currency
+        SRTGB            CHAR      4 working section
+        ANRED            CHAR     15 salutation
+        NAME1            CHAR     35 Naz. 1
+        NAME2            CHAR     35 Naz. 2
+        NAME3            CHAR     35 Naz. 3
+        NAME4            CHAR     35 Naz. 4
+        PSTLZ            CHAR     10 Postal code
+        ORT01            CHAR     35 Place
+        STRAS            CHAR     35 Street and house number
+        PFACH            CHAR     10 PO box
+        LAND1            CHAR      3 key state
+        STCD1            CHAR     16 Tax Number 1
+        WEVWV            CHAR      1 Planned use of promissory notes
+        ZANRE            CHAR     15 Addressing the payee
+        ZNME1            CHAR     35 Payee Name
+        ZNME2            CHAR     35 Payee Name
+        ZNME3            CHAR     35 Payee Name
+        ZNME4            CHAR     35 Payee Name
+        ZPSTL            CHAR     10 Post number payee
+        ZORT1            CHAR     35 Instead payee
+        ZSTRA            CHAR     35 Street and house number payee
+        ZPFAC            CHAR     10 Pošt.přihrádka payee
+        ZLAND            CHAR      3 key state
+        ZREGI            CHAR      3 Regional Code payee
+        ZBNKS            CHAR      3 key state
+        ZBNKN            CHAR     18 Bank account number of the payee
+        ZBNKL            CHAR     15 Bank code of the payee
+        ZBKON            CHAR      2 Control Bank code payee
+        ZBVTY            CHAR      4 Character bank account payee
+        ZSWIF            CHAR     11 SWIFT code for international payments
+        XEZER            CHAR      1 Character: Is there a debit authorization?
+        ZSPRA            LANG      1 Language key payee
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        ZALDT            DATS      8 Posting date of the payment document
+        RZAWE            CHAR      1 Method of payment for this payment
+        RUMSK            CHAR      1 Character special general ledger payment operas
+        RZUMS            CHAR      1 Character target a specific ledger payments
+        HKTID            CHAR      5 Short key for the chart connections
+        HBKID            CHAR      5 Short key corporate bank
+        HKTIW            CHAR      5 Short key combination accounts for bill
+        HBKIW            CHAR      5 Short key firem.banky for the draft when r
+        BVTYP            CHAR      4 Type banks part.
+        UBKON            CHAR      2 Verification code bank in our bank
+        UBKNT            CHAR     18 The number of our bank account
+        UBNKS            CHAR      3 Key state banks
+        UBNKL            CHAR     15 Directional code of our bank
+        UBHKT            CHAR     10 GL account number for our bank account / after
+        VALUT            DATS      8 Dat.valuty
+        CRVAL            DATS      8 The value date on the bank of the payee
+        ANFAE            DATS      8 Payment at Maturity
+        WEFAE            DATS      8 Maturity Date acquired promissory notes
+        RBETR            CURR     13 Amount in local currency
+        RSKON            CURR     13 Total bill payment transactions in corporate
+        RWBTR            CURR     13 The amount paid in the currency of payment
+        RWSKT            CURR     13 Total discount of payment transactions in the currency p
+        RSPE1            CURR     11 Popl.ve form
+        RSPE2            CURR     11 Popl.ve form
+        RPOST            DEC       5 The number of paid items
+        RTEXT            DEC       5 The number of lines of text to paid items
+        RSPM1            CURR     11 Tax forms for the bill with maximum amount
+        RSPM2            CURR     11 Tax forms for the bill with maximum amount
+        WEHMX            CURR     13 The maximum amount of the bill in comp. currency
+        WEFMX            CURR     13 The maximum amount of the bill in the payment currency
+        WEHRS            CURR     13 The residual amount in the recent comp.currency
+        WEFRS            CURR     13 The residual amount in the payment currency for the last
+        WEAMX            DEC       3 The number of bills with a maximum amount
+        BUSAB            CHAR      2 Accounting officer
+        EIKTO            CHAR     12 Our customer's account number or subscription
+        XINVE            CHAR      1 Character: This applies to investment property?
+        WDATE            DATS      8 Date of issue bills
+        XAEND            CHAR      1 Character: Draft payments was subsequently changed
+        ZLSPR            CHAR      1 Key for blocking payments
+        DTAWS            CHAR      2 Key instructions for exchanging data carriers
+        DTAMS            CHAR      1 Key messages for the exchange of data carriers
+        KURSF            DEC       9 Exchange rate
+        ABWAE            CUKY      5 Reporting currency for money transfers
+        SKVHW            CURR     13 Loss discounts in comp currency
+        SKVFW            CURR     13 The loss of the discount in the payment currency
+        DSKVH            CURR     13 Potential loss of discounts in comp. currency
+        ZPST2            CHAR     10 ZIP postal bins payee
+        PAYGR            CHAR     20 Grouping field for automatic payments
+        ZBNKY            CHAR     15 Bank code payee
+        UBNKY            CHAR     15 The code of our bank
+        PSTL2            CHAR     10 ZIP postal bins
+        ABSBU            CHAR      4 Sending company code
+        RBET2            CURR     13 The amount paid in the second local currency
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        RBET3            CURR     13 The amount paid in the third local currency
+        RSKO2            CURR     13 Total bill payment transactions in the second f
+        RSKO3            CURR     13 The balance of payments operations in the third f
+        KURS2            DEC       9 The value of the company for the second currency
+        KURS3            DEC       9 The value of the company for the third currency
+        BKREF            CHAR     20 A reference to bank. Account
+        UZAWE            CHAR      2 Addendum to the payment method
+        ZORT2            CHAR     35 The local part of the address of the payee
+        ZTLFX            CHAR     31 Fax number of the payee
+        XSIWE            CHAR      1 Character: A bill of exchange at sight
+        ZPFOR            CHAR     35 Instead P.O. Box at the payee
+        PERNR            NUMC      8 Personal number
+        SEQNR            CHAR      5 Order.no
+        BTZNR            RAW       1 Assigning fin. Tranfers
+        AUSFD            DATS      8 Maturity date paid items
+        EDIAV            CHAR      1 Status Advice EDI
+        IDOC_NUM_AVIS    NUMC     16 IDOC number
+        EDIBN            CHAR      1 State payment order EDI
+        IDOC_NUM         NUMC     16 IDOC number
+        ZTELF            CHAR     20 Phone number of the payee
+        ZTELX            CHAR     30 Telex number of the payee
+        KOINH            CHAR     60 The name of the account holder
+        DTWS1            NUMC      2 instructions 1
+        DTWS2            NUMC      2 Statement 2
+        DTWS3            NUMC      2 instructions 3
+        DTWS4            NUMC      2 instruction 4
+        ZSTC1            CHAR     16 No. 1 tax payee
+        KIDNO            CHAR     30 payment reference
+        PYORD            CHAR     10 Payment order
+        REGIO            CHAR      3 Region (Federal State, Land, pr
+        TEXT             CHAR     29 Text field
+        BTYP1            CHAR      1 Type banks for bank route (koresp.ban
+        BNKS1            CHAR      3 Key state banks
+        BNKL1            CHAR     15 Bank code
+        BNKN1            CHAR     18 Number bank. account
+        BKON1            CHAR      2 Bank check code
+        BKRF1            CHAR     20 A reference to bank. Account
+        BTYP2            CHAR      1 Type banks for bank route (koresp.ban
+        BNKS2            CHAR      3 Key state banks
+        BNKL2            CHAR     15 Bank code
+        BNKN2            CHAR     18 Number bank. account
+        BKON2            CHAR      2 Bank check code
+        BKRF2            CHAR     20 A reference to bank. Account
+        BTYP3            CHAR      1 Type banks for bank route (koresp.ban
+        BNKS3            CHAR      3 Key state banks
+        BNKL3            CHAR     15 Bank code
+        BNKN3            CHAR     18 Number bank. account
+        BKON3            CHAR      2 Bank check code
+        BKRF3            CHAR     20 A reference to bank. Account
+        SAKNR            CHAR     10 Account Number Ledger
+        HKONT            CHAR     10 Account Ledger Accounting HK
+        ALEBN            CHAR      1 ALE IDOC status data division payment
+        XKDFB            CHAR      1 Not to recognize exchange differences
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Field name     K Type Length Short text
+        ____________________________________________________________
+        SRTBP            CHAR      4 Business place
+        INCLUDE IREGUH_FPM
+         FPM_KEY         CHAR     15 Chained date run, the ID and sug. Order
+         GRPNO           INT4     10 Criterion grouping payments
+         SRTF1           CHAR     38 Specific sorting payment env. by format
+         SRTF2           CHAR     56 Sorting payment env. By user
+         XCORR           CHAR      1 Character: Correspondence for payment
+         XAVIS           CHAR      1 Character: Separate advice
+         XCOPM           CHAR      1 Payment medium for a business partner
+        DORIGIN          CHAR      8 Origin grouping
+        RFTTRN           CHAR     20 Payment code
+        ZADNR            CHAR     10 The address number of the payee
+        ADRNR            CHAR     10 Address number
+        ZIBAN            CHAR     34 IBAN of the payee
+        APPEND  REGUH_FM
+         FM_STATUS       CHAR      1 Status of availability for payment
+        APPEND  REGUH_FMFG
+         FILE_NBR        NUMC      6
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            RBETR           T001-WAERS
+            RSKON           T001-WAERS
+            RWBTR           REGUH-WAERS
+            RWSKT           REGUH-WAERS
+            RSPE1           T001-WAERS
+            RSPE2           T001-WAERS
+            RSPM1           T001-WAERS
+            RSPM2           T001-WAERS
+            WEHMX           T001-WAERS
+            WEFMX           REGUH-WAERS
+            WEHRS           T001-WAERS
+            WEFRS           REGUH-WAERS
+            SKVHW           T001-WAERS
+            SKVFW           REGUH-WAERS
+            DSKVH           T001-WAERS
+            RBET2           BKPF-HWAE2
+            RBET3           BKPF-HWAE3
+            RSKO2           BKPF-HWAE2
+            RSKO3           BKPF-HWAE3
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            KUNNR           ALPHA
+            VBLNR           ALPHA
+            ZSPRA           ISOLA
+            UBHKT           ALPHA
+            KURSF           EXCRT
+            KURS2           EXCRT
+            KURS3           EXCRT
+            PYORD           ALPHA
+            SAKNR           ALPHA
+            HKONT           ALPHA
+            ZADNR           ALPHA
+            ADRNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

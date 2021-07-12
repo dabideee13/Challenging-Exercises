@@ -1,0 +1,146 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKBE
+        ______________________________________________________________________
+
+
+        EKBE
+          Short description:Purchase document history
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 59
+          Field length sum: 448
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        MANDT            X CLNT      3 Client
+        EBELN            X CHAR     10 The number of purchase document
+        EBELP            X NUMC      5 Item proof of purchase
+        ZEKKN            X NUMC      2 Serial number assignment Account
+        VGABE            X CHAR      1 Type of operation - development orders
+        GJAHR            X NUMC      4 Year material document
+        BELNR            X CHAR     10 Number of material document
+        BUZEI            X NUMC      4 An entry in doc. Mat.
+        INCLUDE EKBEDATA
+         BEWTP             CHAR      1 Type D Order
+         BWART             CHAR      3 Movement Type (Inventory Management)
+         BUDAT             DATS      8 Posting date in the document
+         MENGE             QUAN     13 Amount
+         BPMNG             QUAN     13 Quantity in the units ordering prices
+         DMBTR             CURR     13 IN amount in local currency
+         WRBTR             CURR     13 Amount in document currency
+         WAERS             CUKY      5 key currency
+         AREWR             CURR     13 Compensatory value on account of PM / PF fir
+         WESBS             QUAN     13 Block. Supplies in Order of receipt of material.
+         BPWES             QUAN     13 Qty. in MJOC
+         SHKZG             CHAR      1 Character Debit / credit
+         BWTAR             CHAR     10 kind awards
+         ELIKZ             CHAR      1 Character final deliveries
+         XBLNR             CHAR     16 Number of the reference document
+         LFGJA             NUMC      4 The fiscal year of the reference document
+         LFBNR             CHAR     10 Number of the reference document
+         LFPOS             NUMC      4 Item reference document
+         GRUND             NUMC      4 reason movement
+         CPUDT             DATS      8 Day of purchase accounting document
+         CPUTM             TIMS      6 acquisition time
+         REEWR             CURR     13 The value registered in the company's invoice currencies
+         EVERE             CHAR      2 Compliance Expeditionary prescription
+         REFWR             CURR     13 The value registered an invoice in foreign currency
+         MATNR             CHAR     18 No.
+         WERKS             CHAR      4 Race
+         XWSBR             CHAR      1 PM Cancellation permitted at LF, despite the fact
+         ETENS             NUMC      4 Serial number order confirmation
+         KNUMV             CHAR     10 Condition ID document
+         MWSKZ             CHAR      2 Character VAT
+         LSMNG             QUAN     13 Quantity in the units of received list
+         LSMEH             UNIT      3 Unit of measure of the delivery note
+         EMATN             CHAR     18 No.
+         AREWW             CURR     13 Compensatory value on the account of PM / PF in the currency
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKBE
+        ______________________________________________________________________
+
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+         HSWAE             CUKY      5 Key corporate currency
+         BAMNG             QUAN     13 Amount
+         CHARG             CHAR     10 lot number
+         BLDAT             DATS      8 document Date
+         XWOFF             CHAR      1 Open to create value
+         XUNPL             CHAR      1 Unplanned account assignment from the liquidation f
+         ERNAM             CHAR     12 Officer name for the object based
+         SRVPOS            CHAR     18 No. performance
+         PACKNO            NUMC     10 Packet number Performance
+         INTROW            NUMC     10 Number of Rows performance
+         BEKKN             NUMC      2 Number of account assignment to order
+         LEMIN             CHAR      1 Character Returns
+         AREWB             CURR     13 Compensatory value on account of PM / PF in the currency
+         REWRB             CURR     13 Invoice amount in the order currency
+         SAPRL             CHAR      4 SAP release
+        INCLUDE RETURN_DELIVERY
+         ET_UPD            CHAR      1 Update method prorated amount
+        APPEND  /SAPNEA/J_SC_EK
+         J_SC_DIE_COMP_F   CHAR      1
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            MENGE           EKPO-MEINS
+            BPMNG           EKPO-BPRME
+            DMBTR           T001-WAERS
+            WRBTR           EKBE-WAERS
+            AREWR           T001-WAERS
+            WESBS           EKPO-MEINS
+            BPWES           EKPO-BPRME
+            REEWR           T001-WAERS
+            REFWR           EKBE-WAERS
+            LSMNG           EKBE-LSMEH
+            AREWW           EKBE-WAERS
+            BAMNG           EKPO-LMEIN
+            AREWB           EKKO-WAERS
+            REWRB           EKKO-WAERS
+
+          Field with conversion routines:
+            Field name      conversion routine
+            EBELN           ALPHA
+            GJAHR           GJAHR
+            BELNR           ALPHA
+            LFGJA           GJAHR
+            LFBNR           ALPHA
+            MATNR           MATN1
+            LSMEH           CUNIT
+            EMATN           MATN1
+            SRVPOS          ALPHA
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

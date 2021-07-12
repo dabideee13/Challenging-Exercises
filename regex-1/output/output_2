@@ -1,0 +1,26 @@
+./input\01BKPF|          Short description:Accounting header
+./input\01BKPF|          Field count: 94
+./input\02BSAK|          Short description:Accounting: Secondary index for suppliers (balance items)
+./input\02BSAK|          Field count: 177
+./input\03BSEG|          Short description:Document segment: Accounting
+./input\03BSEG|          Field count: 306
+./input\04EINA|          Short description:Purchase info record - general data
+./input\04EINA|          Field count: 39
+./input\06EKBE|          Short description:Purchase document history
+./input\06EKBE|          Field count: 59
+./input\07EKKO|          Short description:Purchase document header
+./input\07EKKO|          Field count: 76
+./input\08EKPO|          Short description:Purchase document item
+./input\08EKPO|          Field count: 209
+./input\09LFA1|          Short description:Supplier root folder (general part)
+./input\09LFA1|          Field count: 113
+./input\10MKPF|          Short description:Materials document header
+./input\10MKPF|          Field count: 25
+./input\12RBKP|          Short description:Document header - received invoice
+./input\12RBKP|          Field count: 127
+./input\13REGUH|          Short description:Payments data from payment programme
+./input\13REGUH|          Field count: 164
+./input\14REGUP|          Short description:Processed items from payment programme
+./input\14REGUP|          Field count: 176
+./input\15RSEG|          Short description:Document item - received invoice
+./input\15RSEG|          Field count: 71

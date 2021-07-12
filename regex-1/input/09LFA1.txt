@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        LFA1
+          Short description:Supplier root folder (general part)
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 113
+          Field length sum: 1487
+
+        Field name      K Type Length Short text
+        ____________________________________________________________
+        MANDT           X CLNT      3 Client
+        LIFNR           X CHAR     10 Vendor account number
+        LAND1             CHAR      3 key state
+        NAME1             CHAR     35 Naz. 1
+        NAME2             CHAR     35 Naz. 2
+        NAME3             CHAR     35 Naz. 3
+        NAME4             CHAR     35 Naz. 4
+        ORT01             CHAR     35 Place
+        ORT02             CHAR     35 part of
+        PFACH             CHAR     10 PO box
+        PSTL2             CHAR     10 ZIP postal bins
+        PSTLZ             CHAR     10 Postal code
+        REGIO             CHAR      3 Region (Federal State, Land, pr
+        SORTL             CHAR     10 sorting field
+        STRAS             CHAR     35 Street and house number
+        ADRNR             CHAR     10 Address
+        MCOD1             CHAR     25 Search term for match-codes
+        MCOD2             CHAR     25 Search term for match-codes
+        MCOD3             CHAR     25 Search term for match-codes
+        INCLUDE SI_LFA1
+         ANRED            CHAR     15 salutation
+         BAHNS            CHAR     25 Train.station
+         BBBNR            NUMC      7 International location number (Part 1)
+         BBSNR            NUMC      5 International location number (Part 2)
+         BEGRU            CHAR      4 rights group
+         BRSCH            CHAR      4 key sectors
+         BUBKZ            NUMC      1 The check digit international number
+         DATLT            CHAR     14 Number of data lines
+         DTAMS            CHAR      1 Key messages for the exchange of data carriers
+         DTAWS            CHAR      2 Key instructions for exchanging data carriers
+         ERDAT            DATS      8 Date of Recording Connection
+         ERNAM            CHAR     12 Officer name for the object based
+         ESRNR            CHAR     11 ESR participant number
+         KONZS            CHAR     10 key concern
+         KTOKK            CHAR      4 Acc. group supplier
+         KUNNR            CHAR     10 Customer number 1
+         LNRZA            CHAR     10 Account number of different payee
+         LOEVM            CHAR      1 Central deleted root rec.
+         SPERR            CHAR      1 Block acc.
+         SPERM            CHAR      1 Centrally allocated block purchase
+         SPRAS            LANG      1 language key
+         STCD1            CHAR     16 Tax Number 1
+         STCD2            CHAR     11 Tax number 2
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        Field name      K Type Length Short text
+        ____________________________________________________________
+         STKZA            CHAR      1 Character: My business partner obligation Anniversary
+         STKZU            CHAR      1 Obligation VAT
+         TELBX            CHAR     15 No.Telebox
+         TELF1            CHAR     16 First telephone no.
+         TELF2            CHAR     16 2nd telephone number
+         TELFX            CHAR     31 Fax number
+         TELTX            CHAR     30 Number teletex
+         TELX1            CHAR     30 Telex
+         XCPDK            CHAR      1 Character: This is an account of the CPD?
+         XZEMP            CHAR      1 Character: Is the document allowed different intake
+         VBUND            CHAR      6 Number of partner companies
+         FISKN            CHAR     10 Account Number Master Record fiscal
+         STCEG            CHAR     20 VAT registration number
+         STKZN            CHAR      1 Individual
+         SPERQ            CHAR      2 Disabled function
+         GBORT            CHAR     25 Instead naroz.osoby subject zdroj.dani
+         GBDAT            DATS      8 Date naroz.osoby subject zdroj.dani
+         SEXKZ            CHAR      1 Key for sex Withholding Tax Payers
+         KRAUS            CHAR     11 No.info. loan
+         REVDB            DATS      8 Last control (external)
+         QSSYS            CHAR      4 QM system vendor
+         KTOCK            CHAR      4 Reference accounting group for the account (CPD
+         PFORT            CHAR     35 instead Postbox
+         WERKS            CHAR      4 Race (private or external)
+         LTSNA            CHAR      1 Character: Sub-range supplier relevante
+         WERKR            CHAR      1 Character - level race relevant
+         PLKAL            CHAR      2 Key corporate calendar
+         DUEFL            CHAR      1 Status data transfer to future. release
+         TXJCD            CHAR     15 Tax Jurisdiction Code - jurisdiction for
+         SPERZ            CHAR      1 Bl.payments
+         SCACD            CHAR      4 Standard Carrier Access Code
+         SFRGR            CHAR      4 Transport group - carrier
+         LZONE            CHAR     10 Transport zone 
+         XLFZA            CHAR      1 Character: Different payee through No.
+         DLGRP            CHAR      4 Group Scheme delivered services
+         FITYP            CHAR      2 kind of tax
+         STCDT            CHAR      2 Type of taxpayer numbers
+         REGSS            CHAR      1 Registered for social insurance
+         ACTSS            CHAR      3 Character Business for Social Insurance
+         STCD3            CHAR     18 Tax number 3
+         STCD4            CHAR     18 Tax number 4
+         IPISP            CHAR      1 Character: Tax value divided
+         TAXBS            NUMC      1 The percentage tax base
+         PROFS            CHAR     30 Profession
+         STGDL            CHAR      2 Transportation: Statistical group performs
+         EMNFR            CHAR     10 External label manufacturer
+         LFURL            CHAR    132 Uniform Resource Locator
+         J_1KFREPRE       CHAR     10 name of representative
+         J_1KFTBUS        CHAR     30 transaction type
+         J_1KFTIND        CHAR     30 industry type
+         CONFS            CHAR      1 Status confirmation of the change (central)
+         UPDAT            DATS      8 Confirmation date changes
+         UPTIM            TIMS      6 Time of the last acknowledgment changes
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        Field name      K Type Length Short text
+        ____________________________________________________________
+         NODEL            CHAR      1 Central locking for deletion from the master
+         QSSYSDAT         DATS      8 Expiration Date Certification
+         PODKZB           CHAR      1 Character: Contractor relevant confirmation
+         FISKU            CHAR     10 Account number in the master records of the relevant
+         STENR            CHAR     18 Tax Order number to the appropriate fin.office
+        APPEND  /SAPNEA/J_SC_
+         J_SC_CAPITAL     CURR     15
+         J_SC_CURRENCY    CUKY      5
+        APPEND  ALFA1_FMFG
+         ALC              CHAR      8
+         PMT_OFFICE       CHAR      4
+        APPEND  ALFA1_PSO
+         PSOFG            CHAR     10 Group officers
+         PSOIS            CHAR     20 Preliminary process pers. Account
+         INCLUDE IADDR_PSO
+          PSON1           CHAR     35 Naz. 1
+          PSON2           CHAR     35 Naz. 2
+          PSON3           CHAR     35 Naz. 3
+          PSOVN           CHAR     35 Name
+          PSOTL           CHAR     20 Caption
+          PSOHS           CHAR      6 Hausnummer: From Release 4.6B already Not
+          PSOST           CHAR     28 Street: From Release 4.6B is deprecated
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            J_SC_CAPITAL    LFA1-J_SC_CURRENCY
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            ADRNR           ALPHA
+            KUNNR           ALPHA
+            LNRZA           ALPHA
+            SPRAS           ISOLA
+            VBUND           ALPHA
+            FISKN           ALPHA
+            FISKU           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

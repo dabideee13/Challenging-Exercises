@@ -1,0 +1,438 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        EKPO
+          Short description:Purchase document item
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 209
+          Field length sum: 1348
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+        MANDT         X CLNT      3 Client
+        EBELN         X CHAR     10 The number of purchase document
+        EBELP         X NUMC      5 Item proof of purchase
+        INCLUDE EKPODATA
+         LOEKZ          CHAR      1 Character deletion of the purchase receipt
+         STATU          CHAR      1 Current status
+         AEDAT          DATS      8 Date of change item purchase document
+         TXZ01          CHAR     40 Short text
+         MATNR          CHAR     18 No.
+         EMATN          CHAR     18 No.
+         BUKRS          CHAR      4 Accounting circuit
+         WERKS          CHAR      4 Race
+         LGORT          CHAR      4 Stock
+         BEDNR          CHAR     10 number needed
+         MATKL          CHAR      9 Material Group
+         INFNR          CHAR     10 Number purch.order
+         IDNLF          CHAR     35 Material number at supplier
+         KTMNG          QUAN     13 target amount
+         MENGE          QUAN     13 Order quantity
+         MEINS          UNIT      3 Ordering unit of measure
+         BPRME          UNIT      3 Unit of measure ordering prices
+         BPUMZ          DEC       5 Counter for conversion into MJOC OMCs
+         BPUMN          DEC       5 Denominator for conversion into MJOC OMCs
+         UMREZ          DEC       5 The counter for the conversion of ordering MJ Act
+         UMREN          DEC       5 The denominator for the calculation of ordering MJ d
+         NETPR          CURR     11 Net Price in currency purchase receipt in dock
+         PEINH          DEC       5 Number of units in the price
+         NETWR          CURR     13 Net order value in the currency of the purchase order
+         BRTWR          CURR     13 Gross order value in the currency orders
+         AGDAT          DATS      8 The deadline for submission of bids
+         WEBAZ          DEC       3 Processing time in days for receiving mate
+         MWSKZ          CHAR      2 Character VAT
+         BONUS          CHAR      2 Clearing Group 1 (purchase)
+         INSMK          CHAR      1 Species inventory
+         SPINF          CHAR      1 Character: Update info.rec.
+         PRSDR          CHAR      1 Print prices
+         SCHPR          CHAR      1 The emblem of the estimated price
+         MAHNZ          DEC       3 Number of reminders
+         MAHN1          DEC       3 The number of days for the first reminder
+         MAHN2          DEC       3 The number of days for a second reminder
+         MAHN3          DEC       3 The number of days for the third reminder
+         UEBTO          DEC       3 Tolerance limit for over limit supply
+         UEBTK          CHAR      1 Character: Unlimited allow over-limit supply
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+         UNTTO          DEC       3 Tolerance limit for an incomplete delivery
+         BWTAR          CHAR     10 kind awards
+         BWTTY          CHAR      1 type Award
+         ABSKZ          CHAR      1 Character rejection
+         AGMEM          CHAR      3 Attribute Deals
+         ELIKZ          CHAR      1 Character final deliveries
+         EREKZ          CHAR      1 Character final invoice
+         PSTYP          CHAR      1 Type of items in a shopping document
+         KNTTP          CHAR      1 Type of Account Assignment
+         KZVBR          CHAR      1 consumption
+         VRTKZ          CHAR      1 Break Character for multiple assignments
+         TWRKZ          CHAR      1 Character partial invoices
+         WEPOS          CHAR      1 Character Receipt
+         WEUNB          CHAR      1 Receipt yet
+         REPOS          CHAR      1 Sign receipt of the invoice
+         WEBRE          CHAR      1 Sign invoices for disposal in terms of income mat
+         KZABS          CHAR      1 The obligation of the order confirmation
+         LABNR          CHAR     20 Order Confirmation Number
+         KONNR          CHAR     10 Parent contract number
+         KTPNR          NUMC      5 Item Parent Contract
+         ABDAT          DATS      8 Date pro agreed cumulated
+         ABFTZ          QUAN     13 Agreed accumulated amount
+         ETFZ1          DEC       3 The first period of fixation
+         ETFZ2          DEC       3 The second period of fixation
+         KZSTU          CHAR      1 Binding nature of the time period for release d
+         NOTKZ          CHAR      1 Exclusion under the framework contract with class
+         LMEIN          UNIT      3 Measure base unit
+         EVERS          CHAR      2 Dispatch prescription
+         ZWERT          CURR     13 Target value of framework contracts in the currency in
+         NAVNW          CURR     13 Non-deductible input VAT
+         ABMNG          QUAN     13 Normal amounts odvolávkové
+         PRDAT          DATS      8 Pricing Date
+         BSTYP          CHAR      1 Type of purchase document
+         EFFWR          CURR     13 Fair value items
+         XOBLR          CHAR      1 This item is relevant for Commitment
+         KUNNR          CHAR     10 Customer
+         ADRNR          CHAR     10 Manual number of addresses in the item shopping at
+         EKKOL          CHAR      4 A group of conditions at supplier
+         SKTOF          CHAR      1 The item is not skontovatelná
+         STAFO          CHAR      6 Group Update to update stat
+         PLIFZ          DEC       3 The planned delivery time in days
+         NTGEW          QUAN     13 net weight
+         GEWEI          UNIT      3 unit weight
+         TXJCD          CHAR     15 Tax Jurisdiction Code - jurisdiction for
+         ETDRK          CHAR      1 Character: Layout print-relevant Exis
+         SOBKZ          CHAR      1 Character special reserves
+         ARSNR          NUMC     10 Reservation number showdown
+         ARSPS          NUMC      4 Item Reserve showdown
+         INSNC          CHAR      1 Character quality control is immutable
+         SSQSS          CHAR      8 Control key for quality management in Tray
+         ZGTYP          CHAR      4 type certificate
+         EAN11          CHAR     18 European Article Number (EAN)
+         BSTAE          CHAR      4 Control key confirmation
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+         REVLV          CHAR      2 status review
+         GEBER          CHAR     10 Fund/§
+         FISTL          CHAR     16 financial place
+         FIPOS          CHAR     14 budget item
+         KO_GSBER       CHAR      4 Parameter reported by business area
+         KO_PARGB       CHAR      4 Adopted by the Working Department Business Partner
+         KO_PRCTR       CHAR     10 profit center
+         KO_PPRCTR      CHAR     10 Partner profit center
+         MEPRF          CHAR      1 Management data pricing
+         BRGEW          QUAN     13 Gross weight
+         VOLUM          QUAN     13 Volume
+         VOLEH          UNIT      3 unit volume
+         INCO1          CHAR      3 Incoterms part 1
+         INCO2          CHAR     28 Incoterms part 2
+         VORAB          CHAR      1 Order inventory
+         KOLIF          CHAR     10 Prel.Ord.
+         LTSNR          CHAR      6 Sub-range supplier
+         PACKNO         NUMC     10 packet number
+         FPLNR          CHAR     10 Number Billing Plan
+         GNETWR         CURR     13 Currently in use
+         STAPO          CHAR      1 The item is statistically
+         UEBPO          NUMC      5 Parent item in purchasing documents
+         LEWED          DATS      8 Latest possible date PM
+         EMLIF          CHAR     10 A contractor who has to deliver
+         LBLKZ          CHAR      1 Contractor hired labor
+         SATNR          CHAR     18 Material that can be configured over the frame
+         ATTYP          CHAR      2 type of material
+         KANBA          CHAR      1 Character kanban
+         ADRN2          CHAR     10 The number of delivery addresses
+         CUOBJ          NUMC     18 Configuration (internal object number)
+         XERSY          CHAR      1 Automatic Settlement Receipt
+         EILDT          DATS      8 Beg.date for account to PM
+         DRDAT          DATS      8 The date when the document was last Print log
+         DRUHR          TIMS      6 Time
+         DRUNR          NUMC      4 Order.no
+         AKTNR          CHAR     10 Action
+         ABELN          CHAR     10 number Allocation
+         ABELP          NUMC      5 Item Allocation
+         ANZPU          QUAN     13 Number of points
+         PUNEI          UNIT      3 The point unit
+         SAISO          CHAR      4 type of season
+         SAISJ          CHAR      4 year season
+         EBON2          CHAR      2 Clearing Group 2 (additional settlement
+         EBON3          CHAR      2 Clearing Group 3 (additional settlement
+         EBONF          CHAR      1 The item is not relevant for supply. clearings
+         MLMAA          CHAR      1 Activation mater.ledger plane mater
+         MHDRZ          DEC       4 Minimum  valid.
+         ANFNR          CHAR     10 number demand
+         ANFPS          NUMC      5 Item Demand
+         KZKFG          CHAR      1 origin configuration
+         USEQU          CHAR      1 the use of quotas
+         UMSOK          CHAR      1 Character special stocks transsilages
+         BANFN          CHAR     10 Requisition number
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+         BNFPO          NUMC      5 Item Requisition
+         MTART          CHAR      4 Kind of material
+         UPTYP          CHAR      1 Type subheadings in the purchase receipt
+         UPVOR          CHAR      1 there subheading
+         KZWI1          CURR     13 1 Subtotal terms of costing sch
+         KZWI2          CURR     13 2 Subtotal terms of costing sch
+         KZWI3          CURR     13 3 Subtotal terms of costing sch
+         KZWI4          CURR     13 4 Subtotal terms of costing sch
+         KZWI5          CURR     13 Subtotal conditions of 5 calc.scheme
+         KZWI6          CURR     13 6 Subtotal conditions of calc.scheme
+         SIKGR          CHAR      3 Key processing for sub-items
+         MFZHI          QUAN     15 The maximum cumulative amount uvol.mater
+         FFZHI          QUAN     15 The maximum cumulative amount released in
+         RETPO          CHAR      1 Item Returns
+         AUREL          CHAR      1 Relevant distributor.
+         BSGRU          CHAR      3 Part no reason.
+         LFRET          CHAR      4 Type of supplies for coming back. supplier deliveries
+         MFRGR          CHAR      8 Group transport- material
+         NRFHG          CHAR      1 Material with kind of rebate
+         J_1BNBM        CHAR     16
+         J_1BMATUSE     CHAR      1 Using material
+         J_1BMATORG     CHAR      1 The origin of the material
+         J_1BOWNPRO     CHAR      1 Homemade
+         J_1BINDUST     CHAR      2 Material Type CFOP
+         ABUEB          CHAR      4 Profile creation offs
+         NLABD          DATS      8 Next. transmission of delivery call-offs
+         NFABD          DATS      8 Following the transfer of operational offs
+         KZBWS          CHAR      1 Special awards supplies
+         BONBA          CURR     13 ZáklBonusu 1
+         FABKZ          CHAR      1 Character: This item relevant to operational
+         J_1AINDXP      CHAR      5 inflation index
+         J_1AIDATEP     DATS      8 Date inflation index
+         MPROF          CHAR      4 Profile parts manufacturer
+         EGLKZ          CHAR      1 Character final deliveries
+         KZTLF          CHAR      1 Partial delivery on the item level (přeskla
+         KZFME          CHAR      1 Use / types of measurement units
+         RDPRF          CHAR      4 rounding profile
+         TECHS          CHAR     12 Awards validity / Standard awards
+         CHG_SRV        CHAR      1 Configuration has been changed
+         CHG_FPLNR      CHAR      1 There is no invoice for this item, although it is not
+         MFRPN          CHAR     40 Manufacturer Part Number
+         MFRNR          CHAR     10 manufacturer number
+         EMNFR          CHAR     10 External label manufacturer
+         NOVET          CHAR      1 Entry for SD delivery is blocked
+         AFNAM          CHAR     12 Name of applicant
+         TZONRC         CHAR      6 Time zone receiving unit
+         IPRKZ          CHAR      1 Character period DMT
+         LEBRE          CHAR      1 The sign for the liquidation of invoices relative to the above
+         BERID          CHAR     10 disposition area
+         XCONDITIONS    CHAR      1 The conditions for entry, although no invoices
+         APOMS          CHAR      1 APO a planning system
+         CCOMP          CHAR      1 The logic of accounting for stock transfer
+         GRANT_NBR      CHAR     20 Grant
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Field name    K Type Length Short text
+        ____________________________________________________________
+         FKBER          CHAR     16 functional area
+         STATUS         CHAR      1 Status item purchase document
+         RESLO          CHAR      4 The submitting skald when ordering recycl
+         APPEND  FMFG_EKPODA
+          EXCPE         NUMC      2
+        INCLUDE CI_EKPODB
+        REFSITE         CHAR      4 Reference plant: Purchase
+        APPEND  ZAEKPO
+         ZZUEBPO        NUMC      5 Parent item in purchasing documents
+         ZZUMREZ        DEC       8
+         ZZUMREN        DEC       5 Denominator for conversion to base Merna
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            KTMNG           EKPO-MEINS
+            MENGE           EKPO-MEINS
+            NETPR           EKKO-WAERS
+            NETWR           EKKO-WAERS
+            BRTWR           EKKO-WAERS
+            ABFTZ           EKPO-MEINS
+            ZWERT           EKKO-WAERS
+            NAVNW           EKKO-WAERS
+            ABMNG           EKPO-MEINS
+            EFFWR           EKKO-WAERS
+            NTGEW           EKPO-GEWEI
+            BRGEW           EKPO-GEWEI
+            VOLUM           EKPO-VOLEH
+            GNETWR          EKKO-WAERS
+            ANZPU           EKPO-PUNEI
+            KZWI1           EKKO-WAERS
+            KZWI2           EKKO-WAERS
+            KZWI3           EKKO-WAERS
+            KZWI4           EKKO-WAERS
+            KZWI5           EKKO-WAERS
+            KZWI6           EKKO-WAERS
+            MFZHI           EKPO-MEINS
+            FFZHI           EKPO-MEINS
+            BONBA           EKKO-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            EBELN           ALPHA
+            MATNR           MATN1
+            EMATN           MATN1
+            INFNR           ALPHA
+            MEINS           CUNIT
+            BPRME           CUNIT
+            KONNR           ALPHA
+            LMEIN           CUNIT
+            KUNNR           ALPHA
+            ADRNR           ALPHA
+            STAFO           ALPHA
+            GEWEI           CUNIT
+            EAN11           EAN11
+            REVLV           NUMCV
+            FIPOS           FMCIS
+            KO_PRCTR        ALPHA
+            KO_PPRCTR       ALPHA
+            VOLEH           CUNIT
+            KOLIF           ALPHA
+            EMLIF           ALPHA
+            SATNR           MATN1
+            ADRN2           ALPHA
+            AKTNR           ALPHA
+            ABELN           ALPHA
+            PUNEI           CUNIT
+            SAISJ           GJAHR
+            ANFNR           ALPHA
+            BANFN           ALPHA
+            J_1BINDUST      ALPHA
+            MFRNR           ALPHA
+            IPRKZ           PERKZ
+            GRANT_NBR       ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            6
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

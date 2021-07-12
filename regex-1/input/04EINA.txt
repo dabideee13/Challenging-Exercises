@@ -1,0 +1,146 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EINA
+        ______________________________________________________________________
+
+
+        EINA
+          Short description:Purchase info record - general data
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 39
+          Field length sum: 354
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Client
+        INFNR       X CHAR     10 Number purch.order
+        MATNR         CHAR     18 No.
+        MATKL         CHAR      9 Material Group
+        LIFNR         CHAR     10 Vendor account number
+        LOEKZ         CHAR      1 Purch.info.rec .: General data reported
+        ERDAT         DATS      8 Date of Recording Connection
+        ERNAM         CHAR     12 Officer name for the object based
+        TXZ01         CHAR     40 Short text for info. Purchase
+        SORTL         CHAR     10 Sorting term for inf.rec. for neskla
+        MEINS         UNIT      3 Ordering unit of measure
+        UMREZ         DEC       5 The counter for the conversion of ordering MJ Act
+        UMREN         DEC       5 The denominator for the calculation of ordering MJ d
+        IDNLF         CHAR     35 Material number at supplier
+        VERKF         CHAR     30 KompetentníPracOdbytuProPřípadDotazy
+        TELF1         CHAR     16 Telephone number of suppliers
+        MAHN1         DEC       3 The number of days for the first reminder
+        MAHN2         DEC       3 The number of days for a second reminder
+        MAHN3         DEC       3 The number of days for the third reminder
+        URZNR         CHAR     10 The number of certificates
+        URZDT         DATS      8 Certificates of origin apply to
+        URZLA         CHAR      3 State issue certificates of origin
+        URZTP         CHAR      1 type certificate
+        URZZT         CHAR     16 Number
+        LMEIN         UNIT      3 The basic unit of measurement
+        REGIO         CHAR      3 Region (Federal State, Land, pr
+        VABME         CHAR      1 Variable ordering MJ active
+        LTSNR         CHAR      6 Sub-range supplier
+        LTSSF         NUMC      5 Sorting sequence number
+        WGLIF         CHAR     18 Group Material suppliers
+        RUECK         CHAR      2 Agreement on the abolition
+        LIFAB         DATS      8 Can deliver from
+        LIFBI         DATS      8 Can be delivered to
+        KOLIF         CHAR     10 Prel.Ord.
+        ANZPU         QUAN     13 Number of points
+        PUNEI         UNIT      3 The point unit
+        RELIF         CHAR      1 regular supplier
+        MFRNR         CHAR     10 Producer
+        APPEND  ZAEINA
+         KNTTP        CHAR      1 Type of Account Assignment
+        ____________________________________________________________
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EINA
+        ______________________________________________________________________
+
+
+
+          Field with reference fields:
+            Field name      reference field
+            ANZPU           EINA-PUNEI
+
+          Field with conversion routines:
+            Field name      conversion routine
+            INFNR           ALPHA
+            MATNR           MATN1
+            LIFNR           ALPHA
+            MEINS           CUNIT
+            LMEIN           CUNIT
+            KOLIF           ALPHA
+            PUNEI           CUNIT
+            MFRNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

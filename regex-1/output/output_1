@@ -1,0 +1,1636 @@
+./input\01BKPF|MANDT|CLNT|3|Client
+./input\01BKPF|BUKRS|CHAR|4|Accounting circuit
+./input\01BKPF|BELNR|CHAR|10|The number of accounting documents
+./input\01BKPF|GJAHR|NUMC|4|Fiscal year
+./input\01BKPF|BLART|CHAR|2|Doc. Type
+./input\01BKPF|BLDAT|DATS|8|document Date
+./input\01BKPF|BUDAT|DATS|8|Posting date in the document
+./input\01BKPF|MONAT|NUMC|2|fiscal month
+./input\01BKPF|CPUDT|DATS|8|Day of purchase accounting document
+./input\01BKPF|CPUTM|TIMS|6|acquisition time
+./input\01BKPF|AEDAT|DATS|8|The last modified date of the document according to A transaction
+./input\01BKPF|UPDDT|DATS|8|Last updated document
+./input\01BKPF|WWERT|DATS|8|Date conversion
+./input\01BKPF|USNAM|CHAR|12|username
+./input\01BKPF|TCODE|CHAR|20|Transaction code
+./input\01BKPF|BVORG|CHAR|16|Number of accounting operations beyond accounting
+./input\01BKPF|XBLNR|CHAR|16|Number of the reference document
+./input\01BKPF|DBBLG|CHAR|10|Doc. No. permanent accounting
+./input\01BKPF|STBLG|CHAR|10|The number of the cancellation document
+./input\01BKPF|STJAH|NUMC|4|Fiscal Year of the cancellation document
+./input\01BKPF|BKTXT|CHAR|25|Text main doc.
+./input\01BKPF|WAERS|CUKY|5|key currency
+./input\01BKPF|KURSF|DEC|9|Exchange rate
+./input\01BKPF|KZWRS|CUKY|5|Currency key concern
+./input\01BKPF|KZKRS|DEC|9|Currency exchange rate concern
+./input\01BKPF|BSTAT|CHAR|1|status document
+./input\01BKPF|XNETB|CHAR|1|Character: A document posted net?
+./input\01BKPF|FRATH|CURR|13|Additional costs
+./input\01BKPF|XRUEB|CHAR|1|Character: The document is posted to a previous
+./input\01BKPF|GLVOR|CHAR|4|Business and Economics operations
+./input\01BKPF|GRPID|CHAR|12|Map name Batch Input
+./input\01BKPF|DOKID|CHAR|40|Doc. Name in archive system
+./input\01BKPF|ARCID|CHAR|10|ID main doc. extract.
+./input\01BKPF|IBLAR|CHAR|2|Internal type of document to document management
+./input\01BKPF|AWTYP|CHAR|5|reference operations
+./input\01BKPF|AWKEY|CHAR|20|key reference
+./input\01BKPF|FIKRS|CHAR|4|financial circuit
+./input\01BKPF|HWAER|CUKY|5|corporate currency
+./input\01BKPF|HWAE2|CUKY|5|Second Local Currency key
+./input\01BKPF|HWAE3|CUKY|5|Third key corporate currency
+./input\01BKPF|KURS2|DEC|9|The value of the company for the second currency
+./input\01BKPF|KURS3|DEC|9|The value of the company for the third currency
+./input\01BKPF|BASW2|CHAR|1|The default currency for currency conversion
+./input\01BKPF|BASW3|CHAR|1|The default currency for currency conversion
+./input\01BKPF|UMRD2|CHAR|1|Kind of data conversion for other corporate Me
+./input\01BKPF|UMRD3|CHAR|1|Kind of data conversion company for third currencies
+./input\01BKPF|XSTOV|CHAR|1|Character: The document is marked for reversal
+./input\01BKPF|STODT|DATS|8|Scheduled date for billing cancellations
+./input\01BKPF|XMWST|CHAR|1|Tax calculation automatically?
+./input\01BKPF|CURT2|CHAR|2|Type Second Local Currency
+./input\01BKPF|CURT3|CHAR|2|Type of currency for the third corporate currency
+./input\01BKPF|KUTY2|CHAR|4|course type
+./input\01BKPF|KUTY3|CHAR|4|course type
+./input\01BKPF|XSNET|CHAR|1|HK accounts amounts are net amounts
+./input\01BKPF|AUSBK|CHAR|4|Source company code
+./input\01BKPF|XUSVR|CHAR|1|Character: Taxes US were changed to a detailed account
+./input\01BKPF|DUEFL|CHAR|1|Status data transfer to future. release
+./input\01BKPF|AWSYS|CHAR|10|Logical system
+./input\01BKPF|TXKRS|DEC|9|The exchange rate for the tax
+./input\01BKPF|LOTKZ|CHAR|10|Volume requirements
+./input\01BKPF|XWVOF|CHAR|1|Character: Payment bill the customer before spl
+./input\01BKPF|STGRD|CHAR|2|Reason cancellations or postings on the opposite
+./input\01BKPF|PPNAM|CHAR|12|Users who previously acquired evidence
+./input\01BKPF|BRNCH|CHAR|4|extension number
+./input\01BKPF|NUMPG|NUMC|3|Number of pages of invoices
+./input\01BKPF|ADISC|CHAR|1|Character: Entering represents diskont.doklad
+./input\01BKPF|XREF1_HD|CHAR|20|_1 Internal reference key to the header
+./input\01BKPF|XREF2_HD|CHAR|20|Reference key_2 internal header to dock
+./input\01BKPF|XREVERSAL|CHAR|1|Indicates whether a document or a hundred stronovací
+./input\01BKPF|REINDAT|DATS|8|Date of arrival Invoice
+./input\01BKPF|PSOTY|CHAR|2|Document Type: Payment requirements
+./input\01BKPF|PSOAK|CHAR|10|Reason
+./input\01BKPF|PSOKS|CHAR|10|region
+./input\01BKPF|PSOSG|CHAR|1|Reason for cancellation - command system IS-PS
+./input\01BKPF|PSOFN|CHAR|30|IS-PS: Sign file
+./input\01BKPF|INTFORM|CHAR|4|interest formula
+./input\01BKPF|INTDATE|DATS|8|Date of calculation of interest
+./input\01BKPF|PSOBT|DATS|8|Recognition day
+./input\01BKPF|PSOZL|CHAR|1|actual postings
+./input\01BKPF|PSODT|DATS|8|Date of last change
+./input\01BKPF|PSOTM|TIMS|6|Last change time
+./input\01BKPF|FM_UMART|CHAR|1|Type of transfer payments
+./input\01BKPF|CCINS|CHAR|4|Credit cards: Type of card
+./input\01BKPF|CCNUM|CHAR|25|Credit cards: Card Number
+./input\01BKPF|SSBLK|CHAR|1
+./input\01BKPF|BATCH|CHAR|10|Character connections for papers
+./input\01BKPF|SNAME|CHAR|12|User
+./input\01BKPF|SAMPLED|CHAR|1
+./input\01BKPF|EXCLUDE_FLAG|CHAR|1
+./input\01BKPF|BLIND|CHAR|1|The 'ledger budget'
+./input\01BKPF|OFFSET_STATUS|CHAR|2|Status offset treasury
+./input\01BKPF|OFFSET_REFER_DAT|DATS|8|The data record is sent back to the Treasury
+./input\01BKPF|PENRC|CHAR|2|Reason for late payments
+./input\01BKPF|KNUMV|CHAR|10|Condition ID document
+./input\02BSAK|MANDT|CLNT|3|Client
+./input\02BSAK|BUKRS|CHAR|4|Accounting circuit
+./input\02BSAK|LIFNR|CHAR|10|Vendor account number
+./input\02BSAK|UMSKS|CHAR|1|Class operations ledger
+./input\02BSAK|UMSKZ|CHAR|1|Character special ledger
+./input\02BSAK|AUGDT|DATS|8|Date of settlement
+./input\02BSAK|AUGBL|CHAR|10|Certificate Number Settlement
+./input\02BSAK|ZUONR|CHAR|18|number assignment
+./input\02BSAK|GJAHR|NUMC|4|Fiscal year
+./input\02BSAK|BELNR|CHAR|10|The number of accounting documents
+./input\02BSAK|BUZEI|NUMC|3|Number of accounting lines in the accounting document
+./input\02BSAK|BUDAT|DATS|8|Posting date in the document
+./input\02BSAK|BLDAT|DATS|8|document Date
+./input\02BSAK|CPUDT|DATS|8|Day of purchase accounting document
+./input\02BSAK|WAERS|CUKY|5|key currency
+./input\02BSAK|XBLNR|CHAR|16|Number of the reference document
+./input\02BSAK|BLART|CHAR|2|Doc. Type
+./input\02BSAK|MONAT|NUMC|2|fiscal month
+./input\02BSAK|BSCHL|CHAR|2|billing key
+./input\02BSAK|ZUMSK|CHAR|1|Target sign special ledger
+./input\02BSAK|SHKZG|CHAR|1|Character Debit / credit
+./input\02BSAK|GSBER|CHAR|4|working section
+./input\02BSAK|MWSKZ|CHAR|2|Character VAT
+./input\02BSAK|DMBTR|CURR|13|IN amount in local currency
+./input\02BSAK|WRBTR|CURR|13|Amount in document currency
+./input\02BSAK|MWSTS|CURR|13|Tax amount in local currency
+./input\02BSAK|WMWST|CURR|13|Tax amount in document currency
+./input\02BSAK|BDIFF|CURR|13|difference Award
+./input\02BSAK|BDIF2|CURR|13|Valuation difference for the second valuation method
+./input\02BSAK|SGTXT|CHAR|50|text entries
+./input\02BSAK|PROJN|CHAR|16|Obsolete: Project ID: longer used
+./input\02BSAK|AUFNR|CHAR|12|Order number
+./input\02BSAK|ANLN1|CHAR|12|Main number IM
+./input\02BSAK|ANLN2|CHAR|4|Inventory sub. No.
+./input\02BSAK|EBELN|CHAR|10|The number of purchase document
+./input\02BSAK|EBELP|NUMC|5|Item proof of purchase
+./input\02BSAK|SAKNR|CHAR|10|Account Number Ledger
+./input\02BSAK|HKONT|CHAR|10|Account Ledger Accounting HK
+./input\02BSAK|FKONT|NUMC|3|Fin. Plan item
+./input\02BSAK|FILKD|CHAR|10|Branch account number
+./input\02BSAK|ZFBDT|DATS|8|Base date for the calculation of maturity
+./input\02BSAK|ZTERM|CHAR|4|Key payment terms
+./input\02BSAK|ZBD1T|DEC|3|Days discounts 1
+./input\02BSAK|ZBD2T|DEC|3|2 Days discounts
+./input\02BSAK|ZBD3T|DEC|3|The deadline for the condition Net
+./input\02BSAK|ZBD1P|DEC|5|1 percent cash discount
+./input\02BSAK|ZBD2P|DEC|5|2 percent discounts
+./input\02BSAK|SKFBT|CURR|13|Skontovatelná amount in currency document
+./input\02BSAK|SKNTO|CURR|13|The amount of the discount in comp. currency
+./input\02BSAK|WSKTO|CURR|13|The amount of the discount in the currency document
+./input\02BSAK|ZLSCH|CHAR|1|Method of payment
+./input\02BSAK|ZLSPR|CHAR|1|Key for blocking payments
+./input\02BSAK|ZBFIX|CHAR|1|Fixed payment condition
+./input\02BSAK|HBKID|CHAR|5|Short key corporate bank
+./input\02BSAK|BVTYP|CHAR|4|Type banks part.
+./input\02BSAK|REBZG|CHAR|10|Document number of the invoice, which includes given
+./input\02BSAK|REBZJ|NUMC|4|The fiscal year of the relevant invoice (for dobrop
+./input\02BSAK|REBZZ|NUMC|3|Accounting entry in the corresponding invoice
+./input\02BSAK|ZOLLT|CHAR|8|No. duty rate
+./input\02BSAK|ZOLLD|DATS|8|Customs data.
+./input\02BSAK|LZBKZ|CHAR|3|Model central bank law
+./input\02BSAK|LANDL|CHAR|3|state contractor
+./input\02BSAK|DIEKZ|CHAR|1|Character services (foreign payment)
+./input\02BSAK|MANSP|CHAR|1|BlokUpomín
+./input\02BSAK|MSCHL|CHAR|1|dunning key
+./input\02BSAK|MADAT|DATS|8|Date of last reminders
+./input\02BSAK|MANST|NUMC|1|grade dunning
+./input\02BSAK|MABER|CHAR|2|dunning area
+./input\02BSAK|XNETB|CHAR|1|Character: A document posted net?
+./input\02BSAK|XANET|CHAR|1|Character: Deposit charged to the net?
+./input\02BSAK|XCPDD|CHAR|1|Character: Address and data banks are set
+./input\02BSAK|XESRD|CHAR|1|Character: They document the data set ESR?
+./input\02BSAK|XZAHL|CHAR|1|Character: This is a payment transaction?
+./input\02BSAK|MWSK1|CHAR|2|Character taxes for distribution
+./input\02BSAK|DMBT1|CURR|13|The amount in local currency for the division dan
+./input\02BSAK|WRBT1|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\02BSAK|MWSK2|CHAR|2|Character taxes for distribution
+./input\02BSAK|DMBT2|CURR|13|The amount in local currency for the division dan
+./input\02BSAK|WRBT2|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\02BSAK|MWSK3|CHAR|2|Character taxes for distribution
+./input\02BSAK|DMBT3|CURR|13|The amount in local currency for the division dan
+./input\02BSAK|WRBT3|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\02BSAK|QSSKZ|CHAR|2|Character Withholding Tax
+./input\02BSAK|QSSHB|CURR|13|Base amount tax source
+./input\02BSAK|QBSHB|CURR|13|Withholding Tax Amount (in currency document)
+./input\02BSAK|BSTAT|CHAR|1|status document
+./input\02BSAK|ANFBN|CHAR|10|Doc. No. bill payments
+./input\02BSAK|ANFBJ|NUMC|4|Fiscal Year proof requirement salary bill
+./input\02BSAK|ANFBU|CHAR|4|Accounting sub., which is recognized requirement
+./input\02BSAK|VBUND|CHAR|6|Number of partner companies
+./input\02BSAK|REBZT|CHAR|1|Type following document
+./input\02BSAK|STCEG|CHAR|20|VAT registration number
+./input\02BSAK|EGBLD|CHAR|3|State of destination for the delivery of goods
+./input\02BSAK|EGLLD|CHAR|3|Become a vendor at received goods
+./input\02BSAK|QSZNR|CHAR|10|Number of certificate of exemption from the source
+./input\02BSAK|QSFBT|CURR|13|Tax free amount (in the currency Doc)
+./input\02BSAK|XINVE|CHAR|1|Character: This applies to investment property?
+./input\02BSAK|PROJK|NUMC|8|Structure plan element of the project (WBS element)
+./input\02BSAK|FIPOS|CHAR|14|budget item
+./input\02BSAK|NPLNR|CHAR|12|No.net diagram for account assignment
+./input\02BSAK|AUFPL|NUMC|10|Number procedure for operations in the contract
+./input\02BSAK|APLZL|NUMC|8|Internal counter
+./input\02BSAK|XEGDR|CHAR|1|Character: Triangular trade within the EC?
+./input\02BSAK|DMBE2|CURR|13|The amount of local currency in the second
+./input\02BSAK|DMBE3|CURR|13|The amount of local currency in the third
+./input\02BSAK|DMB21|CURR|13|The amount in local currency for the second Divide
+./input\02BSAK|DMB22|CURR|13|The amount in local currency for the second Divide
+./input\02BSAK|DMB23|CURR|13|The amount in local currency for the second Divide
+./input\02BSAK|DMB31|CURR|13|Amount in third local currency for splits
+./input\02BSAK|DMB32|CURR|13|Amount in third local currency for splits
+./input\02BSAK|DMB33|CURR|13|Amount in third local currency for splits
+./input\02BSAK|MWST2|CURR|13|The amount of tax in the second local currency
+./input\02BSAK|MWST3|CURR|13|The amount of tax in the third local currency
+./input\02BSAK|SKNT2|CURR|13|The amount of the discount in the second local currency
+./input\02BSAK|SKNT3|CURR|13|The amount of the discount in the third local currency
+./input\02BSAK|BDIF3|CURR|13|Difference Award for the third corporate currency
+./input\02BSAK|XRAGL|CHAR|1|Character: Aligning has been canceled
+./input\02BSAK|RSTGR|CHAR|3|Because of the differences in payments
+./input\02BSAK|UZAWE|CHAR|2|Addendum to the payment method
+./input\02BSAK|KOSTL|CHAR|10|Cost center
+./input\02BSAK|LNRAN|NUMC|5|Serial number of each item in the IM
+./input\02BSAK|XSTOV|CHAR|1|Character: The document is marked for reversal
+./input\02BSAK|KZBTR|CURR|13|Reduced the original amount in the company's me
+./input\02BSAK|XREF1|CHAR|12|Reference key trading partner
+./input\02BSAK|XREF2|CHAR|12|Reference key trading partner
+./input\02BSAK|XARCH|CHAR|1|Character: The document is already in the archive?
+./input\02BSAK|PSWSL|CUKY|5|Updated currency for transactions effected in HK
+./input\02BSAK|PSWBT|CURR|13|Amount to update the general ledger
+./input\02BSAK|IMKEY|CHAR|8|Internal key for real object
+./input\02BSAK|ZEKKN|NUMC|2|Serial number assignment Account
+./input\02BSAK|FISTL|CHAR|16|financial place
+./input\02BSAK|GEBER|CHAR|10|Fund/§
+./input\02BSAK|DABRZ|DATS|8|Refer.date for showdown
+./input\02BSAK|XNEGP|CHAR|1|Character: Negative billing
+./input\02BSAK|EMPFB|CHAR|10|Payee / Payer
+./input\02BSAK|PRCTR|CHAR|10|profit center
+./input\02BSAK|XREF3|CHAR|20|Reference key to entry document
+./input\02BSAK|DTWS1|NUMC|2|instructions 1
+./input\02BSAK|DTWS2|NUMC|2|Statement 2
+./input\02BSAK|DTWS3|NUMC|2|instructions 3
+./input\02BSAK|DTWS4|NUMC|2|instruction 4
+./input\02BSAK|XPYPR|CHAR|1|Character: Payment order for this item e
+./input\02BSAK|KIDNO|CHAR|30|payment reference
+./input\02BSAK|PYCUR|CUKY|5|Currency for automatic payment
+./input\02BSAK|PYAMT|CURR|13|Amount in Payment Currency
+./input\02BSAK|BUPLA|CHAR|4|Business place
+./input\02BSAK|SECCO|CHAR|4|Section Withholding Tax
+./input\02BSAK|PPDIFF|CURR|13|Realized foreign exchange gain / loss 1.FM (saith
+./input\02BSAK|PPDIF2|CURR|13|Realized foreign exchange gain / loss 2.FM (saith
+./input\02BSAK|PPDIF3|CURR|13|Realized foreign exchange gain / loss 3 FM (saith
+./input\02BSAK|PENLC1|CURR|13
+./input\02BSAK|PENLC2|CURR|13
+./input\02BSAK|PENLC3|CURR|13
+./input\02BSAK|PENFC|CURR|13
+./input\02BSAK|PENDAYS|INT4|10|The number of days for calculation of fines
+./input\02BSAK|PENRC|CHAR|2|Reason for late payments
+./input\02BSAK|VERTT|CHAR|1|Dt. Contract
+./input\02BSAK|VERTN|CHAR|13|Contract number
+./input\02BSAK|VBEWA|CHAR|4|Type of movement
+./input\02BSAK|KBLNR|CHAR|10|Doc. No.-reserve funds
+./input\02BSAK|KBLPOS|NUMC|3|Item document - reserve funds
+./input\02BSAK|GRANT_NBR|CHAR|20|Grant
+./input\02BSAK|GMVKZ|CHAR|1|Sign, whether the item is recovered
+./input\02BSAK|SRTYPE|CHAR|2|Type minor claims
+./input\02BSAK|LOTKZ|CHAR|10|Volume requirements
+./input\02BSAK|ZINKZ|CHAR|2|Exception of interest
+./input\02BSAK|FKBER|CHAR|16|functional area
+./input\02BSAK|INTRENO|CHAR|13|Internal encoding Master Data, Real estate
+./input\02BSAK|PPRCT|CHAR|10|Partner profit center
+./input\02BSAK|BUZID|CHAR|1|Identification of the financial lines
+./input\02BSAK|AUGGJ|NUMC|4|Fiscal Year proof of settlement
+./input\02BSAK|KONTT|CHAR|2|Type of Account Assignment for industry solution
+./input\02BSAK|KONTL|CHAR|50|String account assignment for spec.field
+./input\02BSAK|UEBGDAT|DATS|8|Date of forwarding the item to the judicial reminders
+./input\02BSAK|VNAME|CHAR|6|Joint Venture
+./input\02BSAK|EGRUP|CHAR|3|Group equity participation
+./input\02BSAK|BTYPE|CHAR|2|settlement type
+./input\03BSEG|MANDT|CLNT|3|Client
+./input\03BSEG|BUKRS|CHAR|4|Accounting circuit
+./input\03BSEG|BELNR|CHAR|10|The number of accounting documents
+./input\03BSEG|GJAHR|NUMC|4|Fiscal year
+./input\03BSEG|BUZEI|NUMC|3|Number of accounting lines in the accounting document
+./input\03BSEG|BUZID|CHAR|1|Identification of the financial lines
+./input\03BSEG|AUGDT|DATS|8|Date of settlement
+./input\03BSEG|AUGCP|DATS|8|Date of acquisition settlement
+./input\03BSEG|AUGBL|CHAR|10|Certificate Number Settlement
+./input\03BSEG|BSCHL|CHAR|2|billing key
+./input\03BSEG|KOART|CHAR|1|AccountType
+./input\03BSEG|UMSKZ|CHAR|1|Character special ledger
+./input\03BSEG|UMSKS|CHAR|1|Class operations ledger
+./input\03BSEG|ZUMSK|CHAR|1|Target sign special ledger
+./input\03BSEG|SHKZG|CHAR|1|Character Debit / credit
+./input\03BSEG|GSBER|CHAR|4|working section
+./input\03BSEG|PARGB|CHAR|4|Work section of business partner
+./input\03BSEG|MWSKZ|CHAR|2|Character VAT
+./input\03BSEG|QSSKZ|CHAR|2|Character Withholding Tax
+./input\03BSEG|DMBTR|CURR|13|IN amount in local currency
+./input\03BSEG|WRBTR|CURR|13|Amount in document currency
+./input\03BSEG|KZBTR|CURR|13|Reduced the original amount in the company's me
+./input\03BSEG|PSWBT|CURR|13|Amount to update the general ledger
+./input\03BSEG|PSWSL|CUKY|5|Updated currency for transactions effected in HK
+./input\03BSEG|TXBHW|CURR|13|The initial amount of the tax base in the corporate m
+./input\03BSEG|TXBFW|CURR|13|The original amount of the tax base in the currency of voucher specimens
+./input\03BSEG|MWSTS|CURR|13|Tax amount in local currency
+./input\03BSEG|WMWST|CURR|13|Tax amount in document currency
+./input\03BSEG|HWBAS|CURR|13|The amount of the tax base in comp.currency
+./input\03BSEG|FWBAS|CURR|13|The amount of the tax base in the currency document
+./input\03BSEG|HWZUZ|CURR|13|The reserve amount in local currency
+./input\03BSEG|FWZUZ|CURR|13|Additional tax on currency document
+./input\03BSEG|SHZUZ|CHAR|1|Supplement Debit / Cr. for skonto
+./input\03BSEG|STEKZ|CHAR|2|The component version number
+./input\03BSEG|MWART|CHAR|1|kind of tax
+./input\03BSEG|TXGRP|NUMC|3|Character Group rows taxes
+./input\03BSEG|KTOSL|CHAR|3|key operations
+./input\03BSEG|QSSHB|CURR|13|Base amount tax source
+./input\03BSEG|KURSR|DEC|9|catered course
+./input\03BSEG|GBETR|CURR|13|The amount of the hedged exchange rate of foreign currency
+./input\03BSEG|BDIFF|CURR|13|difference Award
+./input\03BSEG|BDIF2|CURR|13|Valuation difference for the second valuation method
+./input\03BSEG|VALUT|DATS|8|Dat.valuty
+./input\03BSEG|ZUONR|CHAR|18|number assignment
+./input\03BSEG|SGTXT|CHAR|50|text entries
+./input\03BSEG|ZINKZ|CHAR|2|Exception of interest
+./input\03BSEG|VBUND|CHAR|6|Number of partner companies
+./input\03BSEG|BEWAR|CHAR|3|Type of movement
+./input\03BSEG|ALTKT|CHAR|10|Acc.no. concern
+./input\03BSEG|VORGN|CHAR|4|Kind of operations for HK
+./input\03BSEG|FDLEV|CHAR|2|Level cash man.
+./input\03BSEG|FDGRP|CHAR|10|Disposition group
+./input\03BSEG|FDWBT|CURR|13|Disposition amount in currency-proof overflows
+./input\03BSEG|FDTAG|DATS|8|Date of disposition
+./input\03BSEG|FKONT|NUMC|3|Fin. Plan item
+./input\03BSEG|KOKRS|CHAR|4|The load circuit
+./input\03BSEG|KOSTL|CHAR|10|Cost center
+./input\03BSEG|PROJN|CHAR|16|Obsolete: Project ID: longer used
+./input\03BSEG|AUFNR|CHAR|12|Order number
+./input\03BSEG|VBELN|CHAR|10|Invoice
+./input\03BSEG|VBEL2|CHAR|10|Sell.doc.
+./input\03BSEG|POSN2|NUMC|6|Item sell.doc.
+./input\03BSEG|ETEN2|NUMC|4|Number layout
+./input\03BSEG|ANLN1|CHAR|12|Main number IM
+./input\03BSEG|ANLN2|CHAR|4|Inventory sub. No.
+./input\03BSEG|ANBWA|CHAR|3|Movement Type IM
+./input\03BSEG|BZDAT|DATS|8|Refer.datum
+./input\03BSEG|PERNR|NUMC|8|Personal number
+./input\03BSEG|XUMSW|CHAR|1|Character: Item affecting sales?
+./input\03BSEG|XHRES|CHAR|1|Character: The account ledger is resident?
+./input\03BSEG|XKRES|CHAR|1|Character: Views jednotl.položek with acc.
+./input\03BSEG|XOPVW|CHAR|1|Character: Management of open items?
+./input\03BSEG|XCPDD|CHAR|1|Character: Address and data banks are set
+./input\03BSEG|XSKST|CHAR|1|Character: Statistics on cost accounting
+./input\03BSEG|XSAUF|CHAR|1|Character: Accounting custom made statistics
+./input\03BSEG|XSPRO|CHAR|1|Character: Recognition of the project's statistics
+./input\03BSEG|XSERG|CHAR|1|Character: Accounting result in a statistically
+./input\03BSEG|XFAKT|CHAR|1|Character: Performing the update invoice?
+./input\03BSEG|XUMAN|CHAR|1|Character: Transfer from backup?
+./input\03BSEG|XANET|CHAR|1|Character: Deposit charged to the net?
+./input\03BSEG|XSKRL|CHAR|1|Character: Accounting line is relevant.pro pos
+./input\03BSEG|XINVE|CHAR|1|Character: This applies to investment property?
+./input\03BSEG|XPANZ|CHAR|1|Item views
+./input\03BSEG|XAUTO|CHAR|1|Character: Automatically generated entry
+./input\03BSEG|XNCOP|CHAR|1|Character: Items can not be copied?
+./input\03BSEG|XZAHL|CHAR|1|Character: This is a payment transaction?
+./input\03BSEG|SAKNR|CHAR|10|Account Number Ledger
+./input\03BSEG|HKONT|CHAR|10|Account Ledger Accounting HK
+./input\03BSEG|KUNNR|CHAR|10|Customer number 1
+./input\03BSEG|LIFNR|CHAR|10|Vendor account number
+./input\03BSEG|FILKD|CHAR|10|Branch account number
+./input\03BSEG|XBILK|CHAR|1|Character: This is a balance sheet account?
+./input\03BSEG|GVTYP|CHAR|2|Type final account
+./input\03BSEG|HZUON|CHAR|18|Assignment number accounts for ZHK
+./input\03BSEG|ZFBDT|DATS|8|Base date for the calculation of maturity
+./input\03BSEG|ZTERM|CHAR|4|Key payment terms
+./input\03BSEG|ZBD1T|DEC|3|Days discounts 1
+./input\03BSEG|ZBD2T|DEC|3|2 Days discounts
+./input\03BSEG|ZBD3T|DEC|3|The deadline for the condition Net
+./input\03BSEG|ZBD1P|DEC|5|1 percent cash discount
+./input\03BSEG|ZBD2P|DEC|5|2 percent discounts
+./input\03BSEG|SKFBT|CURR|13|Skontovatelná amount in currency document
+./input\03BSEG|SKNTO|CURR|13|The amount of the discount in comp. currency
+./input\03BSEG|WSKTO|CURR|13|The amount of the discount in the currency document
+./input\03BSEG|ZLSCH|CHAR|1|Method of payment
+./input\03BSEG|ZLSPR|CHAR|1|Key for blocking payments
+./input\03BSEG|ZBFIX|CHAR|1|Fixed payment condition
+./input\03BSEG|HBKID|CHAR|5|Short key corporate bank
+./input\03BSEG|BVTYP|CHAR|4|Type banks part.
+./input\03BSEG|NEBTR|CURR|13|Payment Amount Net
+./input\03BSEG|MWSK1|CHAR|2|Character taxes for distribution
+./input\03BSEG|DMBT1|CURR|13|The amount in local currency for the division dan
+./input\03BSEG|WRBT1|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\03BSEG|MWSK2|CHAR|2|Character taxes for distribution
+./input\03BSEG|DMBT2|CURR|13|The amount in local currency for the division dan
+./input\03BSEG|WRBT2|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\03BSEG|MWSK3|CHAR|2|Character taxes for distribution
+./input\03BSEG|DMBT3|CURR|13|The amount in local currency for the division dan
+./input\03BSEG|WRBT3|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\03BSEG|REBZG|CHAR|10|Document number of the invoice, which includes given
+./input\03BSEG|REBZJ|NUMC|4|The fiscal year of the relevant invoice (for dobrop
+./input\03BSEG|REBZZ|NUMC|3|Accounting entry in the corresponding invoice
+./input\03BSEG|REBZT|CHAR|1|Type following document
+./input\03BSEG|ZOLLT|CHAR|8|No. duty rate
+./input\03BSEG|ZOLLD|DATS|8|Customs data.
+./input\03BSEG|LZBKZ|CHAR|3|Model central bank law
+./input\03BSEG|LANDL|CHAR|3|state contractor
+./input\03BSEG|DIEKZ|CHAR|1|Character services (foreign payment)
+./input\03BSEG|SAMNR|NUMC|8|List number of invoices
+./input\03BSEG|ABPER|ACCP|6|Billing period
+./input\03BSEG|VRSKZ|CHAR|1|Character insurance
+./input\03BSEG|VRSDT|DATS|8|Date insurance
+./input\03BSEG|DISBN|CHAR|10|The document number for the use of promissory notes
+./input\03BSEG|DISBJ|NUMC|4|Fiscal year document the use of promissory notes
+./input\03BSEG|DISBZ|NUMC|3|Accounting line in the document about the use of promissory notes
+./input\03BSEG|WVERW|CHAR|1|Type of use bills
+./input\03BSEG|ANFBN|CHAR|10|Doc. No. bill payments
+./input\03BSEG|ANFBJ|NUMC|4|Fiscal Year proof requirement salary bill
+./input\03BSEG|ANFBU|CHAR|4|Accounting sub., which is recognized requirement
+./input\03BSEG|ANFAE|DATS|8|Payment at Maturity
+./input\03BSEG|BLNBT|CURR|13|The basic amount for determining preferential No.
+./input\03BSEG|BLNKZ|CHAR|2|(Become obsolete.) The character subsidies for determining abbreviated to
+./input\03BSEG|BLNPZ|DEC|7|Percentage rate pref.
+./input\03BSEG|MSCHL|CHAR|1|dunning key
+./input\03BSEG|MANSP|CHAR|1|BlokUpomín
+./input\03BSEG|MADAT|DATS|8|Date of last reminders
+./input\03BSEG|MANST|NUMC|1|grade dunning
+./input\03BSEG|MABER|CHAR|2|dunning area
+./input\03BSEG|ESRNR|CHAR|11|ESR participant number
+./input\03BSEG|ESRRE|CHAR|27|Reference no. ESR
+./input\03BSEG|ESRPZ|CHAR|2|Controll no. ESR
+./input\03BSEG|KLIBT|CURR|13|Amount for checking credit
+./input\03BSEG|QSZNR|CHAR|10|Number of certificate of exemption from the source
+./input\03BSEG|QBSHB|CURR|13|Withholding Tax Amount (in currency document)
+./input\03BSEG|QSFBT|CURR|13|Tax free amount (in the currency Doc)
+./input\03BSEG|NAVHW|CURR|13|Non-deductible input VAT (in the corporate Me
+./input\03BSEG|NAVFW|CURR|13|Non-deductible input VAT (in the currency of voucher specimens
+./input\03BSEG|MATNR|CHAR|18|No.
+./input\03BSEG|WERKS|CHAR|4|Race
+./input\03BSEG|MENGE|QUAN|13|Amount
+./input\03BSEG|MEINS|UNIT|3|The basic unit of measurement
+./input\03BSEG|ERFMG|QUAN|13|Quantity in the units of the entered amount
+./input\03BSEG|ERFME|UNIT|3|Unit of measure rec. amount
+./input\03BSEG|BPMNG|QUAN|13|Quantity in the units ordering prices
+./input\03BSEG|BPRME|UNIT|3|Unit prices in order
+./input\03BSEG|EBELN|CHAR|10|The number of purchase document
+./input\03BSEG|EBELP|NUMC|5|Item proof of purchase
+./input\03BSEG|ZEKKN|NUMC|2|Serial number assignment Account
+./input\03BSEG|ELIKZ|CHAR|1|Character final deliveries
+./input\03BSEG|VPRSV|CHAR|1|Character control prices
+./input\03BSEG|PEINH|DEC|5|Number of units in the price
+./input\03BSEG|BWKEY|CHAR|4|circle awards
+./input\03BSEG|BWTAR|CHAR|10|kind awards
+./input\03BSEG|BUSTW|CHAR|4|Accounting value chain
+./input\03BSEG|REWRT|CURR|13|The value registered in the company's invoice currencies
+./input\03BSEG|REWWR|CURR|13|The value registered an invoice in foreign currency
+./input\03BSEG|BONFB|CURR|13|The amount of the bonus options in comp.currency
+./input\03BSEG|BUALT|CURR|13|The carrying amount of an alternative control prices
+./input\03BSEG|PSALT|CHAR|1|Alternative control prices
+./input\03BSEG|NPREI|CURR|11|New price
+./input\03BSEG|TBTKZ|CHAR|1|Character: Foll. Acc. debited
+./input\03BSEG|SPGRP|CHAR|1|Block.reason.: Price
+./input\03BSEG|SPGRM|CHAR|1|Block.reason .: Qty.
+./input\03BSEG|SPGRT|CHAR|1|Block.reason .: Term
+./input\03BSEG|SPGRG|CHAR|1|Block.reason: Number jedn.uObjCeny
+./input\03BSEG|SPGRV|CHAR|1|Block.reason: Budget
+./input\03BSEG|SPGRQ|CHAR|1|Character: Manual blocking reason
+./input\03BSEG|STCEG|CHAR|20|VAT registration number
+./input\03BSEG|EGBLD|CHAR|3|State of destination for the delivery of goods
+./input\03BSEG|EGLLD|CHAR|3|Become a vendor at received goods
+./input\03BSEG|RSTGR|CHAR|3|Because of the differences in payments
+./input\03BSEG|RYACQ|CHAR|4|Year growth
+./input\03BSEG|RPACQ|NUMC|3|Period of growth
+./input\03BSEG|RDIFF|CURR|13|Realized foreign exchange gain / loss
+./input\03BSEG|RDIF2|CURR|13|Realized exchange rate difference for the second fi
+./input\03BSEG|PRCTR|CHAR|10|profit center
+./input\03BSEG|XHKOM|CHAR|1|Character: Account Ledger assigned manually
+./input\03BSEG|VNAME|CHAR|6|Joint Venture
+./input\03BSEG|RECID|CHAR|2|Cost type
+./input\03BSEG|EGRUP|CHAR|3|Group equity participation
+./input\03BSEG|VPTNR|CHAR|10|Act. No. partner
+./input\03BSEG|VERTT|CHAR|1|Dt. Contract
+./input\03BSEG|VERTN|CHAR|13|Contract number
+./input\03BSEG|VBEWA|CHAR|4|Type of movement
+./input\03BSEG|DEPOT|CHAR|10|Depot
+./input\03BSEG|TXJCD|CHAR|15|Tax Jurisdiction Code - jurisdiction for
+./input\03BSEG|IMKEY|CHAR|8|Internal key for real object
+./input\03BSEG|DABRZ|DATS|8|Refer.date for showdown
+./input\03BSEG|POPTS|DEC|9|Optional rate of real estate
+./input\03BSEG|FIPOS|CHAR|14|budget item
+./input\03BSEG|KSTRG|CHAR|12|bearer costs
+./input\03BSEG|NPLNR|CHAR|12|No.net diagram for account assignment
+./input\03BSEG|AUFPL|NUMC|10|Number procedure for operations in the contract
+./input\03BSEG|APLZL|NUMC|8|General counter orders
+./input\03BSEG|PROJK|NUMC|8|Structure plan element of the project (WBS element)
+./input\03BSEG|PAOBJNR|NUMC|10|Number for result objects (CO-PA)
+./input\03BSEG|PASUBNR|NUMC|4|History of changes for earnings objects (CO
+./input\03BSEG|SPGRS|CHAR|1|Reason block height amounts .:
+./input\03BSEG|SPGRC|CHAR|1|Reason block .: Quality
+./input\03BSEG|BTYPE|CHAR|2|settlement type
+./input\03BSEG|ETYPE|CHAR|3|Class participation capital
+./input\03BSEG|XEGDR|CHAR|1|Character: Triangular trade within the EC?
+./input\03BSEG|LNRAN|NUMC|5|Serial number of each item in the IM
+./input\03BSEG|HRKFT|CHAR|4|Origin Grp. as inferior cost breakdown
+./input\03BSEG|DMBE2|CURR|13|The amount of local currency in the second
+./input\03BSEG|DMBE3|CURR|13|The amount of local currency in the third
+./input\03BSEG|DMB21|CURR|13|The amount in local currency for the second Divide
+./input\03BSEG|DMB22|CURR|13|The amount in local currency for the second Divide
+./input\03BSEG|DMB23|CURR|13|The amount in local currency for the second Divide
+./input\03BSEG|DMB31|CURR|13|Amount in third local currency for splits
+./input\03BSEG|DMB32|CURR|13|Amount in third local currency for splits
+./input\03BSEG|DMB33|CURR|13|Amount in third local currency for splits
+./input\03BSEG|MWST2|CURR|13|The amount of tax in the second local currency
+./input\03BSEG|MWST3|CURR|13|The amount of tax in the third local currency
+./input\03BSEG|NAVH2|CURR|13|Non-deductible input tax in the second company
+./input\03BSEG|NAVH3|CURR|13|Non-deductible input VAT in the third Companies
+./input\03BSEG|SKNT2|CURR|13|The amount of the discount in the second local currency
+./input\03BSEG|SKNT3|CURR|13|The amount of the discount in the third local currency
+./input\03BSEG|BDIF3|CURR|13|Difference Award for the third corporate currency
+./input\03BSEG|RDIF3|CURR|13|Realized exchange rate difference for the third fir
+./input\03BSEG|HWMET|CHAR|1|The method, which was determined amount fir
+./input\03BSEG|GLUPM|CHAR|1|Update method for integrating FM - FI
+./input\03BSEG|XRAGL|CHAR|1|Character: Aligning has been canceled
+./input\03BSEG|UZAWE|CHAR|2|Addendum to the payment method
+./input\03BSEG|LOKKT|CHAR|10|Alternative account number in the accounting group
+./input\03BSEG|FISTL|CHAR|16|financial place
+./input\03BSEG|GEBER|CHAR|10|Fund/§
+./input\03BSEG|STBUK|CHAR|4|Accounting circuit taxes
+./input\03BSEG|TXBH2|CURR|13|Tax base / original tax base FM
+./input\03BSEG|TXBH3|CURR|13|Tax base / original tax base FM
+./input\03BSEG|PPRCT|CHAR|10|Partner profit center
+./input\03BSEG|XREF1|CHAR|12|Reference key trading partner
+./input\03BSEG|XREF2|CHAR|12|Reference key trading partner
+./input\03BSEG|KBLNR|CHAR|10|Doc. No.-reserve funds
+./input\03BSEG|KBLPOS|NUMC|3|Item document - reserve funds
+./input\03BSEG|STTAX|CURR|13|The amount of tax as statistical information
+./input\03BSEG|FKBER|CHAR|4|functional area
+./input\03BSEG|OBZEI|NUMC|3|Line Number Recognition in the original voucher specimens
+./input\03BSEG|XNEGP|CHAR|1|Character: Negative billing
+./input\03BSEG|RFZEI|NUMC|3|Credit cards-entry
+./input\03BSEG|CCBTC|CHAR|10|Credit cards: Running showdown
+./input\03BSEG|KKBER|CHAR|4|Credit Control Area
+./input\03BSEG|EMPFB|CHAR|10|Payee / Payer
+./input\03BSEG|XREF3|CHAR|20|Reference key to entry document
+./input\03BSEG|DTWS1|NUMC|2|instructions 1
+./input\03BSEG|DTWS2|NUMC|2|Statement 2
+./input\03BSEG|DTWS3|NUMC|2|instructions 3
+./input\03BSEG|DTWS4|NUMC|2|instruction 4
+./input\03BSEG|GRICD|CHAR|2|Character activities for income tax gross
+./input\03BSEG|GRIRG|CHAR|3|Region (Federal State, Land, pr
+./input\03BSEG|GITYP|CHAR|2|Species distribution for payroll tax
+./input\03BSEG|XPYPR|CHAR|1|Character: Payment order for this item e
+./input\03BSEG|KIDNO|CHAR|30|payment reference
+./input\03BSEG|ABSBT|CURR|13|Credit Management: The amount guaranteed
+./input\03BSEG|IDXSP|CHAR|5|inflation index
+./input\03BSEG|LINFV|DATS|8|Last Modified Date
+./input\03BSEG|KONTT|CHAR|2|Type of Account Assignment for industry solution
+./input\03BSEG|KONTL|CHAR|50|String account assignment for spec.field
+./input\03BSEG|TXDAT|DATS|8|The date for determining the tax rate
+./input\03BSEG|AGZEI|DEC|5|balancing item
+./input\03BSEG|PYCUR|CUKY|5|Currency for automatic payment
+./input\03BSEG|PYAMT|CURR|13|Amount in Payment Currency
+./input\03BSEG|BUPLA|CHAR|4|Business place
+./input\03BSEG|SECCO|CHAR|4|Section Withholding Tax
+./input\03BSEG|LSTAR|CHAR|6|Type performance
+./input\03BSEG|CESSION_KZ|CHAR|2|sign cession
+./input\03BSEG|PRZNR|CHAR|12|business process
+./input\03BSEG|PPDIFF|CURR|13|Realized foreign exchange gain / loss 1.FM (saith
+./input\03BSEG|PPDIF2|CURR|13|Realized foreign exchange gain / loss 2.FM (saith
+./input\03BSEG|PPDIF3|CURR|13|Realized foreign exchange gain / loss 3 FM (saith
+./input\03BSEG|PENLC1|CURR|13
+./input\03BSEG|PENLC2|CURR|13
+./input\03BSEG|PENLC3|CURR|13
+./input\03BSEG|PENFC|CURR|13
+./input\03BSEG|PENDAYS|INT4|10|The number of days for calculation of fines
+./input\03BSEG|PENRC|CHAR|2|Reason for late payments
+./input\03BSEG|GRANT_NBR|CHAR|20|Grant
+./input\03BSEG|SCTAX|CURR|13|The tax share of FI-CA, corporate currency
+./input\03BSEG|FKBER_LONG|CHAR|16|functional area
+./input\03BSEG|GMVKZ|CHAR|1|Sign, whether the item is recovered
+./input\03BSEG|SRTYPE|CHAR|2|Type minor claims
+./input\03BSEG|INTRENO|CHAR|13|Internal encoding Master Data, Real estate
+./input\03BSEG|MEASURE|CHAR|24|Program budget management
+./input\03BSEG|AUGGJ|NUMC|4|Fiscal Year proof of settlement
+./input\03BSEG|PPA_EX_IND|CHAR|1
+./input\03BSEG|ZZPROV|CHAR|12|Reserve
+./input\04EINA|MANDT|CLNT|3|Client
+./input\04EINA|INFNR|CHAR|10|Number purch.order
+./input\04EINA|MATNR|CHAR|18|No.
+./input\04EINA|MATKL|CHAR|9|Material Group
+./input\04EINA|LIFNR|CHAR|10|Vendor account number
+./input\04EINA|LOEKZ|CHAR|1|Purch.info.rec .: General data reported
+./input\04EINA|ERDAT|DATS|8|Date of Recording Connection
+./input\04EINA|ERNAM|CHAR|12|Officer name for the object based
+./input\04EINA|TXZ01|CHAR|40|Short text for info. Purchase
+./input\04EINA|SORTL|CHAR|10|Sorting term for inf.rec. for neskla
+./input\04EINA|MEINS|UNIT|3|Ordering unit of measure
+./input\04EINA|UMREZ|DEC|5|The counter for the conversion of ordering MJ Act
+./input\04EINA|UMREN|DEC|5|The denominator for the calculation of ordering MJ d
+./input\04EINA|IDNLF|CHAR|35|Material number at supplier
+./input\04EINA|VERKF|CHAR|30|KompetentníPracOdbytuProPřípadDotazy
+./input\04EINA|TELF1|CHAR|16|Telephone number of suppliers
+./input\04EINA|MAHN1|DEC|3|The number of days for the first reminder
+./input\04EINA|MAHN2|DEC|3|The number of days for a second reminder
+./input\04EINA|MAHN3|DEC|3|The number of days for the third reminder
+./input\04EINA|URZNR|CHAR|10|The number of certificates
+./input\04EINA|URZDT|DATS|8|Certificates of origin apply to
+./input\04EINA|URZLA|CHAR|3|State issue certificates of origin
+./input\04EINA|URZTP|CHAR|1|type certificate
+./input\04EINA|URZZT|CHAR|16|Number
+./input\04EINA|LMEIN|UNIT|3|The basic unit of measurement
+./input\04EINA|REGIO|CHAR|3|Region (Federal State, Land, pr
+./input\04EINA|VABME|CHAR|1|Variable ordering MJ active
+./input\04EINA|LTSNR|CHAR|6|Sub-range supplier
+./input\04EINA|LTSSF|NUMC|5|Sorting sequence number
+./input\04EINA|WGLIF|CHAR|18|Group Material suppliers
+./input\04EINA|RUECK|CHAR|2|Agreement on the abolition
+./input\04EINA|LIFAB|DATS|8|Can deliver from
+./input\04EINA|LIFBI|DATS|8|Can be delivered to
+./input\04EINA|KOLIF|CHAR|10|Prel.Ord.
+./input\04EINA|ANZPU|QUAN|13|Number of points
+./input\04EINA|PUNEI|UNIT|3|The point unit
+./input\04EINA|RELIF|CHAR|1|regular supplier
+./input\04EINA|MFRNR|CHAR|10|Producer
+./input\04EINA|KNTTP|CHAR|1|Type of Account Assignment
+./input\06EKBE|MANDT|CLNT|3|Client
+./input\06EKBE|EBELN|CHAR|10|The number of purchase document
+./input\06EKBE|EBELP|NUMC|5|Item proof of purchase
+./input\06EKBE|ZEKKN|NUMC|2|Serial number assignment Account
+./input\06EKBE|VGABE|CHAR|1|Type of operation - development orders
+./input\06EKBE|GJAHR|NUMC|4|Year material document
+./input\06EKBE|BELNR|CHAR|10|Number of material document
+./input\06EKBE|BUZEI|NUMC|4|An entry in doc. Mat.
+./input\06EKBE|BEWTP|CHAR|1|Type D Order
+./input\06EKBE|BWART|CHAR|3|Movement Type (Inventory Management)
+./input\06EKBE|BUDAT|DATS|8|Posting date in the document
+./input\06EKBE|MENGE|QUAN|13|Amount
+./input\06EKBE|BPMNG|QUAN|13|Quantity in the units ordering prices
+./input\06EKBE|DMBTR|CURR|13|IN amount in local currency
+./input\06EKBE|WRBTR|CURR|13|Amount in document currency
+./input\06EKBE|WAERS|CUKY|5|key currency
+./input\06EKBE|AREWR|CURR|13|Compensatory value on account of PM / PF fir
+./input\06EKBE|WESBS|QUAN|13|Block. Supplies in Order of receipt of material.
+./input\06EKBE|BPWES|QUAN|13|Qty. in MJOC
+./input\06EKBE|SHKZG|CHAR|1|Character Debit / credit
+./input\06EKBE|BWTAR|CHAR|10|kind awards
+./input\06EKBE|ELIKZ|CHAR|1|Character final deliveries
+./input\06EKBE|XBLNR|CHAR|16|Number of the reference document
+./input\06EKBE|LFGJA|NUMC|4|The fiscal year of the reference document
+./input\06EKBE|LFBNR|CHAR|10|Number of the reference document
+./input\06EKBE|LFPOS|NUMC|4|Item reference document
+./input\06EKBE|GRUND|NUMC|4|reason movement
+./input\06EKBE|CPUDT|DATS|8|Day of purchase accounting document
+./input\06EKBE|CPUTM|TIMS|6|acquisition time
+./input\06EKBE|REEWR|CURR|13|The value registered in the company's invoice currencies
+./input\06EKBE|EVERE|CHAR|2|Compliance Expeditionary prescription
+./input\06EKBE|REFWR|CURR|13|The value registered an invoice in foreign currency
+./input\06EKBE|MATNR|CHAR|18|No.
+./input\06EKBE|WERKS|CHAR|4|Race
+./input\06EKBE|XWSBR|CHAR|1|PM Cancellation permitted at LF, despite the fact
+./input\06EKBE|ETENS|NUMC|4|Serial number order confirmation
+./input\06EKBE|KNUMV|CHAR|10|Condition ID document
+./input\06EKBE|MWSKZ|CHAR|2|Character VAT
+./input\06EKBE|LSMNG|QUAN|13|Quantity in the units of received list
+./input\06EKBE|LSMEH|UNIT|3|Unit of measure of the delivery note
+./input\06EKBE|EMATN|CHAR|18|No.
+./input\06EKBE|AREWW|CURR|13|Compensatory value on the account of PM / PF in the currency
+./input\06EKBE|HSWAE|CUKY|5|Key corporate currency
+./input\06EKBE|BAMNG|QUAN|13|Amount
+./input\06EKBE|CHARG|CHAR|10|lot number
+./input\06EKBE|BLDAT|DATS|8|document Date
+./input\06EKBE|XWOFF|CHAR|1|Open to create value
+./input\06EKBE|XUNPL|CHAR|1|Unplanned account assignment from the liquidation f
+./input\06EKBE|ERNAM|CHAR|12|Officer name for the object based
+./input\06EKBE|SRVPOS|CHAR|18|No. performance
+./input\06EKBE|PACKNO|NUMC|10|Packet number Performance
+./input\06EKBE|INTROW|NUMC|10|Number of Rows performance
+./input\06EKBE|BEKKN|NUMC|2|Number of account assignment to order
+./input\06EKBE|LEMIN|CHAR|1|Character Returns
+./input\06EKBE|AREWB|CURR|13|Compensatory value on account of PM / PF in the currency
+./input\06EKBE|REWRB|CURR|13|Invoice amount in the order currency
+./input\06EKBE|SAPRL|CHAR|4|SAP release
+./input\06EKBE|ET_UPD|CHAR|1|Update method prorated amount
+./input\06EKBE|J_SC_DIE_COMP_F|CHAR|1
+./input\07EKKO|MANDT|CLNT|3|Client
+./input\07EKKO|EBELN|CHAR|10|The number of purchase document
+./input\07EKKO|BUKRS|CHAR|4|Accounting circuit
+./input\07EKKO|BSTYP|CHAR|1|Type of purchase document
+./input\07EKKO|BSART|CHAR|4|Type purchase doc.
+./input\07EKKO|BSAKZ|CHAR|1|Control character to kind of proof of purchase
+./input\07EKKO|LOEKZ|CHAR|1|Character deletion of the purchase receipt
+./input\07EKKO|STATU|CHAR|1|Status of the purchase document
+./input\07EKKO|AEDAT|DATS|8|Date of Recording Connection
+./input\07EKKO|ERNAM|CHAR|12|Officer name for the object based
+./input\07EKKO|PINCR|NUMC|5|interval items
+./input\07EKKO|LPONR|NUMC|5|The last item number
+./input\07EKKO|LIFNR|CHAR|10|Vendor account number
+./input\07EKKO|SPRAS|LANG|1|language key
+./input\07EKKO|ZTERM|CHAR|4|Key payment terms
+./input\07EKKO|ZBD1T|DEC|3|days discounts
+./input\07EKKO|ZBD2T|DEC|3|days discounts
+./input\07EKKO|ZBD3T|DEC|3|days discounts
+./input\07EKKO|ZBD1P|DEC|5|1 percent cash discount
+./input\07EKKO|ZBD2P|DEC|5|2 percent discounts
+./input\07EKKO|EKORG|CHAR|4|purchasing organization
+./input\07EKKO|EKGRP|CHAR|3|Group purchase
+./input\07EKKO|WAERS|CUKY|5|key currency
+./input\07EKKO|WKURS|DEC|9|Exchange rate
+./input\07EKKO|KUFIX|CHAR|1|Character: Fixing course
+./input\07EKKO|BEDAT|DATS|8|Date of purchase document
+./input\07EKKO|KDATB|DATS|8|Commencement of validity
+./input\07EKKO|KDATE|DATS|8|Expiration date
+./input\07EKKO|BWBDT|DATS|8|Deadline appl.
+./input\07EKKO|ANGDT|DATS|8|The deadline for submission of bids
+./input\07EKKO|BNDDT|DATS|8|Binding bid deadline
+./input\07EKKO|GWLDT|DATS|8|warranty date
+./input\07EKKO|AUSNR|CHAR|10|The number listed contest
+./input\07EKKO|ANGNR|CHAR|10|Number of offer
+./input\07EKKO|IHRAN|DATS|8|Date of submission of bids
+./input\07EKKO|IHREZ|CHAR|12|Your sign
+./input\07EKKO|VERKF|CHAR|30|Competent seller at supplier
+./input\07EKKO|TELF1|CHAR|16|Telephone number of suppliers
+./input\07EKKO|LLIEF|CHAR|10|Supplier for delivery
+./input\07EKKO|KUNNR|CHAR|10|Customer number 1
+./input\07EKKO|KONNR|CHAR|10|Parent contract number
+./input\07EKKO|ABGRU|CHAR|2|The field is not used
+./input\07EKKO|AUTLF|CHAR|1|Complete order prescribed
+./input\07EKKO|WEAKT|CHAR|1|Character: Report Receipt
+./input\07EKKO|RESWK|CHAR|4|Surrendering the race for orders shipments
+./input\07EKKO|LBLIF|CHAR|10|The field is not used
+./input\07EKKO|INCO1|CHAR|3|Incoterms part 1
+./input\07EKKO|INCO2|CHAR|28|Incoterms part 2
+./input\07EKKO|KTWRT|CURR|15|The cumulative planned value
+./input\07EKKO|SUBMI|CHAR|10|The number of submission
+./input\07EKKO|KNUMV|CHAR|10|Condition ID document
+./input\07EKKO|KALSM|CHAR|6|Diagram (pricing, news, assigned
+./input\07EKKO|STAFO|CHAR|6|Group Update to update stat
+./input\07EKKO|LIFRE|CHAR|10|Different issuer of the invoice
+./input\07EKKO|EXNUM|CHAR|10|The number of the foreign trade data in documents MM
+./input\07EKKO|UNSEZ|CHAR|12|Our brand
+./input\07EKKO|LOGSY|CHAR|10|Logical system
+./input\07EKKO|UPINC|NUMC|5|Interval subheading
+./input\07EKKO|STAKO|CHAR|1|Proof of time-dependent conditions
+./input\07EKKO|FRGGR|CHAR|2|Group free.
+./input\07EKKO|FRGSX|CHAR|2|Release strategy
+./input\07EKKO|FRGKE|CHAR|1|Sign release: Shopping document
+./input\07EKKO|FRGZU|CHAR|8|Enable status
+./input\07EKKO|FRGRL|CHAR|1|releasing incomplete
+./input\07EKKO|LANDS|CHAR|3|State tax return
+./input\07EKKO|LPHIS|CHAR|1|The sign for supplies - Documents
+./input\07EKKO|ADRNR|CHAR|10|Address number
+./input\07EKKO|STCEG_L|CHAR|3|State ID number of value added tax
+./input\07EKKO|STCEG|CHAR|20|VAT registration number
+./input\07EKKO|ABSGR|NUMC|2|Reason for rejection
+./input\07EKKO|ADDNR|CHAR|10|Number
+./input\07EKKO|KORNR|CHAR|1|Correction neutral reserves
+./input\07EKKO|MEMORY|CHAR|1|The order is not yet complete
+./input\07EKKO|PROCSTAT|CHAR|2|Status processing the purchase document
+./input\07EKKO|RLWRT|CURR|15|Total value at release
+./input\07EKKO|REVNO|CHAR|8|The version number of purchase
+./input\08EKPO|MANDT|CLNT|3|Client
+./input\08EKPO|EBELN|CHAR|10|The number of purchase document
+./input\08EKPO|EBELP|NUMC|5|Item proof of purchase
+./input\08EKPO|LOEKZ|CHAR|1|Character deletion of the purchase receipt
+./input\08EKPO|STATU|CHAR|1|Current status
+./input\08EKPO|AEDAT|DATS|8|Date of change item purchase document
+./input\08EKPO|TXZ01|CHAR|40|Short text
+./input\08EKPO|MATNR|CHAR|18|No.
+./input\08EKPO|EMATN|CHAR|18|No.
+./input\08EKPO|BUKRS|CHAR|4|Accounting circuit
+./input\08EKPO|WERKS|CHAR|4|Race
+./input\08EKPO|LGORT|CHAR|4|Stock
+./input\08EKPO|BEDNR|CHAR|10|number needed
+./input\08EKPO|MATKL|CHAR|9|Material Group
+./input\08EKPO|INFNR|CHAR|10|Number purch.order
+./input\08EKPO|IDNLF|CHAR|35|Material number at supplier
+./input\08EKPO|KTMNG|QUAN|13|target amount
+./input\08EKPO|MENGE|QUAN|13|Order quantity
+./input\08EKPO|MEINS|UNIT|3|Ordering unit of measure
+./input\08EKPO|BPRME|UNIT|3|Unit of measure ordering prices
+./input\08EKPO|BPUMZ|DEC|5|Counter for conversion into MJOC OMCs
+./input\08EKPO|BPUMN|DEC|5|Denominator for conversion into MJOC OMCs
+./input\08EKPO|UMREZ|DEC|5|The counter for the conversion of ordering MJ Act
+./input\08EKPO|UMREN|DEC|5|The denominator for the calculation of ordering MJ d
+./input\08EKPO|NETPR|CURR|11|Net Price in currency purchase receipt in dock
+./input\08EKPO|PEINH|DEC|5|Number of units in the price
+./input\08EKPO|NETWR|CURR|13|Net order value in the currency of the purchase order
+./input\08EKPO|BRTWR|CURR|13|Gross order value in the currency orders
+./input\08EKPO|AGDAT|DATS|8|The deadline for submission of bids
+./input\08EKPO|WEBAZ|DEC|3|Processing time in days for receiving mate
+./input\08EKPO|MWSKZ|CHAR|2|Character VAT
+./input\08EKPO|BONUS|CHAR|2|Clearing Group 1 (purchase)
+./input\08EKPO|INSMK|CHAR|1|Species inventory
+./input\08EKPO|SPINF|CHAR|1|Character: Update info.rec.
+./input\08EKPO|PRSDR|CHAR|1|Print prices
+./input\08EKPO|SCHPR|CHAR|1|The emblem of the estimated price
+./input\08EKPO|MAHNZ|DEC|3|Number of reminders
+./input\08EKPO|MAHN1|DEC|3|The number of days for the first reminder
+./input\08EKPO|MAHN2|DEC|3|The number of days for a second reminder
+./input\08EKPO|MAHN3|DEC|3|The number of days for the third reminder
+./input\08EKPO|UEBTO|DEC|3|Tolerance limit for over limit supply
+./input\08EKPO|UEBTK|CHAR|1|Character: Unlimited allow over-limit supply
+./input\08EKPO|UNTTO|DEC|3|Tolerance limit for an incomplete delivery
+./input\08EKPO|BWTAR|CHAR|10|kind awards
+./input\08EKPO|BWTTY|CHAR|1|type Award
+./input\08EKPO|ABSKZ|CHAR|1|Character rejection
+./input\08EKPO|AGMEM|CHAR|3|Attribute Deals
+./input\08EKPO|ELIKZ|CHAR|1|Character final deliveries
+./input\08EKPO|EREKZ|CHAR|1|Character final invoice
+./input\08EKPO|PSTYP|CHAR|1|Type of items in a shopping document
+./input\08EKPO|KNTTP|CHAR|1|Type of Account Assignment
+./input\08EKPO|KZVBR|CHAR|1|consumption
+./input\08EKPO|VRTKZ|CHAR|1|Break Character for multiple assignments
+./input\08EKPO|TWRKZ|CHAR|1|Character partial invoices
+./input\08EKPO|WEPOS|CHAR|1|Character Receipt
+./input\08EKPO|WEUNB|CHAR|1|Receipt yet
+./input\08EKPO|REPOS|CHAR|1|Sign receipt of the invoice
+./input\08EKPO|WEBRE|CHAR|1|Sign invoices for disposal in terms of income mat
+./input\08EKPO|KZABS|CHAR|1|The obligation of the order confirmation
+./input\08EKPO|LABNR|CHAR|20|Order Confirmation Number
+./input\08EKPO|KONNR|CHAR|10|Parent contract number
+./input\08EKPO|KTPNR|NUMC|5|Item Parent Contract
+./input\08EKPO|ABDAT|DATS|8|Date pro agreed cumulated
+./input\08EKPO|ABFTZ|QUAN|13|Agreed accumulated amount
+./input\08EKPO|ETFZ1|DEC|3|The first period of fixation
+./input\08EKPO|ETFZ2|DEC|3|The second period of fixation
+./input\08EKPO|KZSTU|CHAR|1|Binding nature of the time period for release d
+./input\08EKPO|NOTKZ|CHAR|1|Exclusion under the framework contract with class
+./input\08EKPO|LMEIN|UNIT|3|Measure base unit
+./input\08EKPO|EVERS|CHAR|2|Dispatch prescription
+./input\08EKPO|ZWERT|CURR|13|Target value of framework contracts in the currency in
+./input\08EKPO|NAVNW|CURR|13|Non-deductible input VAT
+./input\08EKPO|ABMNG|QUAN|13|Normal amounts odvolávkové
+./input\08EKPO|PRDAT|DATS|8|Pricing Date
+./input\08EKPO|BSTYP|CHAR|1|Type of purchase document
+./input\08EKPO|EFFWR|CURR|13|Fair value items
+./input\08EKPO|XOBLR|CHAR|1|This item is relevant for Commitment
+./input\08EKPO|KUNNR|CHAR|10|Customer
+./input\08EKPO|ADRNR|CHAR|10|Manual number of addresses in the item shopping at
+./input\08EKPO|EKKOL|CHAR|4|A group of conditions at supplier
+./input\08EKPO|SKTOF|CHAR|1|The item is not skontovatelná
+./input\08EKPO|STAFO|CHAR|6|Group Update to update stat
+./input\08EKPO|PLIFZ|DEC|3|The planned delivery time in days
+./input\08EKPO|NTGEW|QUAN|13|net weight
+./input\08EKPO|GEWEI|UNIT|3|unit weight
+./input\08EKPO|TXJCD|CHAR|15|Tax Jurisdiction Code - jurisdiction for
+./input\08EKPO|ETDRK|CHAR|1|Character: Layout print-relevant Exis
+./input\08EKPO|SOBKZ|CHAR|1|Character special reserves
+./input\08EKPO|ARSNR|NUMC|10|Reservation number showdown
+./input\08EKPO|ARSPS|NUMC|4|Item Reserve showdown
+./input\08EKPO|INSNC|CHAR|1|Character quality control is immutable
+./input\08EKPO|SSQSS|CHAR|8|Control key for quality management in Tray
+./input\08EKPO|ZGTYP|CHAR|4|type certificate
+./input\08EKPO|EAN11|CHAR|18|European Article Number (EAN)
+./input\08EKPO|BSTAE|CHAR|4|Control key confirmation
+./input\08EKPO|REVLV|CHAR|2|status review
+./input\08EKPO|GEBER|CHAR|10|Fund/§
+./input\08EKPO|FISTL|CHAR|16|financial place
+./input\08EKPO|FIPOS|CHAR|14|budget item
+./input\08EKPO|KO_GSBER|CHAR|4|Parameter reported by business area
+./input\08EKPO|KO_PARGB|CHAR|4|Adopted by the Working Department Business Partner
+./input\08EKPO|KO_PRCTR|CHAR|10|profit center
+./input\08EKPO|KO_PPRCTR|CHAR|10|Partner profit center
+./input\08EKPO|MEPRF|CHAR|1|Management data pricing
+./input\08EKPO|BRGEW|QUAN|13|Gross weight
+./input\08EKPO|VOLUM|QUAN|13|Volume
+./input\08EKPO|VOLEH|UNIT|3|unit volume
+./input\08EKPO|INCO1|CHAR|3|Incoterms part 1
+./input\08EKPO|INCO2|CHAR|28|Incoterms part 2
+./input\08EKPO|VORAB|CHAR|1|Order inventory
+./input\08EKPO|KOLIF|CHAR|10|Prel.Ord.
+./input\08EKPO|LTSNR|CHAR|6|Sub-range supplier
+./input\08EKPO|PACKNO|NUMC|10|packet number
+./input\08EKPO|FPLNR|CHAR|10|Number Billing Plan
+./input\08EKPO|GNETWR|CURR|13|Currently in use
+./input\08EKPO|STAPO|CHAR|1|The item is statistically
+./input\08EKPO|UEBPO|NUMC|5|Parent item in purchasing documents
+./input\08EKPO|LEWED|DATS|8|Latest possible date PM
+./input\08EKPO|EMLIF|CHAR|10|A contractor who has to deliver
+./input\08EKPO|LBLKZ|CHAR|1|Contractor hired labor
+./input\08EKPO|SATNR|CHAR|18|Material that can be configured over the frame
+./input\08EKPO|ATTYP|CHAR|2|type of material
+./input\08EKPO|KANBA|CHAR|1|Character kanban
+./input\08EKPO|ADRN2|CHAR|10|The number of delivery addresses
+./input\08EKPO|CUOBJ|NUMC|18|Configuration (internal object number)
+./input\08EKPO|XERSY|CHAR|1|Automatic Settlement Receipt
+./input\08EKPO|EILDT|DATS|8|Beg.date for account to PM
+./input\08EKPO|DRDAT|DATS|8|The date when the document was last Print log
+./input\08EKPO|DRUHR|TIMS|6|Time
+./input\08EKPO|DRUNR|NUMC|4|Order.no
+./input\08EKPO|AKTNR|CHAR|10|Action
+./input\08EKPO|ABELN|CHAR|10|number Allocation
+./input\08EKPO|ABELP|NUMC|5|Item Allocation
+./input\08EKPO|ANZPU|QUAN|13|Number of points
+./input\08EKPO|PUNEI|UNIT|3|The point unit
+./input\08EKPO|SAISO|CHAR|4|type of season
+./input\08EKPO|SAISJ|CHAR|4|year season
+./input\08EKPO|EBON2|CHAR|2|Clearing Group 2 (additional settlement
+./input\08EKPO|EBON3|CHAR|2|Clearing Group 3 (additional settlement
+./input\08EKPO|EBONF|CHAR|1|The item is not relevant for supply. clearings
+./input\08EKPO|MLMAA|CHAR|1|Activation mater.ledger plane mater
+./input\08EKPO|MHDRZ|DEC|4|Minimum  valid.
+./input\08EKPO|ANFNR|CHAR|10|number demand
+./input\08EKPO|ANFPS|NUMC|5|Item Demand
+./input\08EKPO|KZKFG|CHAR|1|origin configuration
+./input\08EKPO|USEQU|CHAR|1|the use of quotas
+./input\08EKPO|UMSOK|CHAR|1|Character special stocks transsilages
+./input\08EKPO|BANFN|CHAR|10|Requisition number
+./input\08EKPO|BNFPO|NUMC|5|Item Requisition
+./input\08EKPO|MTART|CHAR|4|Kind of material
+./input\08EKPO|UPTYP|CHAR|1|Type subheadings in the purchase receipt
+./input\08EKPO|UPVOR|CHAR|1|there subheading
+./input\08EKPO|KZWI1|CURR|13|1 Subtotal terms of costing sch
+./input\08EKPO|KZWI2|CURR|13|2 Subtotal terms of costing sch
+./input\08EKPO|KZWI3|CURR|13|3 Subtotal terms of costing sch
+./input\08EKPO|KZWI4|CURR|13|4 Subtotal terms of costing sch
+./input\08EKPO|KZWI5|CURR|13|Subtotal conditions of 5 calc.scheme
+./input\08EKPO|KZWI6|CURR|13|6 Subtotal conditions of calc.scheme
+./input\08EKPO|SIKGR|CHAR|3|Key processing for sub-items
+./input\08EKPO|MFZHI|QUAN|15|The maximum cumulative amount uvol.mater
+./input\08EKPO|FFZHI|QUAN|15|The maximum cumulative amount released in
+./input\08EKPO|RETPO|CHAR|1|Item Returns
+./input\08EKPO|AUREL|CHAR|1|Relevant distributor.
+./input\08EKPO|BSGRU|CHAR|3|Part no reason.
+./input\08EKPO|LFRET|CHAR|4|Type of supplies for coming back. supplier deliveries
+./input\08EKPO|MFRGR|CHAR|8|Group transport- material
+./input\08EKPO|NRFHG|CHAR|1|Material with kind of rebate
+./input\08EKPO|J_1BNBM|CHAR|16
+./input\08EKPO|J_1BMATUSE|CHAR|1|Using material
+./input\08EKPO|J_1BMATORG|CHAR|1|The origin of the material
+./input\08EKPO|J_1BOWNPRO|CHAR|1|Homemade
+./input\08EKPO|J_1BINDUST|CHAR|2|Material Type CFOP
+./input\08EKPO|ABUEB|CHAR|4|Profile creation offs
+./input\08EKPO|NLABD|DATS|8|Next. transmission of delivery call-offs
+./input\08EKPO|NFABD|DATS|8|Following the transfer of operational offs
+./input\08EKPO|KZBWS|CHAR|1|Special awards supplies
+./input\08EKPO|BONBA|CURR|13|ZáklBonusu 1
+./input\08EKPO|FABKZ|CHAR|1|Character: This item relevant to operational
+./input\08EKPO|J_1AINDXP|CHAR|5|inflation index
+./input\08EKPO|J_1AIDATEP|DATS|8|Date inflation index
+./input\08EKPO|MPROF|CHAR|4|Profile parts manufacturer
+./input\08EKPO|EGLKZ|CHAR|1|Character final deliveries
+./input\08EKPO|KZTLF|CHAR|1|Partial delivery on the item level (přeskla
+./input\08EKPO|KZFME|CHAR|1|Use / types of measurement units
+./input\08EKPO|RDPRF|CHAR|4|rounding profile
+./input\08EKPO|TECHS|CHAR|12|Awards validity / Standard awards
+./input\08EKPO|CHG_SRV|CHAR|1|Configuration has been changed
+./input\08EKPO|CHG_FPLNR|CHAR|1|There is no invoice for this item, although it is not
+./input\08EKPO|MFRPN|CHAR|40|Manufacturer Part Number
+./input\08EKPO|MFRNR|CHAR|10|manufacturer number
+./input\08EKPO|EMNFR|CHAR|10|External label manufacturer
+./input\08EKPO|NOVET|CHAR|1|Entry for SD delivery is blocked
+./input\08EKPO|AFNAM|CHAR|12|Name of applicant
+./input\08EKPO|TZONRC|CHAR|6|Time zone receiving unit
+./input\08EKPO|IPRKZ|CHAR|1|Character period DMT
+./input\08EKPO|LEBRE|CHAR|1|The sign for the liquidation of invoices relative to the above
+./input\08EKPO|BERID|CHAR|10|disposition area
+./input\08EKPO|XCONDITIONS|CHAR|1|The conditions for entry, although no invoices
+./input\08EKPO|APOMS|CHAR|1|APO a planning system
+./input\08EKPO|CCOMP|CHAR|1|The logic of accounting for stock transfer
+./input\08EKPO|GRANT_NBR|CHAR|20|Grant
+./input\08EKPO|FKBER|CHAR|16|functional area
+./input\08EKPO|STATUS|CHAR|1|Status item purchase document
+./input\08EKPO|RESLO|CHAR|4|The submitting skald when ordering recycl
+./input\08EKPO|EXCPE|NUMC|2
+./input\08EKPO|REFSITE|CHAR|4|Reference plant: Purchase
+./input\08EKPO|ZZUEBPO|NUMC|5|Parent item in purchasing documents
+./input\08EKPO|ZZUMREZ|DEC|8
+./input\08EKPO|ZZUMREN|DEC|5|Denominator for conversion to base Merna
+./input\09LFA1|MANDT|CLNT|3|Client
+./input\09LFA1|LIFNR|CHAR|10|Vendor account number
+./input\09LFA1|LAND1|CHAR|3|key state
+./input\09LFA1|NAME1|CHAR|35|Naz. 1
+./input\09LFA1|NAME2|CHAR|35|Naz. 2
+./input\09LFA1|NAME3|CHAR|35|Naz. 3
+./input\09LFA1|NAME4|CHAR|35|Naz. 4
+./input\09LFA1|ORT01|CHAR|35|Place
+./input\09LFA1|ORT02|CHAR|35|part of
+./input\09LFA1|PFACH|CHAR|10|PO box
+./input\09LFA1|PSTL2|CHAR|10|ZIP postal bins
+./input\09LFA1|PSTLZ|CHAR|10|Postal code
+./input\09LFA1|REGIO|CHAR|3|Region (Federal State, Land, pr
+./input\09LFA1|SORTL|CHAR|10|sorting field
+./input\09LFA1|STRAS|CHAR|35|Street and house number
+./input\09LFA1|ADRNR|CHAR|10|Address
+./input\09LFA1|MCOD1|CHAR|25|Search term for match-codes
+./input\09LFA1|MCOD2|CHAR|25|Search term for match-codes
+./input\09LFA1|MCOD3|CHAR|25|Search term for match-codes
+./input\09LFA1|ANRED|CHAR|15|salutation
+./input\09LFA1|BAHNS|CHAR|25|Train.station
+./input\09LFA1|BBBNR|NUMC|7|International location number (Part 1)
+./input\09LFA1|BBSNR|NUMC|5|International location number (Part 2)
+./input\09LFA1|BEGRU|CHAR|4|rights group
+./input\09LFA1|BRSCH|CHAR|4|key sectors
+./input\09LFA1|BUBKZ|NUMC|1|The check digit international number
+./input\09LFA1|DATLT|CHAR|14|Number of data lines
+./input\09LFA1|DTAMS|CHAR|1|Key messages for the exchange of data carriers
+./input\09LFA1|DTAWS|CHAR|2|Key instructions for exchanging data carriers
+./input\09LFA1|ERDAT|DATS|8|Date of Recording Connection
+./input\09LFA1|ERNAM|CHAR|12|Officer name for the object based
+./input\09LFA1|ESRNR|CHAR|11|ESR participant number
+./input\09LFA1|KONZS|CHAR|10|key concern
+./input\09LFA1|KTOKK|CHAR|4|Acc. group supplier
+./input\09LFA1|KUNNR|CHAR|10|Customer number 1
+./input\09LFA1|LNRZA|CHAR|10|Account number of different payee
+./input\09LFA1|LOEVM|CHAR|1|Central deleted root rec.
+./input\09LFA1|SPERR|CHAR|1|Block acc.
+./input\09LFA1|SPERM|CHAR|1|Centrally allocated block purchase
+./input\09LFA1|SPRAS|LANG|1|language key
+./input\09LFA1|STCD1|CHAR|16|Tax Number 1
+./input\09LFA1|STCD2|CHAR|11|Tax number 2
+./input\09LFA1|STKZA|CHAR|1|Character: My business partner obligation Anniversary
+./input\09LFA1|STKZU|CHAR|1|Obligation VAT
+./input\09LFA1|TELBX|CHAR|15|No.Telebox
+./input\09LFA1|TELF1|CHAR|16|First telephone no.
+./input\09LFA1|TELF2|CHAR|16|2nd telephone number
+./input\09LFA1|TELFX|CHAR|31|Fax number
+./input\09LFA1|TELTX|CHAR|30|Number teletex
+./input\09LFA1|TELX1|CHAR|30|Telex
+./input\09LFA1|XCPDK|CHAR|1|Character: This is an account of the CPD?
+./input\09LFA1|XZEMP|CHAR|1|Character: Is the document allowed different intake
+./input\09LFA1|VBUND|CHAR|6|Number of partner companies
+./input\09LFA1|FISKN|CHAR|10|Account Number Master Record fiscal
+./input\09LFA1|STCEG|CHAR|20|VAT registration number
+./input\09LFA1|STKZN|CHAR|1|Individual
+./input\09LFA1|SPERQ|CHAR|2|Disabled function
+./input\09LFA1|GBORT|CHAR|25|Instead naroz.osoby subject zdroj.dani
+./input\09LFA1|GBDAT|DATS|8|Date naroz.osoby subject zdroj.dani
+./input\09LFA1|SEXKZ|CHAR|1|Key for sex Withholding Tax Payers
+./input\09LFA1|KRAUS|CHAR|11|No.info. loan
+./input\09LFA1|REVDB|DATS|8|Last control (external)
+./input\09LFA1|QSSYS|CHAR|4|QM system vendor
+./input\09LFA1|KTOCK|CHAR|4|Reference accounting group for the account (CPD
+./input\09LFA1|PFORT|CHAR|35|instead Postbox
+./input\09LFA1|WERKS|CHAR|4|Race (private or external)
+./input\09LFA1|LTSNA|CHAR|1|Character: Sub-range supplier relevante
+./input\09LFA1|WERKR|CHAR|1|Character - level race relevant
+./input\09LFA1|PLKAL|CHAR|2|Key corporate calendar
+./input\09LFA1|DUEFL|CHAR|1|Status data transfer to future. release
+./input\09LFA1|TXJCD|CHAR|15|Tax Jurisdiction Code - jurisdiction for
+./input\09LFA1|SPERZ|CHAR|1|Bl.payments
+./input\09LFA1|SCACD|CHAR|4|Standard Carrier Access Code
+./input\09LFA1|SFRGR|CHAR|4|Transport group - carrier
+./input\09LFA1|LZONE|CHAR|10|Transport zone 
+./input\09LFA1|XLFZA|CHAR|1|Character: Different payee through No.
+./input\09LFA1|DLGRP|CHAR|4|Group Scheme delivered services
+./input\09LFA1|FITYP|CHAR|2|kind of tax
+./input\09LFA1|STCDT|CHAR|2|Type of taxpayer numbers
+./input\09LFA1|REGSS|CHAR|1|Registered for social insurance
+./input\09LFA1|ACTSS|CHAR|3|Character Business for Social Insurance
+./input\09LFA1|STCD3|CHAR|18|Tax number 3
+./input\09LFA1|STCD4|CHAR|18|Tax number 4
+./input\09LFA1|IPISP|CHAR|1|Character: Tax value divided
+./input\09LFA1|TAXBS|NUMC|1|The percentage tax base
+./input\09LFA1|PROFS|CHAR|30|Profession
+./input\09LFA1|STGDL|CHAR|2|Transportation: Statistical group performs
+./input\09LFA1|EMNFR|CHAR|10|External label manufacturer
+./input\09LFA1|LFURL|CHAR|132|Uniform Resource Locator
+./input\09LFA1|J_1KFREPRE|CHAR|10|name of representative
+./input\09LFA1|J_1KFTBUS|CHAR|30|transaction type
+./input\09LFA1|J_1KFTIND|CHAR|30|industry type
+./input\09LFA1|CONFS|CHAR|1|Status confirmation of the change (central)
+./input\09LFA1|UPDAT|DATS|8|Confirmation date changes
+./input\09LFA1|UPTIM|TIMS|6|Time of the last acknowledgment changes
+./input\09LFA1|NODEL|CHAR|1|Central locking for deletion from the master
+./input\09LFA1|QSSYSDAT|DATS|8|Expiration Date Certification
+./input\09LFA1|PODKZB|CHAR|1|Character: Contractor relevant confirmation
+./input\09LFA1|FISKU|CHAR|10|Account number in the master records of the relevant
+./input\09LFA1|STENR|CHAR|18|Tax Order number to the appropriate fin.office
+./input\09LFA1|J_SC_CAPITAL|CURR|15
+./input\09LFA1|J_SC_CURRENCY|CUKY|5
+./input\09LFA1|ALC|CHAR|8
+./input\09LFA1|PMT_OFFICE|CHAR|4
+./input\09LFA1|PSOFG|CHAR|10|Group officers
+./input\09LFA1|PSOIS|CHAR|20|Preliminary process pers. Account
+./input\09LFA1|PSON1|CHAR|35|Naz. 1
+./input\09LFA1|PSON2|CHAR|35|Naz. 2
+./input\09LFA1|PSON3|CHAR|35|Naz. 3
+./input\09LFA1|PSOVN|CHAR|35|Name
+./input\09LFA1|PSOTL|CHAR|20|Caption
+./input\09LFA1|PSOHS|CHAR|6|Hausnummer: From Release 4.6B already Not
+./input\09LFA1|PSOST|CHAR|28|Street: From Release 4.6B is deprecated
+./input\10MKPF|MANDT|CLNT|3|Client
+./input\10MKPF|MBLNR|CHAR|10|Number of material document
+./input\10MKPF|MJAHR|NUMC|4|Year material document
+./input\10MKPF|VGART|CHAR|2|Type of operation
+./input\10MKPF|BLART|CHAR|2|Doc. Type
+./input\10MKPF|BLAUM|CHAR|2|Type reprising document
+./input\10MKPF|BLDAT|DATS|8|document Date
+./input\10MKPF|BUDAT|DATS|8|Posting date in the document
+./input\10MKPF|CPUDT|DATS|8|Day of purchase accounting document
+./input\10MKPF|CPUTM|TIMS|6|acquisition time
+./input\10MKPF|AEDAT|DATS|8|Date of last change
+./input\10MKPF|USNAM|CHAR|12|username
+./input\10MKPF|TCODE|CHAR|4|The area is closer def., Event. possible use
+./input\10MKPF|XBLNR|CHAR|16|Number of the reference document
+./input\10MKPF|BKTXT|CHAR|25|Text main doc.
+./input\10MKPF|FRATH|CURR|13|Additional costs
+./input\10MKPF|FRBNR|CHAR|16|Waybill number at the receiving material
+./input\10MKPF|WEVER|CHAR|1|Version printing of material
+./input\10MKPF|XABLN|CHAR|10|Number dispatch
+./input\10MKPF|AWSYS|CHAR|10|Logical system
+./input\10MKPF|BLA2D|CHAR|2|Type of document for ad doc to proceedings before
+./input\10MKPF|TCODE2|CHAR|20|Transaction code
+./input\10MKPF|BFWMS|CHAR|1|Posting control for external WMS
+./input\10MKPF|EXNUM|CHAR|10|The number of the foreign trade data in documents MM
+./input\10MKPF|KNUMV|CHAR|10|Condition ID document
+./input\12RBKP|MANDT|CLNT|3|Client
+./input\12RBKP|BELNR|CHAR|10|The document number invoice doc.
+./input\12RBKP|GJAHR|NUMC|4|Fiscal year
+./input\12RBKP|BLART|CHAR|2|Doc. Type
+./input\12RBKP|BLDAT|DATS|8|document Date
+./input\12RBKP|BUDAT|DATS|8|Posting date in the document
+./input\12RBKP|USNAM|CHAR|12|username
+./input\12RBKP|TCODE|CHAR|20|Transaction code
+./input\12RBKP|CPUDT|DATS|8|Day of purchase accounting document
+./input\12RBKP|CPUTM|TIMS|6|acquisition time
+./input\12RBKP|VGART|CHAR|2|Kind of operation in AG08 (sort inter.doc.)
+./input\12RBKP|XBLNR|CHAR|16|Number of the reference document
+./input\12RBKP|BUKRS|CHAR|4|Accounting circuit
+./input\12RBKP|LIFNR|CHAR|10|Different issuer of the invoice
+./input\12RBKP|WAERS|CUKY|5|key currency
+./input\12RBKP|KURSF|DEC|9|Exchange rate
+./input\12RBKP|RMWWR|CURR|13|Gross amount invoiced in the currency document
+./input\12RBKP|BEZNK|CURR|13|Additional costs
+./input\12RBKP|WMWST1|CURR|13|Tax amount in currency document signed
+./input\12RBKP|MWSKZ1|CHAR|2|Character taxes
+./input\12RBKP|WMWST2|CURR|13|.: Becomes outdated tax amount in the currency of the document - already
+./input\12RBKP|MWSKZ2|CHAR|2|Stop-.: Character VAT
+./input\12RBKP|ZTERM|CHAR|4|Key payment terms
+./input\12RBKP|ZBD1T|DEC|3|Days discounts 1
+./input\12RBKP|ZBD1P|DEC|5|1 percent cash discount
+./input\12RBKP|ZBD2T|DEC|3|2 Days discounts
+./input\12RBKP|ZBD2P|DEC|5|2 percent discounts
+./input\12RBKP|ZBD3T|DEC|3|The deadline for the condition Net
+./input\12RBKP|WSKTO|CURR|13|The amount of the discount in the currency document
+./input\12RBKP|XRECH|CHAR|1|Character: Billing Invoice
+./input\12RBKP|BKTXT|CHAR|25|Text main doc.
+./input\12RBKP|SAPRL|CHAR|4|SAP release
+./input\12RBKP|LOGSYS|CHAR|10|Logical system
+./input\12RBKP|XMWST|CHAR|1|Tax calculation automatically?
+./input\12RBKP|STBLG|CHAR|10|The number of the cancellation document
+./input\12RBKP|STJAH|NUMC|4|Fiscal year storn.dokladu
+./input\12RBKP|MWSKZ_BNK|CHAR|2|Character VAT
+./input\12RBKP|TXJCD_BNK|CHAR|15|Tax Jurisdiction Code - jurisdiction for
+./input\12RBKP|IVTYP|CHAR|1|Origin Logist. Invoice document
+./input\12RBKP|XRBTX|CHAR|1|Character: More than one character tax
+./input\12RBKP|REPART|CHAR|1|Character type Invoice
+./input\12RBKP|RBSTAT|CHAR|1|Status billing document
+./input\12RBKP|KNUMVE|CHAR|10|The condition of the document - its own terms
+./input\12RBKP|KNUMVL|CHAR|10|The condition of the document - error suppliers
+./input\12RBKP|ARKUEN|CURR|13|Automatic reduction of the amount of the invoice (nett
+./input\12RBKP|ARKUEMW|CURR|13|VAT - reduced the proportion of auto part
+./input\12RBKP|MAKZN|CURR|13|Manual accept. Diff. nett.
+./input\12RBKP|MAKZMW|CURR|13|Manually accepted amount of VAT
+./input\12RBKP|LIEFFN|CURR|13|Error vendor exkl. VAT
+./input\12RBKP|LIEFFMW|CURR|13|VAT-share vendor errors
+./input\12RBKP|XAUTAKZ|CHAR|1|Ref. automatically accepted for invoices
+./input\12RBKP|ESRNR|CHAR|11|ESR participant number
+./input\12RBKP|ESRPZ|CHAR|2|Controll no. ESR
+./input\12RBKP|ESRRE|CHAR|27|Reference no. ESR
+./input\12RBKP|QSSHB|CURR|13|Base amount tax source
+./input\12RBKP|QSFBT|CURR|13|Tax free amount (in the currency Doc)
+./input\12RBKP|QSSKZ|CHAR|2|Character Withholding Tax
+./input\12RBKP|DIEKZ|CHAR|1|Character services (foreign payment)
+./input\12RBKP|LANDL|CHAR|3|state contractor
+./input\12RBKP|LZBKZ|CHAR|3|Model central bank law
+./input\12RBKP|TXKRS|DEC|9|The exchange rate for the tax
+./input\12RBKP|EMPFB|CHAR|10|Payee / Payer
+./input\12RBKP|BVTYP|CHAR|4|Type banks part.
+./input\12RBKP|HBKID|CHAR|5|Short key corporate bank
+./input\12RBKP|ZUONR|CHAR|18|number assignment
+./input\12RBKP|ZLSPR|CHAR|1|Key for blocking payments
+./input\12RBKP|ZLSCH|CHAR|1|Method of payment
+./input\12RBKP|ZFBDT|DATS|8|Base date for the calculation of maturity
+./input\12RBKP|KIDNO|CHAR|30|payment reference
+./input\12RBKP|REBZG|CHAR|10|Link to an invoice number for ref.doc
+./input\12RBKP|REBZJ|NUMC|4|The fiscal year of the relevant invoice (for dobrop
+./input\12RBKP|XINVE|CHAR|1|Character: This applies to investment property?
+./input\12RBKP|EGMLD|CHAR|3|The State reporting deliveries of goods within the EU
+./input\12RBKP|XEGDR|CHAR|1|Character: Triangular trade within the EC?
+./input\12RBKP|J_1BNFTYPE|CHAR|2
+./input\12RBKP|BRNCH|CHAR|4|extension number
+./input\12RBKP|ERFPR|CHAR|12|Profile acquisition Invoice Logis
+./input\12RBKP|SECCO|CHAR|4|Section Withholding Tax
+./input\12RBKP|NAME1|CHAR|35|Naz. 1
+./input\12RBKP|NAME2|CHAR|35|Naz. 2
+./input\12RBKP|NAME3|CHAR|35|Naz. 3
+./input\12RBKP|NAME4|CHAR|35|Naz. 4
+./input\12RBKP|PSTLZ|CHAR|10|Postal code
+./input\12RBKP|ORT01|CHAR|35|Place
+./input\12RBKP|LAND1|CHAR|3|key state
+./input\12RBKP|STRAS|CHAR|35|Street and house number
+./input\12RBKP|PFACH|CHAR|10|PO box
+./input\12RBKP|PSTL2|CHAR|10|ZIP postal bins
+./input\12RBKP|PSKTO|CHAR|16|Number spec. account
+./input\12RBKP|BANKN|CHAR|18|Number bank. account
+./input\12RBKP|BANKL|CHAR|15|Routing Number
+./input\12RBKP|BANKS|CHAR|3|Key state banks
+./input\12RBKP|STCD1|CHAR|16|Tax Number 1
+./input\12RBKP|STCD2|CHAR|11|Tax number 2
+./input\12RBKP|STKZU|CHAR|1|Obligation VAT
+./input\12RBKP|STKZA|CHAR|1|Character: My business partner obligation Anniversary
+./input\12RBKP|REGIO|CHAR|3|Region (Federal State, Land, pr
+./input\12RBKP|BKONT|CHAR|2|Bank check code
+./input\12RBKP|DTAWS|CHAR|2|Key instructions for exchanging data carriers
+./input\12RBKP|DTAMS|CHAR|1|Key messages for the exchange of data carriers
+./input\12RBKP|SPRAS|CHAR|1|Character field of length 1
+./input\12RBKP|XCPDK|CHAR|1|Character: This is an account of the CPD?
+./input\12RBKP|EMPFG|CHAR|16|Scrambling payee
+./input\12RBKP|FITYP|CHAR|2|kind of tax
+./input\12RBKP|STCDT|CHAR|2|Type of taxpayer numbers
+./input\12RBKP|STKZN|CHAR|1|Individual
+./input\12RBKP|STCD3|CHAR|18|Tax number 3
+./input\12RBKP|STCD4|CHAR|18|Tax number 4
+./input\12RBKP|BKREF|CHAR|20|A reference to bank. Account
+./input\12RBKP|J_1KFREPRE|CHAR|10|name of representative
+./input\12RBKP|J_1KFTBUS|CHAR|30|transaction type
+./input\12RBKP|J_1KFTIND|CHAR|30|industry type
+./input\12RBKP|ANRED|CHAR|15|salutation
+./input\12RBKP|STCEG|CHAR|20|VAT registration number
+./input\12RBKP|ERNAME|CHAR|12|The name of the maker of the external system
+./input\12RBKP|REINDAT|DATS|8|Date of arrival Invoice
+./input\12RBKP|UZAWE|CHAR|2|Addendum to the payment method
+./input\12RBKP|FDLEV|CHAR|2|Level cash man.
+./input\12RBKP|FDTAG|DATS|8|Date of disposition
+./input\12RBKP|ZBFIX|CHAR|1|Fixed payment condition
+./input\12RBKP|FRGKZ|CHAR|1|Character: The release is necessary
+./input\12RBKP|ERFNAM|CHAR|12|Name of officer who entered the building
+./input\12RBKP|BUPLA|CHAR|4|Business place
+./input\12RBKP|FILKD|CHAR|10|Branch account number
+./input\12RBKP|GSBER|CHAR|4|working section
+./input\12RBKP|LOTKZ|CHAR|10|Character connections for papers
+./input\12RBKP|SGTXT|CHAR|50|text entries
+./input\13REGUH|MANDT|CLNT|3|Client
+./input\13REGUH|LAUFD|DATS|8|Program start date
+./input\13REGUH|LAUFI|CHAR|6|Supplementary identification attribute
+./input\13REGUH|XVORL|CHAR|1|Character: Only run the draft?
+./input\13REGUH|ZBUKR|CHAR|4|Paying company code
+./input\13REGUH|LIFNR|CHAR|10|Vendor account number
+./input\13REGUH|KUNNR|CHAR|10|Customer number 1
+./input\13REGUH|EMPFG|CHAR|16|Scrambling payee
+./input\13REGUH|VBLNR|CHAR|10|Payment Document No.
+./input\13REGUH|AVISG|CHAR|1|The reason for printing advice
+./input\13REGUH|WAERS|CUKY|5|key currency
+./input\13REGUH|SRTGB|CHAR|4|working section
+./input\13REGUH|ANRED|CHAR|15|salutation
+./input\13REGUH|NAME1|CHAR|35|Naz. 1
+./input\13REGUH|NAME2|CHAR|35|Naz. 2
+./input\13REGUH|NAME3|CHAR|35|Naz. 3
+./input\13REGUH|NAME4|CHAR|35|Naz. 4
+./input\13REGUH|PSTLZ|CHAR|10|Postal code
+./input\13REGUH|ORT01|CHAR|35|Place
+./input\13REGUH|STRAS|CHAR|35|Street and house number
+./input\13REGUH|PFACH|CHAR|10|PO box
+./input\13REGUH|LAND1|CHAR|3|key state
+./input\13REGUH|STCD1|CHAR|16|Tax Number 1
+./input\13REGUH|WEVWV|CHAR|1|Planned use of promissory notes
+./input\13REGUH|ZANRE|CHAR|15|Addressing the payee
+./input\13REGUH|ZNME1|CHAR|35|Payee Name
+./input\13REGUH|ZNME2|CHAR|35|Payee Name
+./input\13REGUH|ZNME3|CHAR|35|Payee Name
+./input\13REGUH|ZNME4|CHAR|35|Payee Name
+./input\13REGUH|ZPSTL|CHAR|10|Post number payee
+./input\13REGUH|ZORT1|CHAR|35|Instead payee
+./input\13REGUH|ZSTRA|CHAR|35|Street and house number payee
+./input\13REGUH|ZPFAC|CHAR|10|Pošt.přihrádka payee
+./input\13REGUH|ZLAND|CHAR|3|key state
+./input\13REGUH|ZREGI|CHAR|3|Regional Code payee
+./input\13REGUH|ZBNKS|CHAR|3|key state
+./input\13REGUH|ZBNKN|CHAR|18|Bank account number of the payee
+./input\13REGUH|ZBNKL|CHAR|15|Bank code of the payee
+./input\13REGUH|ZBKON|CHAR|2|Control Bank code payee
+./input\13REGUH|ZBVTY|CHAR|4|Character bank account payee
+./input\13REGUH|ZSWIF|CHAR|11|SWIFT code for international payments
+./input\13REGUH|XEZER|CHAR|1|Character: Is there a debit authorization?
+./input\13REGUH|ZSPRA|LANG|1|Language key payee
+./input\13REGUH|ZALDT|DATS|8|Posting date of the payment document
+./input\13REGUH|RZAWE|CHAR|1|Method of payment for this payment
+./input\13REGUH|RUMSK|CHAR|1|Character special general ledger payment operas
+./input\13REGUH|RZUMS|CHAR|1|Character target a specific ledger payments
+./input\13REGUH|HKTID|CHAR|5|Short key for the chart connections
+./input\13REGUH|HBKID|CHAR|5|Short key corporate bank
+./input\13REGUH|HKTIW|CHAR|5|Short key combination accounts for bill
+./input\13REGUH|HBKIW|CHAR|5|Short key firem.banky for the draft when r
+./input\13REGUH|BVTYP|CHAR|4|Type banks part.
+./input\13REGUH|UBKON|CHAR|2|Verification code bank in our bank
+./input\13REGUH|UBKNT|CHAR|18|The number of our bank account
+./input\13REGUH|UBNKS|CHAR|3|Key state banks
+./input\13REGUH|UBNKL|CHAR|15|Directional code of our bank
+./input\13REGUH|UBHKT|CHAR|10|GL account number for our bank account / after
+./input\13REGUH|VALUT|DATS|8|Dat.valuty
+./input\13REGUH|CRVAL|DATS|8|The value date on the bank of the payee
+./input\13REGUH|ANFAE|DATS|8|Payment at Maturity
+./input\13REGUH|WEFAE|DATS|8|Maturity Date acquired promissory notes
+./input\13REGUH|RBETR|CURR|13|Amount in local currency
+./input\13REGUH|RSKON|CURR|13|Total bill payment transactions in corporate
+./input\13REGUH|RWBTR|CURR|13|The amount paid in the currency of payment
+./input\13REGUH|RWSKT|CURR|13|Total discount of payment transactions in the currency p
+./input\13REGUH|RSPE1|CURR|11|Popl.ve form
+./input\13REGUH|RSPE2|CURR|11|Popl.ve form
+./input\13REGUH|RPOST|DEC|5|The number of paid items
+./input\13REGUH|RTEXT|DEC|5|The number of lines of text to paid items
+./input\13REGUH|RSPM1|CURR|11|Tax forms for the bill with maximum amount
+./input\13REGUH|RSPM2|CURR|11|Tax forms for the bill with maximum amount
+./input\13REGUH|WEHMX|CURR|13|The maximum amount of the bill in comp. currency
+./input\13REGUH|WEFMX|CURR|13|The maximum amount of the bill in the payment currency
+./input\13REGUH|WEHRS|CURR|13|The residual amount in the recent comp.currency
+./input\13REGUH|WEFRS|CURR|13|The residual amount in the payment currency for the last
+./input\13REGUH|WEAMX|DEC|3|The number of bills with a maximum amount
+./input\13REGUH|BUSAB|CHAR|2|Accounting officer
+./input\13REGUH|EIKTO|CHAR|12|Our customer's account number or subscription
+./input\13REGUH|XINVE|CHAR|1|Character: This applies to investment property?
+./input\13REGUH|WDATE|DATS|8|Date of issue bills
+./input\13REGUH|XAEND|CHAR|1|Character: Draft payments was subsequently changed
+./input\13REGUH|ZLSPR|CHAR|1|Key for blocking payments
+./input\13REGUH|DTAWS|CHAR|2|Key instructions for exchanging data carriers
+./input\13REGUH|DTAMS|CHAR|1|Key messages for the exchange of data carriers
+./input\13REGUH|KURSF|DEC|9|Exchange rate
+./input\13REGUH|ABWAE|CUKY|5|Reporting currency for money transfers
+./input\13REGUH|SKVHW|CURR|13|Loss discounts in comp currency
+./input\13REGUH|SKVFW|CURR|13|The loss of the discount in the payment currency
+./input\13REGUH|DSKVH|CURR|13|Potential loss of discounts in comp. currency
+./input\13REGUH|ZPST2|CHAR|10|ZIP postal bins payee
+./input\13REGUH|PAYGR|CHAR|20|Grouping field for automatic payments
+./input\13REGUH|ZBNKY|CHAR|15|Bank code payee
+./input\13REGUH|UBNKY|CHAR|15|The code of our bank
+./input\13REGUH|PSTL2|CHAR|10|ZIP postal bins
+./input\13REGUH|ABSBU|CHAR|4|Sending company code
+./input\13REGUH|RBET2|CURR|13|The amount paid in the second local currency
+./input\13REGUH|RBET3|CURR|13|The amount paid in the third local currency
+./input\13REGUH|RSKO2|CURR|13|Total bill payment transactions in the second f
+./input\13REGUH|RSKO3|CURR|13|The balance of payments operations in the third f
+./input\13REGUH|KURS2|DEC|9|The value of the company for the second currency
+./input\13REGUH|KURS3|DEC|9|The value of the company for the third currency
+./input\13REGUH|BKREF|CHAR|20|A reference to bank. Account
+./input\13REGUH|UZAWE|CHAR|2|Addendum to the payment method
+./input\13REGUH|ZORT2|CHAR|35|The local part of the address of the payee
+./input\13REGUH|ZTLFX|CHAR|31|Fax number of the payee
+./input\13REGUH|XSIWE|CHAR|1|Character: A bill of exchange at sight
+./input\13REGUH|ZPFOR|CHAR|35|Instead P.O. Box at the payee
+./input\13REGUH|PERNR|NUMC|8|Personal number
+./input\13REGUH|SEQNR|CHAR|5|Order.no
+./input\13REGUH|BTZNR|RAW|1|Assigning fin. Tranfers
+./input\13REGUH|AUSFD|DATS|8|Maturity date paid items
+./input\13REGUH|EDIAV|CHAR|1|Status Advice EDI
+./input\13REGUH|IDOC_NUM_AVIS|NUMC|16|IDOC number
+./input\13REGUH|EDIBN|CHAR|1|State payment order EDI
+./input\13REGUH|IDOC_NUM|NUMC|16|IDOC number
+./input\13REGUH|ZTELF|CHAR|20|Phone number of the payee
+./input\13REGUH|ZTELX|CHAR|30|Telex number of the payee
+./input\13REGUH|KOINH|CHAR|60|The name of the account holder
+./input\13REGUH|DTWS1|NUMC|2|instructions 1
+./input\13REGUH|DTWS2|NUMC|2|Statement 2
+./input\13REGUH|DTWS3|NUMC|2|instructions 3
+./input\13REGUH|DTWS4|NUMC|2|instruction 4
+./input\13REGUH|ZSTC1|CHAR|16|No. 1 tax payee
+./input\13REGUH|KIDNO|CHAR|30|payment reference
+./input\13REGUH|PYORD|CHAR|10|Payment order
+./input\13REGUH|REGIO|CHAR|3|Region (Federal State, Land, pr
+./input\13REGUH|TEXT|CHAR|29|Text field
+./input\13REGUH|BTYP1|CHAR|1|Type banks for bank route (koresp.ban
+./input\13REGUH|BNKS1|CHAR|3|Key state banks
+./input\13REGUH|BNKL1|CHAR|15|Bank code
+./input\13REGUH|BNKN1|CHAR|18|Number bank. account
+./input\13REGUH|BKON1|CHAR|2|Bank check code
+./input\13REGUH|BKRF1|CHAR|20|A reference to bank. Account
+./input\13REGUH|BTYP2|CHAR|1|Type banks for bank route (koresp.ban
+./input\13REGUH|BNKS2|CHAR|3|Key state banks
+./input\13REGUH|BNKL2|CHAR|15|Bank code
+./input\13REGUH|BNKN2|CHAR|18|Number bank. account
+./input\13REGUH|BKON2|CHAR|2|Bank check code
+./input\13REGUH|BKRF2|CHAR|20|A reference to bank. Account
+./input\13REGUH|BTYP3|CHAR|1|Type banks for bank route (koresp.ban
+./input\13REGUH|BNKS3|CHAR|3|Key state banks
+./input\13REGUH|BNKL3|CHAR|15|Bank code
+./input\13REGUH|BNKN3|CHAR|18|Number bank. account
+./input\13REGUH|BKON3|CHAR|2|Bank check code
+./input\13REGUH|BKRF3|CHAR|20|A reference to bank. Account
+./input\13REGUH|SAKNR|CHAR|10|Account Number Ledger
+./input\13REGUH|HKONT|CHAR|10|Account Ledger Accounting HK
+./input\13REGUH|ALEBN|CHAR|1|ALE IDOC status data division payment
+./input\13REGUH|XKDFB|CHAR|1|Not to recognize exchange differences
+./input\13REGUH|SRTBP|CHAR|4|Business place
+./input\13REGUH|FPM_KEY|CHAR|15|Chained date run, the ID and sug. Order
+./input\13REGUH|GRPNO|INT4|10|Criterion grouping payments
+./input\13REGUH|SRTF1|CHAR|38|Specific sorting payment env. by format
+./input\13REGUH|SRTF2|CHAR|56|Sorting payment env. By user
+./input\13REGUH|XCORR|CHAR|1|Character: Correspondence for payment
+./input\13REGUH|XAVIS|CHAR|1|Character: Separate advice
+./input\13REGUH|XCOPM|CHAR|1|Payment medium for a business partner
+./input\13REGUH|DORIGIN|CHAR|8|Origin grouping
+./input\13REGUH|RFTTRN|CHAR|20|Payment code
+./input\13REGUH|ZADNR|CHAR|10|The address number of the payee
+./input\13REGUH|ADRNR|CHAR|10|Address number
+./input\13REGUH|ZIBAN|CHAR|34|IBAN of the payee
+./input\13REGUH|FM_STATUS|CHAR|1|Status of availability for payment
+./input\13REGUH|FILE_NBR|NUMC|6
+./input\14REGUP|MANDT|CLNT|3|Client
+./input\14REGUP|LAUFD|DATS|8|Program start date
+./input\14REGUP|LAUFI|CHAR|6|Supplementary identification attribute
+./input\14REGUP|XVORL|CHAR|1|Character: Only run the draft?
+./input\14REGUP|ZBUKR|CHAR|4|Paying company code
+./input\14REGUP|LIFNR|CHAR|10|Vendor account number
+./input\14REGUP|KUNNR|CHAR|10|Customer number 1
+./input\14REGUP|EMPFG|CHAR|16|Scrambling payee
+./input\14REGUP|VBLNR|CHAR|10|Payment Document No.
+./input\14REGUP|BUKRS|CHAR|4|Accounting circuit
+./input\14REGUP|BELNR|CHAR|10|The number of accounting documents
+./input\14REGUP|GJAHR|NUMC|4|Fiscal year
+./input\14REGUP|BUZEI|NUMC|3|Number of accounting lines in the accounting document
+./input\14REGUP|FILKD|CHAR|10|Branch account number
+./input\14REGUP|ZLSCH|CHAR|1|Method of payment
+./input\14REGUP|WAERS|CUKY|5|key currency
+./input\14REGUP|HBKID|CHAR|5|Short key corporate bank
+./input\14REGUP|BVTYP|CHAR|4|Type banks part.
+./input\14REGUP|POKEN|CHAR|3|Character items
+./input\14REGUP|XBLNR|CHAR|16|Number of the reference document
+./input\14REGUP|BLART|CHAR|2|Doc. Type
+./input\14REGUP|BUDAT|DATS|8|Posting date in the document
+./input\14REGUP|BLDAT|DATS|8|document Date
+./input\14REGUP|KOART|CHAR|1|AccountType
+./input\14REGUP|BSCHL|CHAR|2|billing key
+./input\14REGUP|HKONT|CHAR|10|Account Ledger Accounting HK
+./input\14REGUP|SAKNR|CHAR|10|Account Number Ledger
+./input\14REGUP|UMSKZ|CHAR|1|Character special ledger
+./input\14REGUP|UMSKS|CHAR|1|Class operations ledger
+./input\14REGUP|ZUMSK|CHAR|1|Target sign special ledger
+./input\14REGUP|SHKZG|CHAR|1|Character Debit / credit
+./input\14REGUP|DMBTR|CURR|13|IN amount in local currency
+./input\14REGUP|WRBTR|CURR|13|Amount in document currency
+./input\14REGUP|BDIFF|CURR|13|difference Award
+./input\14REGUP|GSBER|CHAR|4|working section
+./input\14REGUP|MWSKZ|CHAR|2|Character VAT
+./input\14REGUP|MWSTS|CURR|13|Tax amount in local currency
+./input\14REGUP|WMWST|CURR|13|Tax amount in document currency
+./input\14REGUP|MWSK1|CHAR|2|Character taxes for distribution
+./input\14REGUP|DMBT1|CURR|13|The amount in local currency for the division dan
+./input\14REGUP|WRBT1|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\14REGUP|MWSK2|CHAR|2|Character taxes for distribution
+./input\14REGUP|DMBT2|CURR|13|The amount in local currency for the division dan
+./input\14REGUP|WRBT2|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\14REGUP|MWSK3|CHAR|2|Character taxes for distribution
+./input\14REGUP|DMBT3|CURR|13|The amount in local currency for the division dan
+./input\14REGUP|WRBT3|CURR|13|The amount of foreign currency for the distribution of taxes
+./input\14REGUP|SGTXT|CHAR|50|text entries
+./input\14REGUP|ZFBDT|DATS|8|Base date for the calculation of maturity
+./input\14REGUP|ZTERM|CHAR|4|Key payment terms
+./input\14REGUP|ZBD1T|DEC|3|Days discounts 1
+./input\14REGUP|ZBD2T|DEC|3|2 Days discounts
+./input\14REGUP|ZBD3T|DEC|3|The deadline for the condition Net
+./input\14REGUP|ZBD1P|DEC|5|1 percent cash discount
+./input\14REGUP|ZBD2P|DEC|5|2 percent discounts
+./input\14REGUP|SKFBT|CURR|13|Skontovatelná amount in currency document
+./input\14REGUP|SKNTO|CURR|13|The amount of the discount in comp. currency
+./input\14REGUP|WSKTO|CURR|13|The amount of the discount in the currency document
+./input\14REGUP|ZBFIX|CHAR|1|Fixed payment condition
+./input\14REGUP|ZLSPR|CHAR|1|Key for blocking payments
+./input\14REGUP|SPLEV|CHAR|1|Level at which payment is blocked
+./input\14REGUP|XREBZ|CHAR|1|Character: The item is a credit note in relation to
+./input\14REGUP|ZOLLT|CHAR|8|No. duty rate
+./input\14REGUP|ZOLLD|DATS|8|Customs data.
+./input\14REGUP|LZBKZ|CHAR|3|Model central bank law
+./input\14REGUP|LANDL|CHAR|3|state contractor
+./input\14REGUP|DIEKZ|CHAR|1|Character services (foreign payment)
+./input\14REGUP|QSSKZ|CHAR|2|Character Withholding Tax
+./input\14REGUP|QSSHB|CURR|13|Base amount tax source
+./input\14REGUP|QBSHB|CURR|13|Withholding Tax Amount (in currency document)
+./input\14REGUP|QBSHH|CURR|13|Tax source amount (in local currency)
+./input\14REGUP|ESRNR|CHAR|11|ESR participant number
+./input\14REGUP|ESRRE|CHAR|27|Reference no. ESR
+./input\14REGUP|ESRPZ|CHAR|2|Controll no. ESR
+./input\14REGUP|ZBDXT|DEC|3|Discounts on selected days
+./input\14REGUP|ZBDXP|DEC|5|Selected percentage level discounts
+./input\14REGUP|MSHBT|CURR|13|Maximum amount discounts in local currency
+./input\14REGUP|MSFBT|CURR|13|The maximum amount of the discount in foreign currency
+./input\14REGUP|PROJN|CHAR|16|Obsolete: Project ID: longer used
+./input\14REGUP|AUFNR|CHAR|12|Order number
+./input\14REGUP|ANLN1|CHAR|12|Main number IM
+./input\14REGUP|ANLN2|CHAR|4|Inventory sub. No.
+./input\14REGUP|EBELN|CHAR|10|The number of purchase document
+./input\14REGUP|EBELP|NUMC|5|Item proof of purchase
+./input\14REGUP|XANET|CHAR|1|Character: Deposit charged to the net?
+./input\14REGUP|XNETB|CHAR|1|Character: A document posted net?
+./input\14REGUP|XNACH|CHAR|1|Character: This document must be read once more
+./input\14REGUP|ZWELS|CHAR|10|List of payment methods, which should be of
+./input\14REGUP|VBUND|CHAR|6|Number of partner companies
+./input\14REGUP|STCEG|CHAR|20|VAT registration number
+./input\14REGUP|EGBLD|CHAR|3|State of destination for the delivery of goods
+./input\14REGUP|EGLLD|CHAR|3|Become a vendor at received goods
+./input\14REGUP|QSZNR|CHAR|10|Number of certificate of exemption from the source
+./input\14REGUP|BDIF2|CURR|13|Valuation difference for the second valuation method
+./input\14REGUP|DSKVH|CURR|13|Potential loss of discounts in comp. currency
+./input\14REGUP|POKLA|CHAR|1|Classification of items for printing checks online
+./input\14REGUP|FIPOS|CHAR|14|budget item
+./input\14REGUP|PROJK|NUMC|8|Structure plan element of the project (WBS element)
+./input\14REGUP|NPLNR|CHAR|12|No.net diagram for account assignment
+./input\14REGUP|AUFPL|NUMC|10|Number procedure for operations in the contract
+./input\14REGUP|APLZL|NUMC|8|Internal counter
+./input\14REGUP|XEGDR|CHAR|1|Character: Triangular trade within the EC?
+./input\14REGUP|BDIF3|CURR|13|Difference Award for the third corporate currency
+./input\14REGUP|DMBE2|CURR|13|The amount of local currency in the second
+./input\14REGUP|DMBE3|CURR|13|The amount of local currency in the third
+./input\14REGUP|MWST2|CURR|13|The amount of tax in the second local currency
+./input\14REGUP|SKNT2|CURR|13|The amount of the discount in the second local currency
+./input\14REGUP|SKNT3|CURR|13|The amount of the discount in the third local currency
+./input\14REGUP|QBSH2|CURR|13|The amount of withholding tax in the second Corporate me
+./input\14REGUP|QBSH3|CURR|13|The amount of withholding tax in the third Corporate me
+./input\14REGUP|DMB21|CURR|13|The amount in local currency for the second Divide
+./input\14REGUP|DMB22|CURR|13|The amount in local currency for the second Divide
+./input\14REGUP|DMB23|CURR|13|The amount in local currency for the second Divide
+./input\14REGUP|DMB31|CURR|13|Amount in third local currency for splits
+./input\14REGUP|DMB32|CURR|13|Amount in third local currency for splits
+./input\14REGUP|DMB33|CURR|13|Amount in third local currency for splits
+./input\14REGUP|UZAWE|CHAR|2|Addendum to the payment method
+./input\14REGUP|MWST3|CURR|13|The amount of tax in the third local currency
+./input\14REGUP|ZUONR|CHAR|18|number assignment
+./input\14REGUP|OSKTO|CURR|13|The amount of the discount in comp. currency
+./input\14REGUP|VERTN|CHAR|13|Contract number
+./input\14REGUP|IMKEY|CHAR|8|Internal key for real object
+./input\14REGUP|REBZT|CHAR|1|Type following document
+./input\14REGUP|REBZG|CHAR|10|Document number of the invoice, which includes given
+./input\14REGUP|REBZJ|NUMC|4|The fiscal year of the relevant invoice (for dobrop
+./input\14REGUP|REBZZ|NUMC|3|Accounting entry in the corresponding invoice
+./input\14REGUP|KOSTL|CHAR|10|Cost center
+./input\14REGUP|XINVE|CHAR|1|Character: This applies to investment property?
+./input\14REGUP|VBEL2|CHAR|10|Sell.doc.
+./input\14REGUP|VPOS2|NUMC|6|Numerical field length 6
+./input\14REGUP|ZEKKN|NUMC|2|Serial number assignment Account
+./input\14REGUP|POSN2|NUMC|6|Item sell.doc.
+./input\14REGUP|ETEN2|NUMC|4|Number layout
+./input\14REGUP|FISTL|CHAR|16|financial place
+./input\14REGUP|GEBER|CHAR|10|Fund/§
+./input\14REGUP|DABRZ|DATS|8|Refer.date for showdown
+./input\14REGUP|KKBER|CHAR|4|Credit Control Area
+./input\14REGUP|EMPFB|CHAR|10|Payee / Payer
+./input\14REGUP|PRCTR|CHAR|10|profit center
+./input\14REGUP|XREF1|CHAR|12|Reference key trading partner
+./input\14REGUP|XREF2|CHAR|12|Reference key trading partner
+./input\14REGUP|XREF3|CHAR|20|Reference key to entry document
+./input\14REGUP|ZINKZ|CHAR|2|Exception of interest
+./input\14REGUP|DTWS1|NUMC|2|instructions 1
+./input\14REGUP|DTWS2|NUMC|2|Statement 2
+./input\14REGUP|DTWS3|NUMC|2|instructions 3
+./input\14REGUP|DTWS4|NUMC|2|instruction 4
+./input\14REGUP|MANSP|CHAR|1|BlokUpomín
+./input\14REGUP|KIDNO|CHAR|30|payment reference
+./input\14REGUP|XCPDD|CHAR|1|Character: Address and data banks are set
+./input\14REGUP|VERTT|CHAR|1|Dt. Contract
+./input\14REGUP|VBEWA|CHAR|4|Type of movement
+./input\14REGUP|AGZEI|DEC|5|balancing item
+./input\14REGUP|PSWSL|CUKY|5|Updated currency for transactions effected in HK
+./input\14REGUP|PSWBT|CURR|13|Amount to update the general ledger
+./input\14REGUP|PSSKT|CURR|13|Deduction for item discounts
+./input\14REGUP|XPYAM|CHAR|1|Character: The amount of payment determined
+./input\14REGUP|GDIFF|CURR|13|Total exchange rate difference
+./input\14REGUP|GDIF2|CURR|13|Total exchange rate difference
+./input\14REGUP|GDIF3|CURR|13|Total exchange rate difference
+./input\14REGUP|BUPLA|CHAR|4|Business place
+./input\14REGUP|SECCO|CHAR|4|Section Withholding Tax
+./input\14REGUP|XSAEN|CHAR|1|Character: Unconfirmed change master record
+./input\14REGUP|KBLNR|CHAR|10|Doc. No.-reserve funds
+./input\14REGUP|KBLPOS|NUMC|3|Item document - reserve funds
+./input\14REGUP|KEYNO|CHAR|10|The key number Payment Request
+./input\14REGUP|PAMTF|CURR|13|The amount of the request for payment in the currency of payment
+./input\14REGUP|ORIGIN|CHAR|8|Character origin
+./input\14REGUP|PENLC1|CURR|13
+./input\14REGUP|PENLC2|CURR|13
+./input\14REGUP|PENLC3|CURR|13
+./input\14REGUP|PENFC|CURR|13
+./input\14REGUP|PENDAYS|INT4|10|The number of days for calculation of fines
+./input\14REGUP|PPRCT|CHAR|10|Partner profit center
+./input\14REGUP|GRANT_NBR|CHAR|20|Grant
+./input\14REGUP|FKBER|CHAR|16|functional area
+./input\15RSEG|MANDT|CLNT|3|Client
+./input\15RSEG|BELNR|CHAR|10|The number of accounting documents
+./input\15RSEG|GJAHR|NUMC|4|Fiscal year
+./input\15RSEG|BUZEI|NUMC|6|Item in the invoice document
+./input\15RSEG|EBELN|CHAR|10|The number of purchase document
+./input\15RSEG|EBELP|NUMC|5|Item proof of purchase
+./input\15RSEG|ZEKKN|NUMC|2|Serial number assignment Account
+./input\15RSEG|MATNR|CHAR|18|No.
+./input\15RSEG|BWKEY|CHAR|4|circle awards
+./input\15RSEG|BWTAR|CHAR|10|kind awards
+./input\15RSEG|BUKRS|CHAR|4|Accounting circuit
+./input\15RSEG|WERKS|CHAR|4|Race
+./input\15RSEG|WRBTR|CURR|13|Amount in document currency
+./input\15RSEG|SHKZG|CHAR|1|Character Debit / credit
+./input\15RSEG|MWSKZ|CHAR|2|Character VAT
+./input\15RSEG|TXJCD|CHAR|15|Tax Jurisdiction Code - jurisdiction for
+./input\15RSEG|MENGE|QUAN|13|Amount
+./input\15RSEG|BSTME|UNIT|3|Ordering unit of measure
+./input\15RSEG|BPMNG|QUAN|13|Quantity in the units ordering prices
+./input\15RSEG|BPRME|UNIT|3|Unit prices in order
+./input\15RSEG|LBKUM|QUAN|13|Total inventory valuation
+./input\15RSEG|VRKUM|QUAN|13|Overall inventories in the period accounts.
+./input\15RSEG|MEINS|UNIT|3|The basic unit of measurement
+./input\15RSEG|PSTYP|CHAR|1|Type of items in a shopping document
+./input\15RSEG|KNTTP|CHAR|1|Type of Account Assignment
+./input\15RSEG|BKLAS|CHAR|4|Class pricing
+./input\15RSEG|EREKZ|CHAR|1|Character final invoice
+./input\15RSEG|EXKBE|CHAR|1|Updates character development orders
+./input\15RSEG|XEKBZ|CHAR|1|Character: Update ad. Purchase exp.
+./input\15RSEG|TBTKZ|CHAR|1|Character: Foll. Acc. debited
+./input\15RSEG|SPGRP|CHAR|1|Block.reason.: Price
+./input\15RSEG|SPGRM|CHAR|1|Block.reason .: Qty.
+./input\15RSEG|SPGRT|CHAR|1|Block.reason .: Term
+./input\15RSEG|SPGRG|CHAR|1|Block.reason: Number jedn.uObjCeny
+./input\15RSEG|SPGRV|CHAR|1|Block.reason: Budget
+./input\15RSEG|SPGRQ|CHAR|1|Character: Manual blocking reason
+./input\15RSEG|SPGRS|CHAR|1|Reason block height amounts .:
+./input\15RSEG|SPGRC|CHAR|1|Reason block .: Quality
+./input\15RSEG|BUSTW|CHAR|4|Accounting value chain
+./input\15RSEG|XBLNR|CHAR|16|Number of the reference document
+./input\15RSEG|XRUEB|CHAR|1|Character: The document is posted to a previous
+./input\15RSEG|BNKAN|CURR|13|Additional expense share with ad. Item
+./input\15RSEG|KSCHL|CHAR|4|Kind of conditions
+./input\15RSEG|SALK3|CURR|13|The value of total inventory valuation
+./input\15RSEG|VMSAL|CURR|13|The value of inventories valued at front
+./input\15RSEG|XLIFO|CHAR|1|LIFO / FIFO-relevant
+./input\15RSEG|LFBNR|CHAR|10|Number of the reference document
+./input\15RSEG|LFGJA|NUMC|4|The fiscal year of the current period
+./input\15RSEG|LFPOS|NUMC|4|Item reference document
+./input\15RSEG|MATBF|CHAR|18|Material in which is guided supply
+./input\15RSEG|RBMNG|QUAN|13|Invoiced amount by Vendor Invoice
+./input\15RSEG|BPRBM|QUAN|13|Invoiced amount by the vendor invoice
+./input\15RSEG|RBWWR|CURR|13|Amount invoiced in the currency of the document by
+./input\15RSEG|LFEHL|CHAR|1|Type of error suppliers
+./input\15RSEG|GRICD|CHAR|2|Character activities for income tax gross
+./input\15RSEG|GRIRG|CHAR|3|Region (Federal State, Land, pr
+./input\15RSEG|GITYP|CHAR|2|Species distribution for payroll tax
+./input\15RSEG|PACKNO|NUMC|10|Packet number Performance
+./input\15RSEG|INTROW|NUMC|10|Number of Rows performance
+./input\15RSEG|SGTXT|CHAR|50|text entries
+./input\15RSEG|XSKRL|CHAR|1|Character: Accounting line is relevant.pro pos
+./input\15RSEG|KZMEK|CHAR|1|Proofreading symbols
+./input\15RSEG|MRMOK|CHAR|1|Character: The entry of the invoice is processed
+./input\15RSEG|STUNR|NUMC|3|Level number
+./input\15RSEG|ZAEHK|NUMC|2|Counter conditions
+./input\15RSEG|STOCK_POSTING|CURR|13|Inventory accounting lines of incoming invoices
+./input\15RSEG|STOCK_POSTING_PP|CURR|13|Inventory accounting lines of incoming invoices, mine
+./input\15RSEG|STOCK_POSTING_PY|CURR|13|Inventory accounting lines of incoming invoices, mine
+./input\15RSEG|WEREC|CHAR|1|Character Recognition compensation for PM / PF u serve
+./input\15RSEG|LIFNR|CHAR|10|Vendor account number
+./input\15RSEG|FRBNR|CHAR|16|Waybill number at the receiving material

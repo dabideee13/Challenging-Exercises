@@ -1,0 +1,292 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        RBKP
+          Short description:Document header - received invoice
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 127
+          Field length sum: 1236
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Client
+        BELNR       X CHAR     10 The document number invoice doc.
+        GJAHR       X NUMC      4 Fiscal year
+        BLART         CHAR      2 Doc. Type
+        BLDAT         DATS      8 document Date
+        BUDAT         DATS      8 Posting date in the document
+        USNAM         CHAR     12 username
+        TCODE         CHAR     20 Transaction code
+        CPUDT         DATS      8 Day of purchase accounting document
+        CPUTM         TIMS      6 acquisition time
+        VGART         CHAR      2 Kind of operation in AG08 (sort inter.doc.)
+        XBLNR         CHAR     16 Number of the reference document
+        BUKRS         CHAR      4 Accounting circuit
+        LIFNR         CHAR     10 Different issuer of the invoice
+        WAERS         CUKY      5 key currency
+        KURSF         DEC       9 Exchange rate
+        RMWWR         CURR     13 Gross amount invoiced in the currency document
+        BEZNK         CURR     13 Additional costs
+        WMWST1        CURR     13 Tax amount in currency document signed
+        MWSKZ1        CHAR      2 Character taxes
+        WMWST2        CURR     13 .: Becomes outdated tax amount in the currency of the document - already
+        MWSKZ2        CHAR      2 Stop-.: Character VAT
+        ZTERM         CHAR      4 Key payment terms
+        ZBD1T         DEC       3 Days discounts 1
+        ZBD1P         DEC       5 1 percent cash discount
+        ZBD2T         DEC       3 2 Days discounts
+        ZBD2P         DEC       5 2 percent discounts
+        ZBD3T         DEC       3 The deadline for the condition Net
+        WSKTO         CURR     13 The amount of the discount in the currency document
+        XRECH         CHAR      1 Character: Billing Invoice
+        BKTXT         CHAR     25 Text main doc.
+        SAPRL         CHAR      4 SAP release
+        LOGSYS        CHAR     10 Logical system
+        XMWST         CHAR      1 Tax calculation automatically?
+        STBLG         CHAR     10 The number of the cancellation document
+        STJAH         NUMC      4 Fiscal year storn.dokladu
+        MWSKZ_BNK     CHAR      2 Character VAT
+        TXJCD_BNK     CHAR     15 Tax Jurisdiction Code - jurisdiction for
+        IVTYP         CHAR      1 Origin Logist. Invoice document
+        XRBTX         CHAR      1 Character: More than one character tax
+        REPART        CHAR      1 Character type Invoice
+        RBSTAT        CHAR      1 Status billing document
+        KNUMVE        CHAR     10 The condition of the document - its own terms
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        KNUMVL        CHAR     10 The condition of the document - error suppliers
+        ARKUEN        CURR     13 Automatic reduction of the amount of the invoice (nett
+        ARKUEMW       CURR     13 VAT - reduced the proportion of auto part
+        MAKZN         CURR     13 Manual accept. Diff. nett.
+        MAKZMW        CURR     13 Manually accepted amount of VAT
+        LIEFFN        CURR     13 Error vendor exkl. VAT
+        LIEFFMW       CURR     13 VAT-share vendor errors
+        XAUTAKZ       CHAR      1 Ref. automatically accepted for invoices
+        INCLUDE RBKP_FI
+         ESRNR        CHAR     11 ESR participant number
+         ESRPZ        CHAR      2 Controll no. ESR
+         ESRRE        CHAR     27 Reference no. ESR
+         QSSHB        CURR     13 Base amount tax source
+         QSFBT        CURR     13 Tax free amount (in the currency Doc)
+         QSSKZ        CHAR      2 Character Withholding Tax
+         DIEKZ        CHAR      1 Character services (foreign payment)
+         LANDL        CHAR      3 state contractor
+         LZBKZ        CHAR      3 Model central bank law
+         TXKRS        DEC       9 The exchange rate for the tax
+         EMPFB        CHAR     10 Payee / Payer
+         BVTYP        CHAR      4 Type banks part.
+         HBKID        CHAR      5 Short key corporate bank
+         ZUONR        CHAR     18 number assignment
+         ZLSPR        CHAR      1 Key for blocking payments
+         ZLSCH        CHAR      1 Method of payment
+         ZFBDT        DATS      8 Base date for the calculation of maturity
+         KIDNO        CHAR     30 payment reference
+         REBZG        CHAR     10 Link to an invoice number for ref.doc
+         REBZJ        NUMC      4 The fiscal year of the relevant invoice (for dobrop
+         XINVE        CHAR      1 Character: This applies to investment property?
+         EGMLD        CHAR      3 The State reporting deliveries of goods within the EU
+         XEGDR        CHAR      1 Character: Triangular trade within the EC?
+        J_1BNFTYPE    CHAR      2
+        BRNCH         CHAR      4 extension number
+        ERFPR         CHAR     12 Profile acquisition Invoice Logis
+        SECCO         CHAR      4 Section Withholding Tax
+        INCLUDE RBKP_1TIME
+         NAME1        CHAR     35 Naz. 1
+         NAME2        CHAR     35 Naz. 2
+         NAME3        CHAR     35 Naz. 3
+         NAME4        CHAR     35 Naz. 4
+         PSTLZ        CHAR     10 Postal code
+         ORT01        CHAR     35 Place
+         LAND1        CHAR      3 key state
+         STRAS        CHAR     35 Street and house number
+         PFACH        CHAR     10 PO box
+         PSTL2        CHAR     10 ZIP postal bins
+         PSKTO        CHAR     16 Number spec. account
+         BANKN        CHAR     18 Number bank. account
+         BANKL        CHAR     15 Routing Number
+         BANKS        CHAR      3 Key state banks
+         STCD1        CHAR     16 Tax Number 1
+         STCD2        CHAR     11 Tax number 2
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+         STKZU        CHAR      1 Obligation VAT
+         STKZA        CHAR      1 Character: My business partner obligation Anniversary
+         REGIO        CHAR      3 Region (Federal State, Land, pr
+         BKONT        CHAR      2 Bank check code
+         DTAWS        CHAR      2 Key instructions for exchanging data carriers
+         DTAMS        CHAR      1 Key messages for the exchange of data carriers
+         SPRAS        CHAR      1 Character field of length 1
+         XCPDK        CHAR      1 Character: This is an account of the CPD?
+         EMPFG        CHAR     16 Scrambling payee
+         FITYP        CHAR      2 kind of tax
+         STCDT        CHAR      2 Type of taxpayer numbers
+         STKZN        CHAR      1 Individual
+         STCD3        CHAR     18 Tax number 3
+         STCD4        CHAR     18 Tax number 4
+         BKREF        CHAR     20 A reference to bank. Account
+         J_1KFREPRE   CHAR     10 name of representative
+         J_1KFTBUS    CHAR     30 transaction type
+         J_1KFTIND    CHAR     30 industry type
+         ANRED        CHAR     15 salutation
+         STCEG        CHAR     20 VAT registration number
+        ERNAME        CHAR     12 The name of the maker of the external system
+        REINDAT       DATS      8 Date of arrival Invoice
+        UZAWE         CHAR      2 Addendum to the payment method
+        FDLEV         CHAR      2 Level cash man.
+        FDTAG         DATS      8 Date of disposition
+        ZBFIX         CHAR      1 Fixed payment condition
+        FRGKZ         CHAR      1 Character: The release is necessary
+        ERFNAM        CHAR     12 Name of officer who entered the building
+        BUPLA         CHAR      4 Business place
+        FILKD         CHAR     10 Branch account number
+        GSBER         CHAR      4 working section
+        LOTKZ         CHAR     10 Character connections for papers
+        SGTXT         CHAR     50 text entries
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            RMWWR           RBKP-WAERS
+            BEZNK           RBKP-WAERS
+            WMWST1          RBKP-WAERS
+            WMWST2          RBKP-WAERS
+            WSKTO           RBKP-WAERS
+            ARKUEN          RBKP-WAERS
+            ARKUEMW         RBKP-WAERS
+            MAKZN           RBKP-WAERS
+            MAKZMW          RBKP-WAERS
+            LIEFFN          RBKP-WAERS
+            LIEFFMW         RBKP-WAERS
+            QSSHB           RBKP-WAERS
+            QSFBT           RBKP-WAERS
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            LIFNR           ALPHA
+            KURSF           EXCRT
+            LOGSYS          ALPHA
+            STBLG           ALPHA
+            STJAH           GJAHR
+            ESRRE           ALPHA
+            TXKRS           EXCRT
+            EMPFB           ALPHA
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            FILKD           ALPHA
+            LOTKZ           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

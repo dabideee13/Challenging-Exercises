@@ -1,0 +1,73 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          MKPF
+        ______________________________________________________________________
+
+
+        MKPF
+          Short description:Materials document header
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 25
+          Field length sum: 211
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Client
+        MBLNR       X CHAR     10 Number of material document
+        MJAHR       X NUMC      4 Year material document
+        VGART         CHAR      2 Type of operation
+        BLART         CHAR      2 Doc. Type
+        BLAUM         CHAR      2 Type reprising document
+        BLDAT         DATS      8 document Date
+        BUDAT         DATS      8 Posting date in the document
+        CPUDT         DATS      8 Day of purchase accounting document
+        CPUTM         TIMS      6 acquisition time
+        AEDAT         DATS      8 Date of last change
+        USNAM         CHAR     12 username
+        TCODE         CHAR      4 The area is closer def., Event. possible use
+        XBLNR         CHAR     16 Number of the reference document
+        BKTXT         CHAR     25 Text main doc.
+        FRATH         CURR     13 Additional costs
+        FRBNR         CHAR     16 Waybill number at the receiving material
+        WEVER         CHAR      1 Version printing of material
+        XABLN         CHAR     10 Number dispatch
+        AWSYS         CHAR     10 Logical system
+        BLA2D         CHAR      2 Type of document for ad doc to proceedings before
+        TCODE2        CHAR     20 Transaction code
+        BFWMS         CHAR      1 Posting control for external WMS
+        EXNUM         CHAR     10 The number of the foreign trade data in documents MM
+        APPEND  JVMKPF
+         KNUMV        CHAR     10 Condition ID document
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            FRATH           T001-WAERS
+
+          Field with conversion routines:
+            Field name      conversion routine
+            MBLNR           ALPHA
+            MJAHR           GJAHR
+            XABLN           ALPHA
+            AWSYS           ALPHA
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

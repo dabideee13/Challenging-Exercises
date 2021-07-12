@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+        RSEG
+          Short description:Document item - received invoice
+          Transparent table
+          Active version
+
+
+        Field structure
+          Field count: 71
+          Field length sum: 482
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        MANDT            X CLNT      3 Client
+        BELNR            X CHAR     10 The number of accounting documents
+        GJAHR            X NUMC      4 Fiscal year
+        BUZEI            X NUMC      6 Item in the invoice document
+        EBELN              CHAR     10 The number of purchase document
+        EBELP              NUMC      5 Item proof of purchase
+        ZEKKN              NUMC      2 Serial number assignment Account
+        MATNR              CHAR     18 No.
+        BWKEY              CHAR      4 circle awards
+        BWTAR              CHAR     10 kind awards
+        BUKRS              CHAR      4 Accounting circuit
+        WERKS              CHAR      4 Race
+        WRBTR              CURR     13 Amount in document currency
+        SHKZG              CHAR      1 Character Debit / credit
+        MWSKZ              CHAR      2 Character VAT
+        TXJCD              CHAR     15 Tax Jurisdiction Code - jurisdiction for
+        MENGE              QUAN     13 Amount
+        BSTME              UNIT      3 Ordering unit of measure
+        BPMNG              QUAN     13 Quantity in the units ordering prices
+        BPRME              UNIT      3 Unit prices in order
+        LBKUM              QUAN     13 Total inventory valuation
+        VRKUM              QUAN     13 Overall inventories in the period accounts.
+        MEINS              UNIT      3 The basic unit of measurement
+        PSTYP              CHAR      1 Type of items in a shopping document
+        KNTTP              CHAR      1 Type of Account Assignment
+        BKLAS              CHAR      4 Class pricing
+        EREKZ              CHAR      1 Character final invoice
+        EXKBE              CHAR      1 Updates character development orders
+        XEKBZ              CHAR      1 Character: Update ad. Purchase exp.
+        TBTKZ              CHAR      1 Character: Foll. Acc. debited
+        SPGRP              CHAR      1 Block.reason.: Price
+        SPGRM              CHAR      1 Block.reason .: Qty.
+        SPGRT              CHAR      1 Block.reason .: Term
+        SPGRG              CHAR      1 Block.reason: Number jedn.uObjCeny
+        SPGRV              CHAR      1 Block.reason: Budget
+        SPGRQ              CHAR      1 Character: Manual blocking reason
+        SPGRS              CHAR      1 Reason block height amounts .:
+        SPGRC              CHAR      1 Reason block .: Quality
+        BUSTW              CHAR      4 Accounting value chain
+        XBLNR              CHAR     16 Number of the reference document
+        XRUEB              CHAR      1 Character: The document is posted to a previous
+        BNKAN              CURR     13 Additional expense share with ad. Item
+        KSCHL              CHAR      4 Kind of conditions
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+        Field name       K Type Length Short text
+        ____________________________________________________________
+        SALK3              CURR     13 The value of total inventory valuation
+        VMSAL              CURR     13 The value of inventories valued at front
+        XLIFO              CHAR      1 LIFO / FIFO-relevant
+        LFBNR              CHAR     10 Number of the reference document
+        LFGJA              NUMC      4 The fiscal year of the current period
+        LFPOS              NUMC      4 Item reference document
+        MATBF              CHAR     18 Material in which is guided supply
+        RBMNG              QUAN     13 Invoiced amount by Vendor Invoice
+        BPRBM              QUAN     13 Invoiced amount by the vendor invoice
+        RBWWR              CURR     13 Amount invoiced in the currency of the document by
+        LFEHL              CHAR      1 Type of error suppliers
+        GRICD              CHAR      2 Character activities for income tax gross
+        GRIRG              CHAR      3 Region (Federal State, Land, pr
+        GITYP              CHAR      2 Species distribution for payroll tax
+        PACKNO             NUMC     10 Packet number Performance
+        INTROW             NUMC     10 Number of Rows performance
+        SGTXT              CHAR     50 text entries
+        XSKRL              CHAR      1 Character: Accounting line is relevant.pro pos
+        KZMEK              CHAR      1 Proofreading symbols
+        MRMOK              CHAR      1 Character: The entry of the invoice is processed
+        STUNR              NUMC      3 Level number
+        ZAEHK              NUMC      2 Counter conditions
+        STOCK_POSTING      CURR     13 Inventory accounting lines of incoming invoices
+        STOCK_POSTING_PP   CURR     13 Inventory accounting lines of incoming invoices, mine
+        STOCK_POSTING_PY   CURR     13 Inventory accounting lines of incoming invoices, mine
+        WEREC              CHAR      1 Character Recognition compensation for PM / PF u serve
+        LIFNR              CHAR     10 Vendor account number
+        FRBNR              CHAR     16 Waybill number at the receiving material
+        ____________________________________________________________
+          Field with reference fields:
+            Field name      reference field
+            WRBTR           RBKP-WAERS
+            MENGE           RSEG-BSTME
+            BPMNG           RSEG-BPRME
+            LBKUM           MARA-MEINS
+            VRKUM           MARA-MEINS
+            BNKAN           RBKP-WAERS
+            SALK3           T001-WAERS
+            VMSAL           T001-WAERS
+            RBMNG           RSEG-BSTME
+            BPRBM           RSEG-BPRME
+            RBWWR           RBKP-WAERS
+            STOCK_POSTING   T001-WAERS
+            STOCK_POSTING_PPT001-WAERS
+            STOCK_POSTING_PYT001-WAERS
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            EBELN           ALPHA
+            MATNR           MATN1
+            BSTME           CUNIT
+            BPRME           CUNIT
+            MEINS           CUNIT
+            LFBNR           ALPHA
+            LFGJA           GJAHR
+            MATBF           MATN1
+            LIFNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

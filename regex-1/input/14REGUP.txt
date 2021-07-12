@@ -1,0 +1,438 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        REGUP
+          Short description:Processed items from payment programme
+          Cluster table from table clusters REGUC
+          Active version
+
+
+        Field structure
+          Field count: 176
+          Field length sum: 1481
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Client
+        LAUFD       X DATS      8 Program start date
+        LAUFI       X CHAR      6 Supplementary identification attribute
+        XVORL       X CHAR      1 Character: Only run the draft?
+        ZBUKR       X CHAR      4 Paying company code
+        LIFNR       X CHAR     10 Vendor account number
+        KUNNR       X CHAR     10 Customer number 1
+        EMPFG       X CHAR     16 Scrambling payee
+        VBLNR       X CHAR     10 Payment Document No.
+        BUKRS       X CHAR      4 Accounting circuit
+        BELNR       X CHAR     10 The number of accounting documents
+        GJAHR       X NUMC      4 Fiscal year
+        BUZEI       X NUMC      3 Number of accounting lines in the accounting document
+        FILKD         CHAR     10 Branch account number
+        ZLSCH         CHAR      1 Method of payment
+        WAERS         CUKY      5 key currency
+        HBKID         CHAR      5 Short key corporate bank
+        BVTYP         CHAR      4 Type banks part.
+        POKEN         CHAR      3 Character items
+        XBLNR         CHAR     16 Number of the reference document
+        BLART         CHAR      2 Doc. Type
+        BUDAT         DATS      8 Posting date in the document
+        BLDAT         DATS      8 document Date
+        KOART         CHAR      1 AccountType
+        BSCHL         CHAR      2 billing key
+        HKONT         CHAR     10 Account Ledger Accounting HK
+        SAKNR         CHAR     10 Account Number Ledger
+        UMSKZ         CHAR      1 Character special ledger
+        UMSKS         CHAR      1 Class operations ledger
+        ZUMSK         CHAR      1 Target sign special ledger
+        SHKZG         CHAR      1 Character Debit / credit
+        DMBTR         CURR     13 IN amount in local currency
+        WRBTR         CURR     13 Amount in document currency
+        BDIFF         CURR     13 difference Award
+        GSBER         CHAR      4 working section
+        MWSKZ         CHAR      2 Character VAT
+        MWSTS         CURR     13 Tax amount in local currency
+        WMWST         CURR     13 Tax amount in document currency
+        MWSK1         CHAR      2 Character taxes for distribution
+        DMBT1         CURR     13 The amount in local currency for the division dan
+        WRBT1         CURR     13 The amount of foreign currency for the distribution of taxes
+        MWSK2         CHAR      2 Character taxes for distribution
+        DMBT2         CURR     13 The amount in local currency for the division dan
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        WRBT2         CURR     13 The amount of foreign currency for the distribution of taxes
+        MWSK3         CHAR      2 Character taxes for distribution
+        DMBT3         CURR     13 The amount in local currency for the division dan
+        WRBT3         CURR     13 The amount of foreign currency for the distribution of taxes
+        SGTXT         CHAR     50 text entries
+        ZFBDT         DATS      8 Base date for the calculation of maturity
+        ZTERM         CHAR      4 Key payment terms
+        ZBD1T         DEC       3 Days discounts 1
+        ZBD2T         DEC       3 2 Days discounts
+        ZBD3T         DEC       3 The deadline for the condition Net
+        ZBD1P         DEC       5 1 percent cash discount
+        ZBD2P         DEC       5 2 percent discounts
+        SKFBT         CURR     13 Skontovatelná amount in currency document
+        SKNTO         CURR     13 The amount of the discount in comp. currency
+        WSKTO         CURR     13 The amount of the discount in the currency document
+        ZBFIX         CHAR      1 Fixed payment condition
+        ZLSPR         CHAR      1 Key for blocking payments
+        SPLEV         CHAR      1 Level at which payment is blocked
+        XREBZ         CHAR      1 Character: The item is a credit note in relation to
+        ZOLLT         CHAR      8 No. duty rate
+        ZOLLD         DATS      8 Customs data.
+        LZBKZ         CHAR      3 Model central bank law
+        LANDL         CHAR      3 state contractor
+        DIEKZ         CHAR      1 Character services (foreign payment)
+        QSSKZ         CHAR      2 Character Withholding Tax
+        QSSHB         CURR     13 Base amount tax source
+        QBSHB         CURR     13 Withholding Tax Amount (in currency document)
+        QBSHH         CURR     13 Tax source amount (in local currency)
+        ESRNR         CHAR     11 ESR participant number
+        ESRRE         CHAR     27 Reference no. ESR
+        ESRPZ         CHAR      2 Controll no. ESR
+        ZBDXT         DEC       3 Discounts on selected days
+        ZBDXP         DEC       5 Selected percentage level discounts
+        MSHBT         CURR     13 Maximum amount discounts in local currency
+        MSFBT         CURR     13 The maximum amount of the discount in foreign currency
+        PROJN         CHAR     16 Obsolete: Project ID: longer used
+        AUFNR         CHAR     12 Order number
+        ANLN1         CHAR     12 Main number IM
+        ANLN2         CHAR      4 Inventory sub. No.
+        EBELN         CHAR     10 The number of purchase document
+        EBELP         NUMC      5 Item proof of purchase
+        XANET         CHAR      1 Character: Deposit charged to the net?
+        XNETB         CHAR      1 Character: A document posted net?
+        XNACH         CHAR      1 Character: This document must be read once more
+        ZWELS         CHAR     10 List of payment methods, which should be of
+        VBUND         CHAR      6 Number of partner companies
+        STCEG         CHAR     20 VAT registration number
+        EGBLD         CHAR      3 State of destination for the delivery of goods
+        EGLLD         CHAR      3 Become a vendor at received goods
+        QSZNR         CHAR     10 Number of certificate of exemption from the source
+        BDIF2         CURR     13 Valuation difference for the second valuation method
+        DSKVH         CURR     13 Potential loss of discounts in comp. currency
+        POKLA         CHAR      1 Classification of items for printing checks online
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        FIPOS         CHAR     14 budget item
+        PROJK         NUMC      8 Structure plan element of the project (WBS element)
+        NPLNR         CHAR     12 No.net diagram for account assignment
+        AUFPL         NUMC     10 Number procedure for operations in the contract
+        APLZL         NUMC      8 Internal counter
+        XEGDR         CHAR      1 Character: Triangular trade within the EC?
+        BDIF3         CURR     13 Difference Award for the third corporate currency
+        DMBE2         CURR     13 The amount of local currency in the second
+        DMBE3         CURR     13 The amount of local currency in the third
+        MWST2         CURR     13 The amount of tax in the second local currency
+        SKNT2         CURR     13 The amount of the discount in the second local currency
+        SKNT3         CURR     13 The amount of the discount in the third local currency
+        QBSH2         CURR     13 The amount of withholding tax in the second Corporate me
+        QBSH3         CURR     13 The amount of withholding tax in the third Corporate me
+        DMB21         CURR     13 The amount in local currency for the second Divide
+        DMB22         CURR     13 The amount in local currency for the second Divide
+        DMB23         CURR     13 The amount in local currency for the second Divide
+        DMB31         CURR     13 Amount in third local currency for splits
+        DMB32         CURR     13 Amount in third local currency for splits
+        DMB33         CURR     13 Amount in third local currency for splits
+        UZAWE         CHAR      2 Addendum to the payment method
+        MWST3         CURR     13 The amount of tax in the third local currency
+        ZUONR         CHAR     18 number assignment
+        OSKTO         CURR     13 The amount of the discount in comp. currency
+        VERTN         CHAR     13 Contract number
+        IMKEY         CHAR      8 Internal key for real object
+        REBZT         CHAR      1 Type following document
+        REBZG         CHAR     10 Document number of the invoice, which includes given
+        REBZJ         NUMC      4 The fiscal year of the relevant invoice (for dobrop
+        REBZZ         NUMC      3 Accounting entry in the corresponding invoice
+        KOSTL         CHAR     10 Cost center
+        XINVE         CHAR      1 Character: This applies to investment property?
+        VBEL2         CHAR     10 Sell.doc.
+        VPOS2         NUMC      6 Numerical field length 6
+        ZEKKN         NUMC      2 Serial number assignment Account
+        POSN2         NUMC      6 Item sell.doc.
+        ETEN2         NUMC      4 Number layout
+        FISTL         CHAR     16 financial place
+        GEBER         CHAR     10 Fund/§
+        DABRZ         DATS      8 Refer.date for showdown
+        KKBER         CHAR      4 Credit Control Area
+        EMPFB         CHAR     10 Payee / Payer
+        PRCTR         CHAR     10 profit center
+        XREF1         CHAR     12 Reference key trading partner
+        XREF2         CHAR     12 Reference key trading partner
+        XREF3         CHAR     20 Reference key to entry document
+        ZINKZ         CHAR      2 Exception of interest
+        DTWS1         NUMC      2 instructions 1
+        DTWS2         NUMC      2 Statement 2
+        DTWS3         NUMC      2 instructions 3
+        DTWS4         NUMC      2 instruction 4
+        MANSP         CHAR      1 BlokUpomín
+        KIDNO         CHAR     30 payment reference
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+        Field name  K Type Length Short text
+        ____________________________________________________________
+        XCPDD         CHAR      1 Character: Address and data banks are set
+        VERTT         CHAR      1 Dt. Contract
+        VBEWA         CHAR      4 Type of movement
+        AGZEI         DEC       5 balancing item
+        PSWSL         CUKY      5 Updated currency for transactions effected in HK
+        PSWBT         CURR     13 Amount to update the general ledger
+        PSSKT         CURR     13 Deduction for item discounts
+        XPYAM         CHAR      1 Character: The amount of payment determined
+        GDIFF         CURR     13 Total exchange rate difference
+        GDIF2         CURR     13 Total exchange rate difference
+        GDIF3         CURR     13 Total exchange rate difference
+        BUPLA         CHAR      4 Business place
+        SECCO         CHAR      4 Section Withholding Tax
+        XSAEN         CHAR      1 Character: Unconfirmed change master record
+        KBLNR         CHAR     10 Doc. No.-reserve funds
+        KBLPOS        NUMC      3 Item document - reserve funds
+        INCLUDE REGUP_PRQ
+         KEYNO        CHAR     10 The key number Payment Request
+         PAMTF        CURR     13 The amount of the request for payment in the currency of payment
+        ORIGIN        CHAR      8 Character origin
+        PENLC1        CURR     13
+        PENLC2        CURR     13
+        PENLC3        CURR     13
+        PENFC         CURR     13
+        PENDAYS       INT4     10 The number of days for calculation of fines
+        PPRCT         CHAR     10 Partner profit center
+        GRANT_NBR     CHAR     20 Grant
+        FKBER         CHAR     16 functional area
+        ____________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+
+          Field with reference fields:
+            Field name      reference field
+            DMBTR           T001-WAERS
+            WRBTR           REGUH-WAERS
+            BDIFF           T001-WAERS
+            MWSTS           T001-WAERS
+            WMWST           REGUP-WAERS
+            DMBT1           T001-WAERS
+            WRBT1           REGUP-WAERS
+            DMBT2           T001-WAERS
+            WRBT2           REGUP-WAERS
+            DMBT3           T001-WAERS
+            WRBT3           REGUP-WAERS
+            SKFBT           REGUH-WAERS
+            SKNTO           T001-WAERS
+            WSKTO           REGUH-WAERS
+            QSSHB           REGUH-WAERS
+            QBSHB           REGUH-WAERS
+            QBSHH           T001-WAERS
+            MSHBT           T001-WAERS
+            MSFBT           REGUH-WAERS
+            BDIF2           X001-HWAE2
+            DSKVH           T001-WAERS
+            BDIF3           X001-HWAE3
+            DMBE2           BKPF-HWAE2
+            DMBE3           BKPF-HWAE3
+            MWST2           BKPF-HWAE2
+            SKNT2           BKPF-HWAE2
+            SKNT3           BKPF-HWAE3
+            QBSH2           BKPF-HWAE2
+            QBSH3           BKPF-HWAE3
+            DMB21           BKPF-HWAE2
+            DMB22           BKPF-HWAE2
+            DMB23           BKPF-HWAE2
+            DMB31           BKPF-HWAE3
+            DMB32           BKPF-HWAE3
+            DMB33           BKPF-HWAE3
+            MWST3           BKPF-HWAE3
+            OSKTO           T001-WAERS
+            PSWBT           REGUP-PSWSL
+            PSSKT           REGUP-PSWSL
+            GDIFF           T001-WAERS
+            GDIF2           X001-HWAE2
+            GDIF3           X001-HWAE3
+            PAMTF           REGUH-WAERS
+            PENLC1          BKPF-HWAER
+            PENLC2          BKPF-HWAE2
+            PENLC3          BKPF-HWAE3
+            PENFC           BKPF-WAERS
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUP
+        ______________________________________________________________________
+
+
+
+          Field with conversion routines:
+            Field name      conversion routine
+            LIFNR           ALPHA
+            KUNNR           ALPHA
+            VBLNR           ALPHA
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            FILKD           ALPHA
+            HKONT           ALPHA
+            SAKNR           ALPHA
+            ESRRE           ALPHA
+            AUFNR           ALPHA
+            ANLN1           ALPHA
+            ANLN2           ALPHA
+            EBELN           ALPHA
+            VBUND           ALPHA
+            FIPOS           FMCIS
+            PROJK           ABPSP
+            NPLNR           ALPHA
+            VERTN           ALPHA
+            IMKEY           IMKEY
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            KOSTL           ALPHA
+            VBEL2           ALPHA
+            EMPFB           ALPHA
+            PRCTR           ALPHA
+            KBLNR           ALPHA
+            KEYNO           ALPHA
+            PPRCT           ALPHA
+            GRANT_NBR       ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            6
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
